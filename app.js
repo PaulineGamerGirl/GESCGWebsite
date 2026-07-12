@@ -1031,71 +1031,56 @@ function renderImmersiveView(target) {
 
     // ---- CONSTELLATION DATA ----
     const CNODES = [
-      { idx:0, num:'01', title:'Academic Survival Hub',                      type:'Website · Free',              funded:false, top:'12%', left:'16%', anim:'float-1 4.2s', pd:'popup-down',                    subs:['COS Student Information Hub','Research Grants & Funding Portal','Research Job Board','Research Readiness Survey','Scholarship Grade Calculator','Academic Pathing Tool','Syllabus Transparency Portal','Note Generator','Free Software Directory','LaTeX Tutorials','NMAT Online Repository'] },
-      { idx:1, num:'02', title:'Semana ng Siyensya — COS Week',              type:'Main Fundraiser · Funded',     funded:true,  top:'5%',  left:'50%', anim:'float-2 3.8s', pd:'popup-down',                    subs:['Academic Competitions — Quiz Bee, Research Making & Spelling Bee','Department Merchandise Drive — Physics, Chemistry, Biology, Math, Statistics','COS Discord Gaming Night — Valorant, Deadlock, MLBB & Genshin'] },
-      { idx:2, num:'03', title:'Transparency & Accountability Platform',     type:'Website · Free',              funded:false, top:'12%', left:'84%', anim:'float-3 5.1s', pd:'popup-down popup-anchor-right',  subs:['Centralized Grievance Channel (Private & Secure)','Financial Transparency Ledger (Every Peso, Public)','Student Rights Charter (Plain Language)','Suggestion Tab (Live, Replied to by Council)'] },
-      { idx:3, num:'04', title:'Inclusion, Accessibility & Representation',  type:'Advocacy · Free',             funded:false, top:'46%', left:'93%', anim:'float-4 4.6s', pd:'popup-down popup-anchor-right',  subs:['Filipino Sign Language Training Program','Laboratory Accessibility Audit (Student-Led, Submitted to Admin)','Women & Minority in STEM Recognition — Real records, not just encouragement'] },
-      { idx:4, num:'05', title:'Queer & Trans Identity Education Series',    type:'Education · Free',            funded:false, top:'80%', left:'82%', anim:'float-5 4.9s', pd:'popup-up popup-anchor-right',    subs:['Queer Identity Science Forum — Academic, Biological & Sociological Research','Pre-Colonial Gender & Trans Philippine History — The Babaylan','Shanghay Laya — Online Queer & Trans Support Website'] },
-      { idx:5, num:'06', title:'Emergency Relief & Food Security Program',   type:'Welfare · Funded',            funded:true,  top:'88%', left:'50%', anim:'float-6 3.5s', pd:'popup-up',                      subs:['Food Security Pantry — No-Questions-Asked Access','Emergency Micro-Grant Fund (₱50 – ₱150 per need)','Welfare Outreach Registry — Consent-Based, Confidential'] },
-      { idx:6, num:'07', title:'Student Financial Empowerment Initiative',   type:'Practical Aid · Free',        funded:false, top:'80%', left:'18%', anim:'float-7 5.5s', pd:'popup-up popup-anchor-left',     subs:['Equipment & Apparel Exchange — Graduating students pass down gear','Freelancing & Part-Time Work Seminar — Real alternatives to fast food lines'] },
-      { idx:7, num:'08', title:'Fundraising & Local Business Collaboration', type:'Partnerships · Funded',       funded:true,  top:'46%', left:'7%',  anim:'float-8 4.3s', pd:'popup-down popup-anchor-left',   subs:['Local Business Partnerships — Formal MOA, 1–3 partners per term','All proceeds go directly to Emergency Relief Fund','Every peso tracked on the public Transparency Ledger'] }
+      { idx:0, num:'01', title:'Academic Survival Hub',                      type:'Website · Free',              funded:false, top:'15%', left:'22%', anim:'float-1 4.2s', subs:['COS Student Information Hub','Research Grants & Funding Portal','Research Job Board','Research Readiness Survey','Scholarship Grade Calculator','Academic Pathing Tool','Syllabus Transparency Portal','Note Generator','Free Software Directory','LaTeX Tutorials','NMAT Online Repository'] },
+      { idx:1, num:'02', title:'Semana ng Siyensya',                         type:'Main Fundraiser · Funded',     funded:true,  top:'10%', left:'50%', anim:'float-2 3.8s', subs:['Academic Competitions','Department Merchandise Drive','COS Discord Gaming Night'] },
+      { idx:2, num:'03', title:'Transparency & Accountability Platform',     type:'Website · Free',              funded:false, top:'15%', left:'78%', anim:'float-3 5.1s', subs:['Centralized Grievance Channel','Financial Transparency Ledger','Student Rights Charter','Suggestion Tab'] },
+      { idx:3, num:'04', title:'Inclusion, Accessibility & Representation',  type:'Advocacy · Free',             funded:false, top:'46%', left:'86%', anim:'float-4 4.6s', subs:['Filipino Sign Language Training','Laboratory Accessibility Audit','Women & Minority in STEM'] },
+      { idx:4, num:'05', title:'Queer & Trans Identity Education Series',    type:'Education · Free',            funded:false, top:'78%', left:'78%', anim:'float-5 4.9s', subs:['Queer Identity Science Forum','Pre-Colonial Gender & Trans History','Shanghay Laya Support Website'] },
+      { idx:5, num:'06', title:'Emergency Relief & Food Security Program',   type:'Welfare · Funded',            funded:true,  top:'84%', left:'50%', anim:'float-6 3.5s', subs:['Food Security Pantry','Emergency Micro-Grant Fund','Welfare Outreach Registry'] },
+      { idx:6, num:'07', title:'Student Financial Empowerment Initiative',   type:'Practical Aid · Free',        funded:false, top:'78%', left:'22%', anim:'float-7 5.5s', subs:['Equipment & Apparel Exchange','Freelancing & Part-Time Work Seminar'] },
+      { idx:7, num:'08', title:'Fundraising & Local Business Collaboration', type:'Partnerships · Funded',       funded:true,  top:'46%', left:'14%', anim:'float-8 4.3s', subs:['Local Business Partnerships','Emergency Relief Fund Allocation','Public Transparency Tracking'] }
     ];
 
-    const LINE_COORDS = [
-      ['16','12',false],['50','5',true],['84','12',false],['93','46',false],
-      ['82','80',false],['50','88',true],['18','80',false],['7','46',true]
-    ];
     const LINE_DURS = ['2.6s','3.2s','2.9s','3.7s','2.4s','3.5s','2.8s','3.1s'];
 
     const generalDirection = `I'm not spending council money on anything that doesn't directly protect or support a student. No paid general assemblies, no events for the sake of having events. The only things I will ever put real funds toward are the fundraisers to raise more money, and the emergency relief and micro grants — because those are the moments where money is the difference between a student making it through the semester or not. Everything else costs zero pesos. It is already feasible the day I take office. This platform doesn't close once published. The suggestion tab means any student can add an idea at any point in the term, and they will get an actual reply. If they want to lead it themselves, we will help them do it.`;
 
     html += `
       <div class="project-constellation" id="project-constellation">
+        <div class="constellation-heading">
+          <span class="ch-micro">08 Projects</span>
+          <span class="ch-title">The Platform</span>
+        </div>
+        
+        <div class="massive-bg-text">PROJECTS</div>
 
-        <svg class="constellation-svg" viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          ${LINE_COORDS.map(([x,y,funded],i) => `
-            <line class="constellation-line${funded?' funded-line':''}" x1="50" y1="50" x2="${x}" y2="${y}">
-              <animate attributeName="stroke-dashoffset" from="0" to="-18" dur="${LINE_DURS[i]}" repeatCount="indefinite"/>
-            </line>
-          `).join('')}
-        </svg>
 
         <div class="constellation-core">
-          <div class="core-default-content">
+          <div class="core-label-wrapper">
             <div class="core-label">My General<br>Direction</div>
             <div class="core-hint">Hover to read</div>
           </div>
-          <div class="constellation-core-popup">
-            <div class="core-popup-inner">
-              <div class="core-popup-header">My General Direction</div>
-              <p>${generalDirection}</p>
-              <span class="core-popup-quote">I will spend nothing on what doesn't matter, and everything I have on the people who do.</span>
-            </div>
+          <div class="core-content-expanded">
+            <p>${generalDirection}</p>
+            <span class="core-popup-quote">I will spend nothing on what doesn't matter, and everything I have on the people who do.</span>
           </div>
         </div>
 
         ${CNODES.map(n => `
-          <div class="constellation-node${n.funded?' funded':''}"
+          <div class="constellation-node" id="cnode-${n.idx}"
                style="top:${n.top};left:${n.left};animation:${n.anim} ease-in-out infinite alternate;"
                onclick="scrollToImmersiveCard(${n.idx})">
             <span class="node-number">${n.num}</span>
             <div class="node-title">${n.title}</div>
             <div class="node-type">${n.type}</div>
             <div class="node-arrow">↗</div>
-            <div class="node-popup ${n.pd}">
-              <div class="popup-heading">Sub-Projects</div>
-              <ul class="popup-list">
+            <div class="node-subs">
+              <ul class="node-subs-list">
                 ${n.subs.map(s=>`<li>${s}</li>`).join('')}
               </ul>
             </div>
           </div>
         `).join('')}
-
-        <div class="constellation-scroll-hint">
-          <span>Scroll to explore all projects</span>
-          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-        </div>
-
       </div>
     `;
 
@@ -1529,6 +1514,21 @@ function renderImmersiveView(target) {
 
   container.innerHTML = html;
   sideNavContainer.innerHTML = sideNavHtml;
+
+  // Constellation Intersection Observer to hide Side Nav
+  const constellationEl = document.getElementById('project-constellation');
+  if (constellationEl) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          sideNavContainer.classList.add('nav-hidden');
+        } else {
+          sideNavContainer.classList.remove('nav-hidden');
+        }
+      });
+    }, { threshold: 0.25 });
+    observer.observe(constellationEl);
+  }
 
   // Re-bind form listener if it exists
   const suggForm = document.getElementById('immersive-suggestion-form');
