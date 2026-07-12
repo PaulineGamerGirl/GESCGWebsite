@@ -1363,16 +1363,23 @@ nav {
 }
 
 /* Beautiful Table Styles for Data (Buckets, Classifications) */
-table {
+.table-responsive {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   margin: 2rem 0;
-  background: rgba(255, 255, 255, 0.015);
   border-radius: var(--radius-lg);
-  overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.015);
+}
+
+table {
+  width: 100%;
+  min-width: 750px;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0;
 }
 
 table th {
