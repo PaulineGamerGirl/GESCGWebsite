@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCG Project Platform</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,700&f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Accordion Styles */
+    .accordion {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      margin-bottom: var(--spacing-4);
+      position: relative;
+    }
+    .accordion-header {
+      background: var(--surface);
+      padding: var(--spacing-4);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      color: var(--text-primary);
+      transition: background 0.2s;
+    }
+    .accordion-header:hover {
+      background: #F9FAFB;
+    }
+    .accordion-content {
+      padding: 0 var(--spacing-4);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, padding 0.3s ease;
+      background: var(--surface);
+      position: absolute;
+      top: 100%;
+      left: -1px;
+      right: -1px;
+      z-index: 50;
+      border: 1px solid transparent;
+      border-top: none;
+      border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    }
+    .accordion.active .accordion-content {
+      padding: var(--spacing-4);
+      max-height: 1000px;
+      border-color: var(--border);
+      box-shadow: var(--shadow-lg);
+    }
+    .accordion-icon {
+      transition: transform 0.3s ease;
+    }
+    .accordion.active .accordion-icon {
+      transform: rotate(180deg);
+    }
+    .settings-icon {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      font-size: 28px;
+      cursor: pointer;
+      opacity: 0.8;
+      transition: all 0.3s ease;
+      z-index: 9999;
+      background: rgba(0,0,0,0.5);
+      padding: 10px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.2);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .settings-icon:hover {
+      opacity: 1;
+      transform: scale(1.1) rotate(15deg);
+      background: rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="settings-icon" onclick="toggleEditMode()" title="Enter Edit Mode">⚙️</div>
+  <nav>
+    <div class="container main-nav-container">
+      <div class="brand">
+        SCG Platform 
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#preacts">Pre-Acts (Internal)</a>
+        <a href="#global-strategy">Global Strategy</a>
+        <a href="#suggestions">Suggestions</a>
+        <a href="#finances">Finances</a>
+        <a href="#experiment">Experiment</a>
+        <a href="#me">Me</a>
+      </div>
+    </div>
+    <div class="project-nav">
+      <div class="container" id="project-nav-links">
+        <!-- Project links generated dynamically -->
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div id="home" class="page active">
+      <h1>Project Operations</h1>
+      <div class="summary-row">
+        <span class="chip chip-warning">Planning: 8</span>
+        <span class="chip chip-success">Approved: 0</span>
+        <span class="chip chip-active">Live: 0</span>
+        <span class="chip" style="margin-left: auto;">Bucket A: 6 | Bucket B: 17</span>
+      </div>
+
+      <div id="chart-render" style="margin-bottom: var(--spacing-8);"></div>
+
+      <div class="card">
+        <h3>Project Timeline (Bucket A)</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 16px;">Red lines indicate blackout dates: Midterms (Feb 16-21), ILW (Mar 2-7), Activity Ban (Mar 30-Apr 11).</p>
+        <div id="calendar-render"></div>
+      </div>
+
+      <div class="card" style="margin-top: 32px;">
+        <h3>General Direction</h3>
+        <p>I'm not spending council money on anything that doesn't directly protect or support a student. No paid general assemblies, no events for the sake of having events. The only things I will ever put real funds toward are emergency relief and research grants, because those are the moments where money is the difference between a student making it through the semester or not. Everything else on this platform costs zero pesos, which means none of it depends on whether we win a budget fight or raise enough donations. It is already feasible the day I take office.</p>
+        <p style="margin-top: 16px;">This platform doesn't close once it's published. The suggestion tab means any student can add an idea at any point in the term, and they will get an actual reply, not silence. If they want to lead it themselves, we will help them do it.</p>
+        <p style="margin-top: 16px;">I am running as a transwoman, and I am not going to soften that, perform it, or turn it into a punchline the way some campaigns turn minority issues into something cute or marketable. The students this platform is built for, disabled students, queer students, students who are hungry, students who are scared to file a grievance, deserve a council that takes them seriously, not one that turns them into a campaign aesthetic. That is the standard I am holding myself to.</p>
+        <p style="margin-top: 16px;">I will spend nothing on what doesn't matter, and everything I have on the people who do.</p>
+      </div>
+
+      <div class="card" style="margin-top: 32px;">
+        <h3>Detailed Action Timelines</h3>
+        <div id="detailed-timelines-render"></div>
+      </div>
+      
+      <div class="card" style="margin-top: var(--spacing-8);">
+        <h3>All Projects (Bucket A)</h3>
+        <div class="grid" id="project-cards-render"></div>
+      </div>
+    </div>
+
+    <div id="project-view" class="page">
+      <h1 id="project-title"></h1>
+      <div class="grid">
+        <div class="card" style="grid-column: span 2;">
+          <h3>Project Description</h3>
+          <div id="project-pubmat" class="markdown-body"></div>
+        </div>
+        <div class="card" style="overflow: visible;">
+          <h3>FAQ</h3>
+          <div id="project-faq-accordion" class="accordion">
+            <div class="accordion-header" onclick="this.parentElement.classList.toggle('active')">
+              <span>View Frequently Asked Questions</span>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <div id="project-faq" class="markdown-body"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card" style="margin-top: var(--spacing-8);" id="project-subprojects-container">
+        <h3>Sub-Projects</h3>
+        <div id="project-subprojects" class="markdown-body"></div>
+      </div>
+      
+      <div class="card" style="margin-top: var(--spacing-8);">
+        <h3>Execution Plan</h3>
+        <div id="project-execution-plan" class="markdown-body"></div>
+      </div>
+    </div>
+
+    <div id="preacts" class="page">
+      <h1>Internal Pre-Acts Repository</h1>
+      
+
+      <div id="preacts-content">
+        <div class="grid" id="preacts-grid"></div>
+      </div>
+
+    </div>
+
+    <div id="global-strategy" class="page">
+      <h1>Global Strategy</h1>
+      <div class="grid" id="global-strategy-grid"></div>
+    </div>
+
+    <div id="suggestions" class="page">
+      <h1>Suggestions & Proposals</h1>
+      <div class="grid suggestion-grid">
+        <!-- The Form -->
+        <div class="card suggestion-form-container">
+          <h3>Submit an Idea</h3>
+          <form id="suggestion-form">
+            <div class="form-group">
+              <label for="sugg-name">Name <span style="color: var(--text-secondary); font-weight: normal;">(Leave blank to remain anonymous)</span></label>
+              <input type="text" id="sugg-name" class="input" placeholder="Your Name">
+            </div>
+            
+            <div class="form-group" id="email-group">
+              <label for="sugg-email">Email Address</label>
+              <input type="email" id="sugg-email" class="input" placeholder="student@example.com">
+            </div>
+            
+            <div class="form-group">
+              <label for="sugg-type">Submission Type</label>
+              <select id="sugg-type" class="input" required>
+                <option value="suggestion">General Suggestion</option>
+                <option value="question">Question</option>
+                <option value="proposal">New Project Proposal</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="sugg-content">The Idea / Question</label>
+              <textarea id="sugg-content" class="input" rows="5" placeholder="Describe your idea or question in detail..." required></textarea>
+            </div>
+            
+            <div class="form-group checkbox-group" id="lead-group" style="display: none;">
+              <input type="checkbox" id="sugg-lead">
+              <label for="sugg-lead">I am interested in leading this project if approved.</label>
+            </div>
+            
+            <div id="suggestion-success" style="display: none; color: var(--success); margin-bottom: 16px; font-weight: 500;">
+              ✓ Your submission has been received successfully!
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+          </form>
+        </div>
+
+        <!-- The Process Info -->
+        <div class="suggestion-info">
+          <div class="card" id="lead-process-card">
+            <h3>Want to lead a project?</h3>
+            <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 16px;">If you propose a new project and volunteer to lead it, here is how the process works:</p>
+            <ol class="process-list">
+              <li>
+                <strong>1. Initial Review</strong>
+                <p>The executive team reviews your proposal for feasibility and alignment with college goals.</p>
+              </li>
+              <li>
+                <strong>2. The Interview</strong>
+                <p>We'll reach out to schedule a casual chat to hear your vision and discuss the timeline.</p>
+              </li>
+              <li>
+                <strong>3. Committee Assignment</strong>
+                <p>If approved, you become the Project Head! We will assign an experienced internal committee to handle the logistics and process documents (like Pre-Acts) so you can focus on the big picture.</p>
+              </li>
+              <li>
+                <strong>4. Execution</strong>
+                <p>You lead the charge, and we provide the resources to back you up.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="finances" class="page">
+      <h1>Financial Transparency Ledger</h1>
+      <div class="grid" id="finances-grid"></div>
+    </div>
+
+    <div id="me" class="page">
+      <h1>My Hobbies & Interests</h1>
+      <div class="card markdown-body" style="min-height: 50vh;">
+        <p style="opacity: 0.8; margin-bottom: 1rem;">This space is reserved for personal hobbies and interests.</p>
+      </div>
+    </div>
+
+    <div id="experiment" class="page immersive-page">
+      <canvas id="shader-bg" class="shader-canvas"></canvas>
+
+      <div class="glassy-nav-container" id="immersive-nav">
+        <a href="#" class="glassy-btn active" data-target="home">Home</a>
+        <a href="#" class="glassy-btn" data-target="projects">Projects</a>
+        <a href="#" class="glassy-btn" data-target="preacts">Pre-Acts</a>
+        <a href="#" class="glassy-btn" data-target="global-strategy">Strategy</a>
+        <a href="#" class="glassy-btn" data-target="suggestions">Suggestions</a>
+        <a href="#" class="glassy-btn" data-target="finances">Finances</a>
+        <a href="#" class="glassy-btn" data-target="me">Me</a>
+      </div>
+      
+      <div id="immersive-side-nav" class="side-nav-container">
+        <!-- Dots injected here dynamically -->
+      </div>
+      
+      <div id="immersive-content" class="immersive-scroll-container">
+        <!-- Content dynamically injected here -->
+      </div>
+    </div>
+  </main>
+
+  <div id="floating-save-btn" class="floating-save-btn" style="display: none;" onclick="saveEdits()">
+    💾 Save Changes
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+  <script src="https://unpkg.com/turndown-plugin-gfm/dist/turndown-plugin-gfm.js"></script>
+  <script src="data.js?v=2"></script>
+  <script src="app.js?v=2"></script>
+</body>
+</html>
