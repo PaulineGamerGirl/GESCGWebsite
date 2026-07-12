@@ -1266,7 +1266,18 @@ function renderImmersiveView(target) {
           <p style="line-height: 1.8; opacity: 0.9;">That is the standard we hold ourselves to. Not because it's required, but because you are watching, and you should be.</p>
 
           <div style="margin-top: 3rem; text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08);">
-            <p style="font-family: 'Dancing Script', 'Palatino Linotype', cursive; font-size: clamp(1.5rem, 3vw, 2.2rem); color: #d8b4fe; letter-spacing: 0.02em; line-height: 1.6; font-style: italic;">Para sa Aham, na Ramdam ng Taumbayan.</p>
+            <style>
+              @keyframes premium-breathe {
+                0% { transform: scale(1); text-shadow: 0 0 5px rgba(216, 180, 254, 0.2); }
+                50% { transform: scale(1.05); text-shadow: 0 0 15px rgba(216, 180, 254, 0.6), 0 0 30px rgba(216, 180, 254, 0.3); }
+                100% { transform: scale(1); text-shadow: 0 0 5px rgba(216, 180, 254, 0.2); }
+              }
+              .glowing-signature {
+                display: inline-block;
+                animation: premium-breathe 5s infinite ease-in-out;
+              }
+            </style>
+            <p class="glowing-signature" style="font-family: 'Fleur De Leah', cursive; font-size: clamp(2rem, 4vw, 3rem); color: #d8b4fe; letter-spacing: 0.05em; line-height: 1.6; margin: 0;">Para sa Agham, na Ramdam ng Taumbayan.</p>
           </div>
 
         </div>
