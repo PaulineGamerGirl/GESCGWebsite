@@ -1277,7 +1277,10 @@ function renderImmersiveView(target) {
                 animation: premium-breathe 5s infinite ease-in-out;
               }
             </style>
-            <p class="glowing-signature" style="font-family: 'Fleur De Leah', cursive; font-size: clamp(2rem, 4vw, 3rem); color: #d8b4fe; letter-spacing: 0.05em; line-height: 1.6; margin: 0;">Para sa Agham, na Ramdam ng Taumbayan.</p>
+            <div class="glowing-signature" style="font-family: 'Fleur De Leah', cursive; font-size: clamp(2rem, 4vw, 3rem); color: #d8b4fe; letter-spacing: 0.05em; line-height: 1.2; margin: 0; text-align: left;">
+              <div>Para sa Agham,</div>
+              <div style="margin-left: 1.5em;">na Ramdam ng Taumbayan.</div>
+            </div>
           </div>
 
         </div>
