@@ -1165,13 +1165,13 @@ function renderImmersiveView(target) {
             
             <h4>Reporting Cadences</h4>
             <ul>
-              <li><strong>Director-to-Chief (Weekly):</strong> Every Friday by 5:00 PM, Directors submit status updates to their respective Chief, explicitly highlighting blocked tasks.</li>
+              <li><strong>Director-to-Chief (Weekly):</strong> Every Friday by 5:00 PM, Directors submit status updates to their respective Chief via Telegram, explicitly highlighting blocked tasks.</li>
               <li><strong>Chief-to-President (Biweekly):</strong> Chiefs consolidate reports and meet with the President biweekly to assess platform health, DAAM statuses, and budget burn rates.</li>
             </ul>
 
             <h4>Escalation Path for Blocked Dependencies</h4>
             <ol>
-              <li><strong>24 Hours Blocked:</strong> Director notifies their Chief via internal channels. Chief attempts to unblock directly.</li>
+              <li><strong>24 Hours Blocked:</strong> Director notifies their Chief via Telegram. Chief attempts to unblock directly.</li>
               <li><strong>48 Hours Blocked:</strong> Chief escalates the issue to the President.</li>
               <li><strong>72 Hours Blocked / Imminent Risk:</strong> President calls an emergency alignment meeting with the affected Director and Chief to trigger fallback plans.</li>
               <li><strong>Administrative Blockade:</strong> If blocked by administration (e.g. Dean refuses LOA), the President and Chief of Staff assume direct control of communications to force a resolution.</li>
@@ -1184,6 +1184,16 @@ function renderImmersiveView(target) {
               <li><strong>Dir. Finance:</strong> Manages all money movement. No expenditure moves without an SCT, and specimen signatures must be filed prior to event execution.</li>
               <li><strong>Dir. Creatives:</strong> Secures P&M clearance with a 24-hour minimum lead time for all public-facing materials.</li>
             </ul>
+
+            <h4>How Telegram Works</h4>
+            <p>Telegram is the primary operations layer. Every project has its own group, and within each group, dedicated channels keep communication clean and traceable. Nobody has to chase anyone down — if it's not in the right channel, it doesn't exist.</p>
+            <ul>
+              <li><strong>Per-Committee Channels:</strong> Each committee has its own channel. Anyone from another committee who needs to flag something to, say, Finance or Creatives, drops it there directly. No middlemen. No message getting buried in a general chat.</li>
+              <li><strong>Pre-Documents & Links:</strong> One channel holds all relevant pre-activity documents, DAAM links, clearance forms, and official references in one place so no one's asking for the same file twice.</li>
+              <li><strong>P&M Submissions:</strong> When a committee needs a pubmat done, they message the P&M channel with the brief. Dir. Creatives picks it up from there. It creates a clean paper trail and keeps requests from landing in unmonitored DMs.</li>
+              <li><strong>General Announcements:</strong> Important updates that everyone needs to see go to the general channel — event confirmations, cleared Pre-Acts, reminders before deadlines. Not every message, just the ones that matter.</li>
+            </ul>
+            <p>The structure is deliberately simple. Fewer group chats, clearer channels, less confusion. If a message is in the right place, it gets seen by the right people. That's the whole point.</p>
           </div>
         </div>
       </div>
