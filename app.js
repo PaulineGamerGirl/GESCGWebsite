@@ -1616,26 +1616,22 @@ window.showOrgDetails = function(roleId) {
     'president': {
       title: 'President (Pauline)',
       desc: 'Ultimate accountability for the execution, legality, and financial integrity of the platform.',
-      projects: ['Signs DAAM LOAs', 'Decides Calamity Tier Activations (P6)', 'Signs Officer Advance Protocols (P6)', 'Primary speaker for Freelancing Seminar (P7)'],
-      directors: 'Chief of Staff, Chief of Operations, Chief Communications'
+      projects: ['Signs DAAM LOAs', 'Decides Calamity Tier Activations (P6)', 'Signs Officer Advance Protocols (P6)', 'Primary speaker for Freelancing Seminar (P7)']
     },
     'chief-staff': {
       title: 'Chief of Staff',
       desc: 'Enforces policy compliance, handles sensitive legal/administrative roadblocks, and oversees student welfare projects.',
-      projects: ['External Mediator coordination (P3)', 'Student Rights Charter (P3)', 'Lab Audit Access Letter (P4)', 'Legal Disclaimer Review (P5)'],
-      directors: 'Dir. Academics, Dir. R&D, Dir. Student Services'
+      projects: ['External Mediator coordination (P3)', 'Student Rights Charter (P3)', 'Lab Audit Access Letter (P4)', 'Legal Disclaimer Review (P5)']
     },
     'chief-ops': {
       title: 'Chief of Operations',
       desc: 'Ensures physical events run smoothly and financial protocols (transparency, FRA reports) are strictly followed.',
-      projects: ['Overall Semana ng Siyensya Coordination (P2)', 'Accountability for Pantry Ops (P6) and Fundraising (P8)'],
-      directors: 'Dir. Logistics, Dir. Finance, Dir. Documentations'
+      projects: ['Overall Semana ng Siyensya Coordination (P2)', 'Accountability for Pantry Ops (P6) and Fundraising (P8)']
     },
     'chief-comms': {
       title: 'Chief Communications',
       desc: 'Oversees all public messaging, P&M clearances, advocacy initiatives, and external partnerships.',
-      projects: ['Plan B Crowdfunding Drive (P8)'],
-      directors: 'Dir. Creatives, Dir. EXT/INT, Dir. Advocacy, Dir. National Affairs'
+      projects: ['Plan B Crowdfunding Drive (P8)']
     },
     'dir-acad': {
       title: 'Director for Academics',
