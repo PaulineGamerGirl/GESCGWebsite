@@ -519,7 +519,7 @@ function renderFinances() {
   if (grid.innerHTML !== '') return;
 
   const financesHtml = `
-    <div class="card" style="grid-column: span 1;">
+    <div class="card" style="grid-column: span 2;">
       <h3 style="color: var(--primary);">Student Emergency Response & Relief Program</h3>
       <p style="color: var(--text-secondary); margin-bottom: 16px; font-size: 14px;">Direct aid for vulnerable students, prioritizing basic survival needs.</p>
       
@@ -527,49 +527,32 @@ function renderFinances() {
         <h4 style="margin: 0 0 8px 0; font-size: 15px;">Food Security Pantry</h4>
         <div style="display: flex; justify-content: space-between; margin-bottom: 4px; font-size: 14px;">
           <span>Rice (₱50/kg) & Sardines (₱26/can)</span>
-          <span style="font-weight: 600;">₱1,000.00</span>
+          <span style="font-weight: 600;">50% Allocation</span>
         </div>
-        <div style="font-size: 12px; color: var(--text-secondary);">Provides 10 survival food packs (1kg rice + 2 canned goods per pack) based on 2026 market prices.</div>
+        <div style="font-size: 12px; color: var(--text-secondary);">Provides survival food packs (1kg rice + 2 canned goods per pack) scaled to budget.</div>
       </div>
 
       <div style="background: rgba(99,102,241,0.05); padding: 16px; border-radius: var(--radius-sm);">
         <h4 style="margin: 0 0 8px 0; font-size: 15px;">Emergency Micro-Grants</h4>
         <div style="display: flex; justify-content: space-between; margin-bottom: 4px; font-size: 14px;">
           <span>Small cash aid</span>
-          <span style="font-weight: 600;">₱1,000.00</span>
+          <span style="font-weight: 600;">50% Allocation</span>
         </div>
-        <div style="font-size: 12px; color: var(--text-secondary);">Reserves 10 small grants (₱100 each) for sudden commute deficits or immediate emergency meal needs.</div>
+        <div style="font-size: 12px; color: var(--text-secondary);">Reserves small grants for sudden commute deficits or immediate emergency meal needs.</div>
       </div>
 
       <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
         <span style="font-weight: 600; color: var(--text-primary);">Subtotal Allocation</span>
-        <span style="font-weight: 700; color: var(--secondary); font-size: 18px;">₱2,000.00</span>
+        <span style="font-weight: 700; color: var(--secondary); font-size: 18px;">100% of Seed Fund</span>
       </div>
     </div>
 
-    <div class="card" style="grid-column: span 1;">
-      <h3 style="color: var(--primary);">Student Resource & Academic Support Hub</h3>
-      <p style="color: var(--text-secondary); margin-bottom: 16px; font-size: 14px;">Providing necessary capital to help students finish their academic requirements.</p>
-      
-      <div style="background: rgba(99,102,241,0.05); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px;">
-        <h4 style="margin: 0 0 8px 0; font-size: 15px;">Undergraduate Research Grants</h4>
-        <div style="display: flex; justify-content: space-between; margin-bottom: 4px; font-size: 14px;">
-          <span>Thesis material subsidies</span>
-          <span style="font-weight: 600;">₱1,000.00</span>
-        </div>
-        <div style="font-size: 12px; color: var(--text-secondary);">Initial pool to subsidize printing, material acquisition, or minor laboratory supply costs for thesis groups.</div>
-      </div>
 
-      <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
-        <span style="font-weight: 600; color: var(--text-primary);">Subtotal Allocation</span>
-        <span style="font-weight: 700; color: var(--secondary); font-size: 18px;">₱1,000.00</span>
-      </div>
-    </div>
     
     <div class="card" style="grid-column: span 2; background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2);">
       <h3 style="margin-top: 0; color: var(--secondary);">Initial Seed Fund Allocation (TBA)</h3>
       <p style="margin-bottom: 0; font-size: 14px; color: var(--text-primary); line-height: 1.5;">
-        Our specific initial seed fund amount is currently <strong>To Be Announced (TBA)</strong>, as we await final confirmation from the administration. Once the exact amount is provided, this page will be updated immediately. What we can confirm is our allocation ratio: the seed fund will be split evenly—<strong>50% toward the Sakuna Disaster/Emergency Pantry</strong> and <strong>50% toward Micro-Lending</strong>. All remaining projects (such as Transparency Platforms, Accessibility Initiatives, and Education Series) are <strong>zero-cost</strong> platforms. Any expansion of our funded initiatives will be fully supported through <strong>Semana ng Siyensya</strong> and the <strong>Fundraising & Local Business Collaboration Initiative</strong>, relying strictly on partnerships and merchandise, not student fees.
+        Our specific initial seed fund amount is currently <strong>To Be Announced (TBA)</strong>, as we await final confirmation from the administration. Once the exact amount is provided, this page will be updated immediately. What we can confirm is our allocation ratio: the seed fund will be split evenly, <strong>50% toward the Sakuna Disaster/Emergency Pantry</strong> and <strong>50% toward Micro-Lending</strong>. All remaining projects (such as Transparency Platforms, Accessibility Initiatives, and Education Series) are <strong>zero-cost</strong> platforms. Any expansion of our funded initiatives will be fully supported through <strong>Semana ng Siyensya</strong> and the <strong>Fundraising & Local Business Collaboration Initiative</strong>, relying strictly on partnerships and merchandise, not student fees.<br><br><i>"I believe that the USG is transparent when it comes to the finances, no doubt. But it's where money is placed I believe is where things could be better. I will ensure to spend nothing on what doesn't matter, and everything I have on what does."</i>
       </p>
     </div>
   `;
@@ -1378,10 +1361,6 @@ function renderImmersiveView(target) {
         </div>
         <div class="nav-item" onclick="scrollToImmersiveCard(1)" data-index="1">
           <div class="nav-dot"></div>
-          <div class="nav-label">Resource Hub</div>
-        </div>
-        <div class="nav-item" onclick="scrollToImmersiveCard(2)" data-index="2">
-          <div class="nav-dot"></div>
           <div class="nav-label">Summary</div>
         </div>
       `;
@@ -1396,52 +1375,33 @@ function renderImmersiveView(target) {
               <h4 style="margin: 0 0 0.5rem 0;">Food Security Pantry</h4>
               <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
                 <span>Rice (₱50/kg) & Sardines (₱26/can)</span>
-                <span style="font-weight: 600;">₱1,000.00</span>
+                <span style="font-weight: 600;">50% Allocation</span>
               </div>
-              <div style="font-size: 0.85em; opacity: 0.7;">Provides 10 survival food packs (1kg rice + 2 canned goods per pack) based on 2026 market prices.</div>
+              <div style="font-size: 0.85em; opacity: 0.7;">Provides survival food packs (1kg rice + 2 canned goods per pack) scaled to budget.</div>
             </div>
             <div style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
               <h4 style="margin: 0 0 0.5rem 0;">Emergency Micro-Grants</h4>
               <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
                 <span>Small cash aid</span>
-                <span style="font-weight: 600;">₱1,000.00</span>
+                <span style="font-weight: 600;">50% Allocation</span>
               </div>
-              <div style="font-size: 0.85em; opacity: 0.7;">Reserves 10 small grants (₱100 each) for sudden commute deficits or immediate emergency meal needs.</div>
+              <div style="font-size: 0.85em; opacity: 0.7;">Reserves small grants for sudden commute deficits or immediate emergency meal needs.</div>
             </div>
             <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
               <span style="font-weight: 600;">Subtotal Allocation</span>
-              <span style="font-weight: 700; font-size: 1.1em; color: #d8b4fe;">₱2,000.00</span>
+              <span style="font-weight: 700; font-size: 1.1em; color: #d8b4fe;">100% of Seed Fund</span>
             </div>
           </div>
         </div>
+
         <div class="immersive-card-wrapper" id="immersive-card-1" data-index="1">
-          <h2 class="immersive-section-title animate-in" style="animation-delay: ${delay + 0.2}s">
-            Student Resource & Academic Support Hub
-          </h2>
-          <div class="immersive-glass-card animate-in" style="animation-delay: ${delay + 0.3}s">
-            <p style="opacity: 0.8; margin-bottom: 1rem;">Providing necessary capital to help students finish their academic requirements.</p>
-            <div style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-              <h4 style="margin: 0 0 0.5rem 0;">Undergraduate Research Grants</h4>
-              <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
-                <span>Thesis material subsidies</span>
-                <span style="font-weight: 600;">₱1,000.00</span>
-              </div>
-              <div style="font-size: 0.85em; opacity: 0.7;">Initial pool to subsidize printing, material acquisition, or minor laboratory supply costs for thesis groups.</div>
-            </div>
-            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-weight: 600;">Subtotal Allocation</span>
-              <span style="font-weight: 700; font-size: 1.1em; color: #d8b4fe;">₱1,000.00</span>
-            </div>
-          </div>
-        </div>
-        <div class="immersive-card-wrapper" id="immersive-card-2" data-index="2">
           <h2 class="immersive-section-title animate-in" style="animation-delay: ${delay + 0.4}s">
             Summary
           </h2>
           <div class="immersive-glass-card animate-in" style="animation-delay: ${delay + 0.5}s; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3);">
             <h3 style="margin-top: 0; color: #34d399;">Initial Seed Fund Allocation (TBA)</h3>
             <p style="margin-bottom: 0; line-height: 1.5;">
-              Our specific initial seed fund amount is currently <strong>To Be Announced (TBA)</strong>, as we await final confirmation from the administration. Once the exact amount is provided, this page will be updated immediately. What we can confirm is our allocation ratio: the seed fund will be split evenly—<strong>50% toward the Sakuna Disaster/Emergency Pantry</strong> and <strong>50% toward Micro-Lending</strong>. All remaining projects (such as Transparency Platforms, Accessibility Initiatives, and Education Series) are <strong>zero-cost</strong> platforms. Any expansion of our funded initiatives will be fully supported through <strong>Semana ng Siyensya</strong> and the <strong>Fundraising & Local Business Collaboration Initiative</strong>, relying strictly on partnerships and merchandise, not student fees.
+              Our specific initial seed fund amount is currently <strong>To Be Announced (TBA)</strong>, as we await final confirmation from the administration. Once the exact amount is provided, this page will be updated immediately. What we can confirm is our allocation ratio: the seed fund will be split evenly, <strong>50% toward the Sakuna Disaster/Emergency Pantry</strong> and <strong>50% toward Micro-Lending</strong>. All remaining projects (such as Transparency Platforms, Accessibility Initiatives, and Education Series) are <strong>zero-cost</strong> platforms. Any expansion of our funded initiatives will be fully supported through <strong>Semana ng Siyensya</strong> and the <strong>Fundraising & Local Business Collaboration Initiative</strong>, relying strictly on partnerships and merchandise, not student fees.<br><br><i>"I believe that the USG is transparent when it comes to the finances, no doubt. But it's where money is placed I believe is where things could be better. I will ensure to spend nothing on what doesn't matter, and everything I have on what does."</i>
             </p>
           </div>
         </div>
