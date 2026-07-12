@@ -1145,10 +1145,12 @@ function renderImmersiveView(target) {
             </div>
             
             <div id="org-details-pane" class="glass-pane">
-              <h3 id="org-role-title" style="margin-top: 0; color: var(--primary);">Select a role</h3>
-              <p id="org-role-desc" style="opacity: 0.9; margin-bottom: 1rem;">Click on a node in the organization tree to see their core responsibilities and projects.</p>
-              <div id="org-role-projects"></div>
-              <div id="org-role-execs" style="display: none; margin-top: 1rem; font-size: 0.9em; padding: 0.75rem; background: rgba(0,0,0,0.2); border-radius: 8px;">
+              <div style="min-width: 300px;">
+                <h3 id="org-role-title" style="margin-top: 0; color: var(--primary);">Select a role</h3>
+                <p id="org-role-desc" style="opacity: 0.9; margin-bottom: 1rem;">Click on a node in the organization tree to see their core responsibilities and projects.</p>
+                <div id="org-role-projects"></div>
+                <div id="org-role-execs" style="display: none; margin-top: 1rem; font-size: 0.9em; padding: 0.75rem; background: rgba(0,0,0,0.2); border-radius: 8px;">
+                </div>
               </div>
             </div>
           </div>
