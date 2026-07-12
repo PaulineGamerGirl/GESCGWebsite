@@ -433,34 +433,58 @@ function renderDetailedTimelines() {
   container.innerHTML = html;
 }
 
-// Auto-render Pre-Acts (no password required)
+// Initial render of Pre-Acts lock screen
 renderPreActs();
 
 function renderPreActs() {
   const grid = document.getElementById('preacts-grid');
   if (grid.innerHTML !== '') return;
   
-  let html = '';
-  for (const [projectId, projectData] of Object.entries(data.preActs)) {
-    html += `
-      <div class="card" style="grid-column: span 2;">
-        <h3>${projectData.name} - Pre-Acts</h3>
-        ${projectData.files.map(f => `
-          <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border);">
-            <h4 style="font-family: var(--font-body); font-size: 16px;">${f.filename}</h4>
-            <div class="markdown-body" style="font-size: 13px;">${marked.parse(f.content)}</div>
-          </div>
-        `).join('')}
+  grid.innerHTML = `
+    <div class="card" style="grid-column: span 2; text-align: center; padding: 60px 20px;">
+      <h2 style="color: var(--primary); margin-bottom: 16px;">Restricted Access</h2>
+      <p style="color: var(--text-primary); margin-bottom: 12px;">This section is strictly for the <strong>Future Documentation Committee</strong> to access.</p>
+      <p style="color: var(--text-secondary); margin-bottom: 32px; font-style: italic; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+        "If I were to be elected, I'll ensure all pre-activity documents are made before the term even starts, as this is one of the biggest blockages of projects not being executed."
+      </p>
+      
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+        <input type="password" id="preacts-password" placeholder="Enter Password" style="padding: 12px 16px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: rgba(0,0,0,0.2); color: var(--text-primary); width: 100%; max-width: 250px; text-align: center; font-family: var(--font-body); font-size: 14px; outline: none;">
+        <button onclick="window.unlockPreActs()" style="padding: 12px 32px; background: var(--primary); color: #fff; border: none; border-radius: var(--radius-sm); cursor: pointer; font-weight: 600; font-family: var(--font-heading); font-size: 14px; transition: all 0.2s ease;">Unlock</button>
+        <p id="preacts-error" style="color: #ef4444; margin-top: 8px; display: none; font-size: 13px;">Incorrect password.</p>
       </div>
-    `;
-  }
-  
-  if (html === '') {
-    html = '<p>No Bucket A Pre-Acts found.</p>';
-  }
-  
-  grid.innerHTML = html;
+    </div>
+  `;
 }
+
+window.unlockPreActs = function() {
+  const pwd = document.getElementById('preacts-password').value;
+  if (pwd === 'PaulineForCAP') {
+    const grid = document.getElementById('preacts-grid');
+    let html = '';
+    for (const [projectId, projectData] of Object.entries(data.preActs)) {
+      html += `
+        <div class="card" style="grid-column: span 2;">
+          <h3>${projectData.name} - Pre-Acts</h3>
+          ${projectData.files.map(f => `
+            <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border);">
+              <h4 style="font-family: var(--font-body); font-size: 16px;">${f.filename}</h4>
+              <div class="markdown-body" style="font-size: 13px;">${marked.parse(f.content)}</div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+    
+    if (html === '') {
+      html = '<p>No Bucket A Pre-Acts found.</p>';
+    }
+    
+    grid.innerHTML = html;
+  } else {
+    document.getElementById('preacts-error').style.display = 'block';
+  }
+};
 
 function renderGlobalStrategy() {
   const grid = document.getElementById('global-strategy-grid');
