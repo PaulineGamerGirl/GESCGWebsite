@@ -1362,3 +1362,50 @@ nav {
   font-weight: 500;
 }
 
+/* Beautiful Table Styles for Data (Buckets, Classifications) */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 2rem 0;
+  background: rgba(255, 255, 255, 0.015);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+table th {
+  background: rgba(216, 180, 254, 0.08);
+  color: #d8b4fe;
+  font-weight: 600;
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  letter-spacing: 0.03em;
+  font-size: 0.9em;
+}
+
+table td {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.85);
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Glassmorphism alternating rows */
+table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+/* Subtle hover interaction */
+table tbody tr:hover {
+  background: rgba(216, 180, 254, 0.04);
+  transition: background 0.2s ease;
+}
+
