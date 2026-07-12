@@ -1665,9 +1665,9 @@ window.showOrgDetails = function(roleId) {
     },
     'dir-nat': {
       title: 'Director for National Affairs',
-      desc: 'Consults on socio-political alignment for advocacy projects.',
-      projects: ['Queer identity forums consultation'],
-      execs: 'National Affairs Executives (Policy review and alignment)'
+      desc: 'In charge of publication materials on national issues, encourages COS students to be more politically active, and consults on socio-political alignment for advocacy projects.',
+      projects: ['National issues information campaigns', 'Queer identity forums consultation'],
+      execs: 'National Affairs Executives (Policy review, content research, and student engagement)'
     }
   };
 
