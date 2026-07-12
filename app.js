@@ -526,7 +526,7 @@ function renderFinances() {
       <div style="background: rgba(99,102,241,0.05); padding: 16px; border-radius: var(--radius-sm); margin-bottom: 16px;">
         <h4 style="margin: 0 0 8px 0; font-size: 15px;">Food Security Pantry</h4>
         <div style="display: flex; justify-content: space-between; margin-bottom: 4px; font-size: 14px;">
-          <span>Rice (₱50/kg) & Sardines (₱26/can)</span>
+          <span>Rice (Est. ₱50/kg) & Sardines (Est. ₱26/can)</span>
           <span style="font-weight: 600;">50% Allocation</span>
         </div>
         <div style="font-size: 12px; color: var(--text-secondary);">Provides survival food packs (1kg rice + 2 canned goods per pack) scaled to budget.</div>
@@ -535,7 +535,7 @@ function renderFinances() {
       <div style="background: rgba(99,102,241,0.05); padding: 16px; border-radius: var(--radius-sm);">
         <h4 style="margin: 0 0 8px 0; font-size: 15px;">Emergency Micro-Grants</h4>
         <div style="display: flex; justify-content: space-between; margin-bottom: 4px; font-size: 14px;">
-          <span>Small cash aid</span>
+          <span>Small cash aid (₱50 - ₱150)</span>
           <span style="font-weight: 600;">50% Allocation</span>
         </div>
         <div style="font-size: 12px; color: var(--text-secondary);">Reserves small grants for sudden commute deficits or immediate emergency meal needs.</div>
@@ -1374,7 +1374,7 @@ function renderImmersiveView(target) {
             <div style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
               <h4 style="margin: 0 0 0.5rem 0;">Food Security Pantry</h4>
               <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
-                <span>Rice (₱50/kg) & Sardines (₱26/can)</span>
+                <span>Rice (Est. ₱50/kg) & Sardines (Est. ₱26/can)</span>
                 <span style="font-weight: 600;">50% Allocation</span>
               </div>
               <div style="font-size: 0.85em; opacity: 0.7;">Provides survival food packs (1kg rice + 2 canned goods per pack) scaled to budget.</div>
@@ -1382,7 +1382,7 @@ function renderImmersiveView(target) {
             <div style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
               <h4 style="margin: 0 0 0.5rem 0;">Emergency Micro-Grants</h4>
               <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
-                <span>Small cash aid</span>
+                <span>Small cash aid (₱50 - ₱150)</span>
                 <span style="font-weight: 600;">50% Allocation</span>
               </div>
               <div style="font-size: 0.85em; opacity: 0.7;">Reserves small grants for sudden commute deficits or immediate emergency meal needs.</div>
