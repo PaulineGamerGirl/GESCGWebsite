@@ -1148,8 +1148,7 @@ function renderImmersiveView(target) {
               <h3 id="org-role-title" style="margin-top: 0; color: var(--primary);">Select a role</h3>
               <p id="org-role-desc" style="opacity: 0.9; margin-bottom: 1rem;">Click on a node in the organization tree to see their core responsibilities and projects.</p>
               <div id="org-role-projects"></div>
-              <div id="org-role-execs" style="margin-top: 1rem; font-size: 0.9em; padding: 0.75rem; background: rgba(0,0,0,0.2); border-radius: 8px;">
-                 <strong>Executives:</strong> The main executors supported by their Directors.
+              <div id="org-role-execs" style="display: none; margin-top: 1rem; font-size: 0.9em; padding: 0.75rem; background: rgba(0,0,0,0.2); border-radius: 8px;">
               </div>
             </div>
           </div>
@@ -1589,25 +1588,25 @@ window.showOrgDetails = function(roleId) {
       title: 'President (Pauline)',
       desc: 'Ultimate accountability for the execution, legality, and financial integrity of the platform.',
       projects: ['Signs DAAM LOAs', 'Decides Calamity Tier Activations (P6)', 'Signs Officer Advance Protocols (P6)', 'Primary speaker for Freelancing Seminar (P7)'],
-      execs: 'Executive Assistants (Scheduling, high-level administrative coordination)'
+      directors: 'Chief of Staff, Chief of Operations, Chief Communications'
     },
     'chief-staff': {
       title: 'Chief of Staff',
       desc: 'Enforces policy compliance, handles sensitive legal/administrative roadblocks, and oversees student welfare projects.',
       projects: ['External Mediator coordination (P3)', 'Student Rights Charter (P3)', 'Lab Audit Access Letter (P4)', 'Legal Disclaimer Review (P5)'],
-      execs: 'Staff Executives (Policy research, external correspondence)'
+      directors: 'Dir. Academics, Dir. R&D, Dir. Student Services'
     },
     'chief-ops': {
       title: 'Chief of Operations',
       desc: 'Ensures physical events run smoothly and financial protocols (transparency, FRA reports) are strictly followed.',
       projects: ['Overall Semana ng Siyensya Coordination (P2)', 'Accountability for Pantry Ops (P6) and Fundraising (P8)'],
-      execs: 'Operations Executives (Event-day management, cross-committee tracking)'
+      directors: 'Dir. Logistics, Dir. Finance, Dir. Documentations'
     },
     'chief-comms': {
       title: 'Chief Communications',
       desc: 'Oversees all public messaging, P&M clearances, advocacy initiatives, and external partnerships.',
       projects: ['Plan B Crowdfunding Drive (P8)'],
-      execs: 'Comms Executives (Brand consistency, timeline enforcement)'
+      directors: 'Dir. Creatives, Dir. EXT/INT, Dir. Advocacy, Dir. National Affairs'
     },
     'dir-acad': {
       title: 'Director for Academics',
@@ -1684,7 +1683,16 @@ window.showOrgDetails = function(roleId) {
   projectsHtml += '</ul>';
   document.getElementById('org-role-projects').innerHTML = projectsHtml;
   
-  document.getElementById('org-role-execs').innerHTML = `<strong>Executives:</strong> ${data.execs}`;
+  const execsEl = document.getElementById('org-role-execs');
+  if (data.directors) {
+    execsEl.innerHTML = `<strong>Directors:</strong> ${data.directors}`;
+    execsEl.style.display = 'block';
+  } else if (data.execs) {
+    execsEl.innerHTML = `<strong>Executives:</strong> ${data.execs}`;
+    execsEl.style.display = 'block';
+  } else {
+    execsEl.style.display = 'none';
+  }
   
   // Toggle behavior: if already active, turn it off and hide the pane
   if (event && event.currentTarget) {
