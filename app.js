@@ -1189,9 +1189,12 @@ function renderImmersiveView(target) {
             <p>Telegram is the primary operations layer. Every project has its own group, and within each group, dedicated channels keep communication clean and traceable. Nobody has to chase anyone down — if it's not in the right channel, it doesn't exist.</p>
             <ul>
               <li><strong>Per-Committee Channels:</strong> Each committee has its own channel. Anyone from another committee who needs to flag something to, say, Finance or Creatives, drops it there directly. No middlemen. No message getting buried in a general chat.</li>
-              <li><strong>Pre-Documents & Links:</strong> One channel holds all relevant pre-activity documents, DAAM links, clearance forms, and official references in one place so no one's asking for the same file twice.</li>
-              <li><strong>P&M Submissions:</strong> When a committee needs a pubmat done, they message the P&M channel with the brief. Dir. Creatives picks it up from there. It creates a clean paper trail and keeps requests from landing in unmonitored DMs.</li>
-              <li><strong>General Announcements:</strong> Important updates that everyone needs to see go to the general channel — event confirmations, cleared Pre-Acts, reminders before deadlines. Not every message, just the ones that matter.</li>
+              <li><strong>General Channel:</strong> Important updates that everyone needs to see go here — event confirmations, cleared Pre-Acts, reminders before deadlines. Not every message, just the ones that matter. Within this channel are dedicated topics:
+                <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                  <li><strong>Pre-Documents & Links:</strong> One topic holds all relevant pre-activity documents, DAAM links, clearance forms, and official references in one place so no one's asking for the same file twice.</li>
+                  <li><strong>P&M Submissions:</strong> When a committee needs a pubmat done, they message the P&M topic with the brief. Dir. Creatives picks it up from there. It creates a clean paper trail and keeps requests from landing in unmonitored DMs.</li>
+                </ul>
+              </li>
             </ul>
             <p>The structure is deliberately simple. Fewer group chats, clearer channels, less confusion. If a message is in the right place, it gets seen by the right people. That's the whole point.</p>
           </div>
