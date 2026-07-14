@@ -1,19 +1,15 @@
 const data = window.__INITIAL_DATA__;
 
-// Configure Marked to wrap tables in a responsive container
+// Configure Marked to wrap tables in a responsive container safely
 if (typeof marked !== 'undefined') {
-  const renderer = new marked.Renderer();
-  renderer.table = function(header, body) {
-    return '<div class="table-responsive"><table>\n'
-      + '<thead>\n'
-      + header
-      + '</thead>\n'
-      + '<tbody>\n'
-      + body
-      + '</tbody>\n'
-      + '</table></div>\n';
+  const originalParse = marked.parse;
+  marked.parse = function(src, options) {
+    let html = originalParse.call(marked, src, options);
+    if (typeof html === 'string') {
+      return html.replace(/<table>/g, '<div class="table-responsive"><table>').replace(/<\/table>/g, '</table></div>');
+    }
+    return html;
   };
-  marked.use({ renderer });
 }
 
 // Setup Nav Links
