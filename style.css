@@ -1376,7 +1376,6 @@ nav {
 
 table {
   width: 100%;
-  min-width: 750px;
   border-collapse: separate;
   border-spacing: 0;
   margin: 0;
@@ -1399,6 +1398,7 @@ table td {
   color: rgba(255, 255, 255, 0.85);
   vertical-align: top;
   line-height: 1.6;
+  word-break: break-word;
 }
 
 table tr:last-child td {
