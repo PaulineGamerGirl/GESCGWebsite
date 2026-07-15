@@ -1016,7 +1016,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p style="font-size: 0.9rem; line-height: 1.7; color: rgba(255,255,255,0.9); margin-bottom: 8px;">
                   This is the official platform of Hanayan member
                   <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; animation: breathe-glow-text 5s ease-in-out infinite; display: inline-block;">Pauline Galias</span>,
-                  running for SCG College President.
+                  running for Science College Government President.
                 </p>
                 <p style="font-size: 0.82rem; color: rgba(255,255,255,0.6);">Feel free to explore the tabs.</p>
               </div>
@@ -1029,9 +1029,9 @@ document.addEventListener('DOMContentLoaded', () => {
               <img src="welcomepng.png" style="width: 540px; max-width: 70vw; animation: breathe-scale-img 6s ease-in-out infinite;">
             </div>
             <div style="position: absolute; top: calc(50vh + 50px); left: 50%; transform: translateX(-50%); width: 100%; display: flex; justify-content: center; pointer-events: auto;">
-              <div class="animate-in" style="width: ${navWidth}px; max-width: 90vw; padding: 24px 32px; text-align: center; animation-delay: 0.3s;">
-                <p style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.9); margin-bottom: 8px; font-weight: 400;">
-                  This is the official platform of Hanayan member <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; display: inline-block; animation: breathe-glow-text 5s ease-in-out infinite;">Pauline Galias</span>, running for SCG College President.
+              <div class="animate-in" style="width: auto; max-width: 95vw; padding: 24px 32px; text-align: center; animation-delay: 0.3s;">
+                <p style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.9); margin-bottom: 8px; font-weight: 400; white-space: nowrap;">
+                  This is the official platform of Hanayan member <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; display: inline-block; animation: breathe-glow-text 5s ease-in-out infinite;">Pauline Galias</span>, running for Science College Government President.
                 </p>
                 <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 400;">
                   Feel free to explore the tabs.

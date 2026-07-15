@@ -1920,13 +1920,18 @@ html.mobile-ui .glassy-nav-container.at-top-middle {
 html.mobile-ui .glassy-btn {
   flex: 1 1 0 !important;          /* equal width distribution */
   min-width: 0 !important;
-  padding: 8px 2px !important;
-  font-size: 11px !important;
+  padding: 12px 4px !important;    /* slightly larger padding for vertical centering */
+  font-size: 12.5px !important;    /* bigger text */
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   text-align: center !important;
-  border-radius: 20px !important;  /* pill shape */
+  border-radius: 6px !important;   /* square and premium */
+}
+html.mobile-ui .glassy-btn.active {
+  background: rgba(255, 255, 255, 0.08) !important; /* faint background */
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: none !important;
 }
 
 /* ── Side nav: hidden ── */
@@ -2201,7 +2206,6 @@ html.mobile-ui .glassy-btn[data-target="home"] {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  padding: 8px 0 !important;
 }
 html.mobile-ui .glassy-btn[data-target="suggestions"] {
   flex: 1.2 1 0 !important;
