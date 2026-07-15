@@ -1903,10 +1903,11 @@ html.mobile-ui .glassy-nav-container {
   transform: none !important;
   border-radius: 0 !important;
   padding: 10px 10px !important;
-  gap: 5px !important;
-  overflow: visible !important;
+  gap: 12px !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
   scrollbar-width: none !important;
-  justify-content: space-between !important;
+  justify-content: flex-start !important;
   flex-wrap: nowrap !important;
   box-shadow: 0 1px 24px rgba(0,0,0,0.5) !important;
   border-top: none !important;
@@ -1918,13 +1919,11 @@ html.mobile-ui .glassy-nav-container.at-top-middle {
   transform: none !important;
 }
 html.mobile-ui .glassy-btn {
-  flex: 1 1 0 !important;          /* equal width distribution */
+  flex: 0 0 auto !important;       /* don't force equal width, fit text */
   min-width: 0 !important;
-  padding: 12px 4px !important;    /* slightly larger padding for vertical centering */
-  font-size: 12.5px !important;    /* bigger text */
+  padding: 12px 10px !important;   /* proper padding */
+  font-size: 14.5px !important;    /* much bigger text */
   white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
   text-align: center !important;
   border-radius: 6px !important;   /* square and premium */
 }
@@ -2181,8 +2180,8 @@ html.mobile-ui .mobile-project-section {
   position: fixed;
   top: 16px;
   right: 24px;
-  width: 64px;
-  height: 64px;
+  width: 44px;
+  height: 44px;
   z-index: 9999;
   object-fit: contain;
 }
@@ -2192,7 +2191,7 @@ html.mobile-ui #desktop-logo {
 
 .mobile-nav-logo {
   display: none;
-  height: 24px;
+  height: 20px;
   width: auto;
   margin: 0 auto;
 }
@@ -2206,9 +2205,10 @@ html.mobile-ui .glassy-btn[data-target="home"] {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  padding: 12px 8px !important;
 }
 html.mobile-ui .glassy-btn[data-target="suggestions"] {
-  flex: 1.2 1 0 !important;
+  flex: 0 0 auto !important;
 }
 .mobile-project-strip {
   display: flex;
