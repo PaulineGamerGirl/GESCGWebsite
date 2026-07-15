@@ -1921,7 +1921,7 @@ html.mobile-ui .glassy-btn {
   flex: 1 1 0 !important;          /* equal width distribution */
   min-width: 0 !important;
   padding: 8px 2px !important;
-  font-size: 10px !important; letter-spacing: -0.2px !important;
+  font-size: 11px !important;
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
@@ -2176,8 +2176,8 @@ html.mobile-ui .mobile-project-section {
   position: fixed;
   top: 16px;
   right: 24px;
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   z-index: 9999;
   object-fit: contain;
 }
@@ -2187,7 +2187,7 @@ html.mobile-ui #desktop-logo {
 
 .mobile-nav-logo {
   display: none;
-  height: 20px;
+  height: 24px;
   width: auto;
   margin: 0 auto;
 }
@@ -2214,6 +2214,9 @@ html.mobile-ui .glassy-btn[data-target="suggestions"] {
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
+}
+.mobile-project-strip > .mobile-project-card:first-child {
+  margin-left: 14px !important;
 }
 .mobile-project-strip::-webkit-scrollbar {
   display: none;
@@ -2367,7 +2370,6 @@ html.mobile-ui table td {
 /* markdown-body inside glass card: don't double-clip */
 html.mobile-ui .immersive-glass-card .markdown-body {
   overflow-x: visible !important;
-  min-width: max-content !important;
 }
 /* Swipe hint caption under every table */
 html.mobile-ui table + * ,
