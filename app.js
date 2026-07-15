@@ -996,21 +996,43 @@ document.addEventListener('DOMContentLoaded', () => {
         container.style.paddingBottom = '0px';
         container.style.overflow = 'visible';
 
-        container.innerHTML = `
-          <div class="animate-in" style="position: absolute; top: -10vh; left: 5vw; z-index: 10; pointer-events: none; animation-delay: 0.1s;">
-            <img src="welcomepng.png" style="width: 540px; max-width: 70vw; animation: breathe-scale-img 6s ease-in-out infinite;">
-          </div>
-          <div style="position: absolute; top: calc(50vh + 50px); left: 50%; transform: translateX(-50%); width: 100%; display: flex; justify-content: center; pointer-events: auto;">
-            <div class="animate-in" style="width: ${navWidth}px; max-width: 90vw; padding: 24px 32px; text-align: center; animation-delay: 0.3s;">
-              <p style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.9); margin-bottom: 8px; font-weight: 400;">
-                This is the official platform of Hanayan member <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; display: inline-block; animation: breathe-glow-text 5s ease-in-out infinite;">Pauline Galias</span>, running for SCG College President.
-              </p>
-              <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 400;">
-                Feel free to explore the tabs.
-              </p>
+        // ── Mobile home: normal flow layout ──
+        if (typeof isMobileUI === 'function' && isMobileUI()) {
+          container.innerHTML = `
+            <div style="display: flex; flex-direction: column; align-items: center; padding: 20px 16px 40px; gap: 16px; min-height: 80vh; justify-content: center;">
+              <div class="animate-in" style="animation-delay:0.1s;">
+                <img src="welcomepng.png"
+                     style="width: 75vw; max-width: 280px; display: block; animation: breathe-scale-img 6s ease-in-out infinite;"
+                     alt="Welcome">
+              </div>
+              <div class="animate-in" style="animation-delay:0.3s; text-align: center; max-width: 320px;">
+                <p style="font-size: 0.9rem; line-height: 1.7; color: rgba(255,255,255,0.9); margin-bottom: 8px;">
+                  This is the official platform of Hanayan member
+                  <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; animation: breathe-glow-text 5s ease-in-out infinite; display: inline-block;">Pauline Galias</span>,
+                  running for SCG College President.
+                </p>
+                <p style="font-size: 0.82rem; color: rgba(255,255,255,0.6);">Feel free to explore the tabs.</p>
+              </div>
             </div>
-          </div>
-        `;
+          `;
+        } else {
+          // Desktop: original absolute-positioned layout
+          container.innerHTML = `
+            <div class="animate-in" style="position: absolute; top: -10vh; left: 5vw; z-index: 10; pointer-events: none; animation-delay: 0.1s;">
+              <img src="welcomepng.png" style="width: 540px; max-width: 70vw; animation: breathe-scale-img 6s ease-in-out infinite;">
+            </div>
+            <div style="position: absolute; top: calc(50vh + 50px); left: 50%; transform: translateX(-50%); width: 100%; display: flex; justify-content: center; pointer-events: auto;">
+              <div class="animate-in" style="width: ${navWidth}px; max-width: 90vw; padding: 24px 32px; text-align: center; animation-delay: 0.3s;">
+                <p style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.9); margin-bottom: 8px; font-weight: 400;">
+                  This is the official platform of Hanayan member <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; display: inline-block; animation: breathe-glow-text 5s ease-in-out infinite;">Pauline Galias</span>, running for SCG College President.
+                </p>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 400;">
+                  Feel free to explore the tabs.
+                </p>
+              </div>
+            </div>
+          `;
+        }
         document.getElementById('immersive-content').classList.add('active');
       } else {
         immersiveNav.classList.add('at-top-middle');
@@ -1134,16 +1156,21 @@ function renderImmersiveView(target) {
       </div>
     `;
 
-    // ── Mobile swipe strip (CSS hides this on desktop, shows in html.mobile-ui) ──
+    // ── Mobile swipe strip (CSS hides on desktop; shown in html.mobile-ui) ──
+    // Strip is FIRST: [General Direction card] [01] [02] … [08]
+    // Clicking GD card scrolls to #mobile-gd-section at the bottom.
     html += `
       <div class="mobile-project-section">
-        <div class="mobile-general-direction animate-in" style="animation-delay:0.1s">
-          <span class="mgd-label">My General Direction</span>
-          <p>${generalDirection}</p>
-          <p class="mgd-quote">I will spend nothing on what doesn't matter, and everything I have on the people who do.</p>
-        </div>
-        <span class="mobile-strip-label">Tap a project — it scrolls down ↓</span>
+        <span class="mobile-strip-label">Swipe a project ↔ then tap ↓</span>
         <div class="mobile-project-strip">
+          <div class="mobile-project-card mobile-gd-card"
+               onclick="document.getElementById('mobile-gd-section')?.scrollIntoView({behavior:'smooth',block:'start'})"
+               tabindex="0" role="button" aria-label="General Direction">
+            <span class="mparr">→</span>
+            <span class="mpn" style="font-size:10px;">DIRECTION</span>
+            <div class="mpt">General Direction</div>
+            <div class="mptype">My Vision</div>
+          </div>
           ${CNODES.map(n => `
             <div class="mobile-project-card${n.funded ? ' is-funded' : ''}"
                  onclick="scrollToImmersiveCard(${n.idx})"
@@ -1235,6 +1262,21 @@ function renderImmersiveView(target) {
       }
       html += `</div>`;
     });
+
+    // \u2500\u2500 Mobile-only: General Direction section at the bottom \u2500\u2500
+    // The strip's GD card scrolls here via scrollIntoView
+    html += `
+      <div id="mobile-gd-section" class="mobile-gd-bottom animate-in" style="animation-delay:0.2s">
+        <span class="mobile-strip-label" style="margin-bottom: 12px; display: block;">My General Direction</span>
+        <div class="immersive-glass-card" style="margin: 0;">
+          <p style="font-size:14px; line-height:1.8; color:rgba(255,255,255,0.92);">${generalDirection}</p>
+          <p style="font-size:13px; font-style:italic; color:#d8b4fe; margin-top:16px; border-left:3px solid #a78bfa; padding-left:12px;">
+            I will spend nothing on what doesn&rsquo;t matter, and everything I have on the people who do.
+          </p>
+        </div>
+      </div>
+    `;
+
   } else if (target === 'preacts') {
     Object.values(data.preActs).forEach((p, index) => {
       sideNavHtml += `

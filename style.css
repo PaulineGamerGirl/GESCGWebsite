@@ -1836,14 +1836,16 @@ table tbody tr:hover {
   box-shadow: 0 0 15px rgba(239, 68, 68, 0.1);
 }
 .me-closing-tagline {
-  font-style: italic;
-  font-size: 1.25rem !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1rem !important;
   color: #fff !important;
   text-align: center;
   margin-top: 3rem !important;
   margin-bottom: 1rem !important;
-  font-family: 'Great Vibes', cursive;
-  letter-spacing: 0.05em;
+  font-family: 'Poppins', 'Outfit', sans-serif;
+  letter-spacing: 0.01em;
+  line-height: 1.7;
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
@@ -1892,7 +1894,7 @@ html.mobile-ui #mobile-scroll-progress {
   display: block;
 }
 
-/* ── Nav: scrollable strip ── */
+/* ── Nav: all 6 buttons fit, pill shape ── */
 html.mobile-ui .glassy-nav-container {
   left: 0 !important;
   right: 0 !important;
@@ -1900,12 +1902,11 @@ html.mobile-ui .glassy-nav-container {
   top: 0 !important;
   transform: none !important;
   border-radius: 0 !important;
-  padding: 10px 12px !important;
-  gap: 6px !important;
-  overflow-x: auto !important;
-  overflow-y: hidden !important;
+  padding: 10px 10px !important;
+  gap: 5px !important;
+  overflow: visible !important;
   scrollbar-width: none !important;
-  justify-content: flex-start !important;
+  justify-content: space-between !important;
   flex-wrap: nowrap !important;
   box-shadow: 0 1px 24px rgba(0,0,0,0.5) !important;
   border-top: none !important;
@@ -1913,17 +1914,19 @@ html.mobile-ui .glassy-nav-container {
   border-right: none !important;
   border-bottom: 1px solid rgba(255,255,255,0.07) !important;
 }
-html.mobile-ui .glassy-nav-container::-webkit-scrollbar {
-  display: none !important;
-}
 html.mobile-ui .glassy-nav-container.at-top-middle {
   transform: none !important;
 }
 html.mobile-ui .glassy-btn {
-  padding: 8px 14px !important;
-  font-size: 13px !important;
+  flex: 1 1 0 !important;          /* equal width distribution */
+  min-width: 0 !important;
+  padding: 8px 2px !important;
+  font-size: 11px !important;
   white-space: nowrap !important;
-  flex-shrink: 0 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  text-align: center !important;
+  border-radius: 20px !important;  /* pill shape */
 }
 
 /* ── Side nav: hidden ── */
@@ -1933,11 +1936,12 @@ html.mobile-ui .side-nav-container {
 
 /* ── Scroll container ── */
 html.mobile-ui .immersive-scroll-container {
-  padding-top: 62px !important;
+  padding-top: 82px !important;   /* nav height + breathing room */
   padding-left: 14px !important;
   padding-right: 14px !important;
   padding-bottom: 48px !important;
   gap: 2.5rem !important;
+  overflow-x: hidden !important;  /* clip horizontal, keep vertical */
 }
 
 /* ── Card wrapper ── */
@@ -2240,6 +2244,35 @@ html.mobile-ui .mobile-project-section {
   height: 2px;
   background: linear-gradient(90deg, transparent, rgba(216,180,254,0.5), transparent);
 }
+/* General Direction card \u2014 distinct purple accent */
+.mobile-project-card.mobile-gd-card {
+  border-color: rgba(167,139,250,0.35);
+  background: rgba(167,139,250,0.08);
+}
+.mobile-project-card.mobile-gd-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(167,139,250,0.1), transparent 60%);
+  pointer-events: none;
+}
+.mobile-project-card.mobile-gd-card .mpn {
+  color: rgba(216,180,254,0.5);
+}
+.mobile-project-card.mobile-gd-card .mparr {
+  color: rgba(216,180,254,0.8);
+}
+
+/* General Direction section at the bottom (mobile only) */
+.mobile-gd-bottom {
+  display: none;                       /* hidden on desktop */
+}
+html.mobile-ui .mobile-gd-bottom {
+  display: block !important;
+  scroll-margin-top: 90px;             /* offset for nav bar */
+  padding-top: 8px;
+}
 
 /* ── Stance table: stacked rows ── */
 html.mobile-ui .immersive-stance-row {
@@ -2277,3 +2310,54 @@ html.mobile-ui .settings-icon {
   font-size: 22px !important;
 }
 
+/* ── Tables: keep desktop width, swipe to read ── */
+html.mobile-ui .markdown-body table,
+html.mobile-ui .immersive-glass-card table,
+html.mobile-ui table {
+  min-width: 540px !important;   /* never collapse columns */
+  font-size: 13px !important;
+}
+html.mobile-ui .markdown-body,
+html.mobile-ui .immersive-glass-card .markdown-body {
+  overflow-x: auto !important;  /* wrapper scrolls horizontally */
+  -webkit-overflow-scrolling: touch !important;
+}
+/* Hint bar under tables so users know they can swipe */
+html.mobile-ui .markdown-body table::after {
+  content: '\2190\00a0swipe\00a0\2192';
+  display: block;
+  font-size: 10px;
+  color: rgba(255,255,255,0.3);
+  text-align: center;
+  padding: 4px 0;
+  letter-spacing: 0.08em;
+}
+
+/* ── Para sa Agham: allow full wrap, no clipping ── */
+html.mobile-ui .glowing-signature {
+  font-size: clamp(1.6rem, 7vw, 2.4rem) !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  line-height: 1.35 !important;
+  text-align: left !important;
+  max-width: 100% !important;
+}
+
+/* ── Project swipe strip: full-bleed scroll fix ── */
+html.mobile-ui .mobile-project-section {
+  width: calc(100% + 28px) !important; /* break out of 14px padding on each side */
+  margin-left: -14px !important;
+  margin-right: -14px !important;
+  overflow: visible !important;
+}
+html.mobile-ui .mobile-project-strip {
+  overflow-x: scroll !important;       /* 'scroll' forces scrollbar on iOS */
+  overflow-y: visible !important;
+  -webkit-overflow-scrolling: touch !important;
+  touch-action: pan-x !important;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
