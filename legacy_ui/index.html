@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SCG Project Platform</title>
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,700&f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Fleur+De+Leah&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20">
+  <link rel="stylesheet" href="style.css">
   <style>
     /* Accordion Styles */
     .accordion {
@@ -83,213 +83,18 @@
       transform: scale(1.1) rotate(15deg);
       background: rgba(255,255,255,0.2);
     }
-    /* ── Phone Simulator Button ── */
-    #mobile-preview-btn {
-      position: fixed;
-      top: 16px;
-      right: 16px;
-      z-index: 99999;
-      background: rgba(255,255,255,0.08);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255,255,255,0.18);
-      border-radius: 50%;
-      width: 44px;
-      height: 44px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      font-size: 20px;
-      transition: all 0.3s cubic-bezier(0.16,1,0.3,1);
-      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-      color: rgba(255,255,255,0.85);
-      line-height: 1;
-    }
-    #mobile-preview-btn:hover { background: rgba(255,255,255,0.16); transform: scale(1.1); }
-    #mobile-preview-btn.active {
-      background: rgba(216,180,254,0.25);
-      border-color: rgba(216,180,254,0.5);
-      box-shadow: 0 0 20px rgba(216,180,254,0.35), 0 4px 16px rgba(0,0,0,0.3);
-      color: #d8b4fe;
-    }
-    html.mobile-ui-auto #mobile-preview-btn { display: none; }
-
-    /* ── Phone Simulator Overlay ── */
-    #phone-simulator {
-      display: none;
-      position: fixed;
-      inset: 0;
-      z-index: 999990;
-      align-items: center;
-      justify-content: center;
-    }
-    .phone-sim-backdrop {
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.93);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
-    .phone-sim-wrapper {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-    }
-    .phone-sim-label {
-      color: rgba(255,255,255,0.35);
-      font-family: 'Poppins', sans-serif;
-      font-size: 11px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-    }
-    /* The outer phone shell */
-    .phone-sim-shell {
-      position: relative;
-      background: linear-gradient(160deg, #1c1c1e 0%, #111 60%, #0a0a0a 100%);
-      border-radius: 52px;
-      /* Outer rim ring */
-      box-shadow:
-        0 0 0 2px rgba(255,255,255,0.08),
-        0 0 0 3px #000,
-        0 0 0 4px rgba(255,255,255,0.05),
-        0 40px 120px rgba(0,0,0,0.95),
-        inset 0 1px 0 rgba(255,255,255,0.1),
-        inset 0 -1px 0 rgba(0,0,0,0.6);
-      padding: 14px 10px 22px;
-      width: 414px;
-      /* height auto via content */
-      transition: transform 0.4s cubic-bezier(0.16,1,0.3,1);
-    }
-    /* Side buttons */
-    .phone-sim-shell::before {
-      content: '';
-      position: absolute;
-      left: -4px;
-      top: 90px;
-      width: 4px;
-      height: 30px;
-      background: #222;
-      border-radius: 2px 0 0 2px;
-      box-shadow: 0 44px 0 #222, 0 80px 0 #222;
-    }
-    .phone-sim-shell::after {
-      content: '';
-      position: absolute;
-      right: -4px;
-      top: 130px;
-      width: 4px;
-      height: 60px;
-      background: #222;
-      border-radius: 0 2px 2px 0;
-    }
-    /* Notch / Dynamic Island */
-    .phone-sim-notch {
-      width: 120px;
-      height: 32px;
-      background: #000;
-      border-radius: 0 0 20px 20px;
-      margin: 0 auto 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
-    .phone-sim-notch::before {
-      content: '';
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #1a1a2e;
-      border: 1.5px solid rgba(255,255,255,0.07);
-    }
-    .phone-sim-notch::after {
-      content: '';
-      width: 60px;
-      height: 10px;
-      border-radius: 6px;
-      background: #000;
-    }
-    /* The actual screen */
-    .phone-sim-screen {
-      width: 390px;
-      height: 844px;
-      border-radius: 40px;
-      overflow: hidden;
-      background: #000;
-      position: relative;
-    }
-    .phone-sim-screen iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-    }
-    /* Home indicator bar */
-    .phone-sim-home {
-      width: 130px;
-      height: 5px;
-      background: rgba(255,255,255,0.25);
-      border-radius: 3px;
-      margin: 10px auto 0;
-    }
-    /* Close button */
-    .phone-sim-close {
-      position: absolute;
-      top: -14px;
-      right: -14px;
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.15);
-      color: rgba(255,255,255,0.7);
-      font-size: 16px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.2s ease;
-      z-index: 2;
-    }
-    .phone-sim-close:hover {
-      background: rgba(255,255,255,0.2);
-      color: #fff;
-    }
   </style>
 </head>
 <body>
-  <!-- Phone Simulator Preview Button (desktop only) -->
-  <img id="desktop-logo" src="LOGO_Hanayan.png" alt="Hanayan Logo" title="Hanayan">
-
-  <!-- Phone Simulator Overlay -->
-  <div id="phone-simulator">
-    <div class="phone-sim-backdrop" onclick="closePhoneSimulator()"></div>
-    <div class="phone-sim-wrapper">
-      <span class="phone-sim-label">Phone Preview — 390 × 844</span>
-      <div class="phone-sim-shell">
-        <button class="phone-sim-close" onclick="closePhoneSimulator()" title="Close">&#x2715;</button>
-        <div class="phone-sim-notch"></div>
-        <div class="phone-sim-screen">
-          <iframe id="phone-sim-iframe" src="" title="Mobile Preview" allow="same-origin"></iframe>
-        </div>
-        <div class="phone-sim-home"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Removed settings icon -->
-  <nav style="display: none;">
+  <div class="settings-icon" onclick="toggleEditMode()" title="Enter Edit Mode">⚙️</div>
+  <nav>
     <div class="container main-nav-container">
       <div class="brand">
         SCG Platform 
       </div>
       <div class="nav-links" id="nav-links">
         <a href="#home">Home</a>
-        <a href="#preacts" style="display: none !important;">Pre-Acts (Internal)</a>
+        <a href="#preacts">Pre-Acts (Internal)</a>
         <a href="#global-strategy">Global Strategy</a>
         <a href="#suggestions">Suggestions</a>
         <a href="#finances">Finances</a>
@@ -304,7 +109,7 @@
     </div>
   </nav>
 
-  <main class="container" style="display: none;">
+  <main class="container">
     <div id="home" class="page active">
       <h1>Project Operations</h1>
       <div class="summary-row">
@@ -367,24 +172,13 @@
         <div id="project-subprojects" class="markdown-body"></div>
       </div>
       
-      <div class="card" style="margin-top: var(--spacing-8); overflow: visible;">
+      <div class="card" style="margin-top: var(--spacing-8);">
         <h3>Execution Plan</h3>
-        <p style="font-size: 0.85rem; opacity: 0.8; margin-bottom: var(--spacing-4);">
-          Dive into the precise implementation details, personnel in charge, operational dependencies, and actionable steps.
-        </p>
-        <div id="project-execution-plan-accordion" class="accordion">
-          <div class="accordion-header" onclick="this.parentElement.classList.toggle('active')">
-            <span>View Complete Execution Plan</span>
-            <span class="accordion-icon">▼</span>
-          </div>
-          <div class="accordion-content">
-            <div id="project-execution-plan" class="markdown-body"></div>
-          </div>
-        </div>
+        <div id="project-execution-plan" class="markdown-body"></div>
       </div>
     </div>
 
-    <div id="preacts" class="page" style="display: none !important;">
+    <div id="preacts" class="page">
       <h1>Internal Pre-Acts Repository</h1>
       
 
@@ -482,31 +276,29 @@
         <p style="opacity: 0.8; margin-bottom: 1rem;">This space is reserved for personal hobbies and interests.</p>
       </div>
     </div>
+
+    <div id="experiment" class="page immersive-page">
+      <canvas id="shader-bg" class="shader-canvas"></canvas>
+
+      <div class="glassy-nav-container" id="immersive-nav">
+        <a href="#" class="glassy-btn active" data-target="home">Home</a>
+        <a href="#" class="glassy-btn" data-target="projects">Projects</a>
+        <a href="#" class="glassy-btn" data-target="preacts">Pre-Acts</a>
+        <a href="#" class="glassy-btn" data-target="global-strategy">Strategy</a>
+        <a href="#" class="glassy-btn" data-target="suggestions">Suggestions</a>
+        <a href="#" class="glassy-btn" data-target="finances">Finances</a>
+        <a href="#" class="glassy-btn" data-target="me">Me</a>
+      </div>
+      
+      <div id="immersive-side-nav" class="side-nav-container">
+        <!-- Dots injected here dynamically -->
+      </div>
+      
+      <div id="immersive-content" class="immersive-scroll-container">
+        <!-- Content dynamically injected here -->
+      </div>
+    </div>
   </main>
-
-  <div id="experiment" class="page immersive-page">
-    <canvas id="shader-bg" class="shader-canvas"></canvas>
-
-    <div class="glassy-nav-container" id="immersive-nav">
-      <a href="#" class="glassy-btn active" data-target="home">
-        <span class="desktop-text">Home</span>
-        <img src="LOGO_Hanayan.png" alt="Hanayan" class="mobile-nav-logo">
-      </a>
-      <a href="#" class="glassy-btn" data-target="projects">Projects</a>
-      <a href="#" class="glassy-btn" data-target="global-strategy">Strat</a>
-      <a href="#" class="glassy-btn" data-target="suggestions">Suggestion</a>
-      <a href="#" class="glassy-btn" data-target="finances">Finances</a>
-      <a href="#" class="glassy-btn" data-target="me">Me</a>
-    </div>
-    
-    <div id="immersive-side-nav" class="side-nav-container">
-      <!-- Dots injected here dynamically -->
-    </div>
-    
-    <div id="immersive-content" class="immersive-scroll-container">
-      <!-- Content dynamically injected here -->
-    </div>
-  </div>
 
   <div id="floating-save-btn" class="floating-save-btn" style="display: none;" onclick="saveEdits()">
     💾 Save Changes
@@ -515,98 +307,7 @@
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
   <script src="https://unpkg.com/turndown-plugin-gfm/dist/turndown-plugin-gfm.js"></script>
-  <script src="data.js?v=20"></script>
-  <script src="app.js?v=20"></script>
-
-  <script>
-    /* ── Auto-detect real mobile and apply mobile-ui class ── */
-    (function () {
-      function applyMobileUI() {
-        document.documentElement.classList.add('mobile-ui');
-      }
-      function autoDetect() {
-        const isNarrow = window.innerWidth <= 600;
-        const isMobileUA = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-        // Also detect if we're inside the phone simulator iframe
-        const isPreview = new URLSearchParams(window.location.search).get('mobilepreview') === '1';
-        if (isNarrow || isMobileUA || isPreview) {
-          applyMobileUI();
-          // Hide toggle btn on real phones and inside iframe
-          document.documentElement.classList.add('mobile-ui-auto');
-        }
-      }
-      autoDetect();
-      window.addEventListener('resize', function () {
-        if (window.innerWidth <= 600) applyMobileUI();
-      });
-    })();
-
-    /* ── Phone Simulator ── */
-    (function () {
-      var simOpen = false;
-
-      window.togglePhoneSimulator = function () {
-        if (simOpen) {
-          closePhoneSimulator();
-        } else {
-          openPhoneSimulator();
-        }
-      };
-
-      window.openPhoneSimulator = function () {
-        var sim = document.getElementById('phone-simulator');
-        var iframe = document.getElementById('phone-sim-iframe');
-        var shell = document.querySelector('.phone-sim-shell');
-        var btn = document.getElementById('mobile-preview-btn');
-
-        // Scale shell to fit viewport height (with 40px breathing room)
-        var maxH = window.innerHeight - 80;
-        var shellNatH = 844 + 14 + 32 + 10 + 22; // screen + notch area + padding
-        var scale = Math.min(1, maxH / shellNatH);
-        shell.style.transform = 'scale(' + scale + ')';
-        shell.style.transformOrigin = 'center top';
-
-        // Load the iframe (only once; subsequent opens reuse)
-        if (!iframe.src || iframe.src === 'about:blank' || !iframe.src.includes('mobilepreview')) {
-          // Build URL with mobilepreview param, preserving any existing path/hash
-          var url = window.location.pathname;
-          iframe.src = url + '?mobilepreview=1';
-        }
-
-        sim.style.display = 'flex';
-        // Animate in
-        requestAnimationFrame(function () {
-          sim.style.opacity = '0';
-          requestAnimationFrame(function () {
-            sim.style.transition = 'opacity 0.35s ease';
-            sim.style.opacity = '1';
-          });
-        });
-
-        if (btn) btn.classList.add('active');
-        simOpen = true;
-      };
-
-      window.closePhoneSimulator = function () {
-        var sim = document.getElementById('phone-simulator');
-        var btn = document.getElementById('mobile-preview-btn');
-        sim.style.transition = 'opacity 0.25s ease';
-        sim.style.opacity = '0';
-        setTimeout(function () {
-          sim.style.display = 'none';
-          sim.style.opacity = '';
-          sim.style.transition = '';
-        }, 250);
-        if (btn) btn.classList.remove('active');
-        simOpen = false;
-      };
-
-      // Escape key closes simulator
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && simOpen) closePhoneSimulator();
-      });
-    })();
-  </script>
+  <script src="data.js?v=2"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>
-

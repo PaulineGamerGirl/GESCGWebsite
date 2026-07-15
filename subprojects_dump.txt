@@ -1,0 +1,146 @@
+﻿
+--- Project 1 Student Resource Hub ---
+# Project 1: Student Resource & Academic Support Hub Sub-Projects
+
+## COS Student Information Hub
+
+*   **Description:** Everything you need to navigate college life in one place: Enlistment and pre-enlistment guides, shifting procedures, department policies, a full contact list for every department office and head, and an FAQ section built from the questions students actually ask. No more chasing down information across five different people and three Facebook groups.
+
+## Research Grants & Funding Portal
+
+*   **Description:** A working directory of every internal and external grant available, so students are never left guessing where to look for money.
+
+## Research Job Board
+
+*   **Description:** Professors and researchers, both inside DLSU and abroad, can post real research and apprenticeship openings here, giving students without existing connections an actual way in.
+
+## Research Readiness Survey
+
+*   **Description:** A short, recurring check asking students if they feel prepared for research work, so the council knows when to push for better orientation, and a consensus whether RESAP could be needed, instead of assuming, sending them directly through the administration.
+
+## Scholarship Grade Calculator
+
+*   **Description:** Lets scholars calculate exactly what grades they need to keep their scholarship, using the real criteria of their specific scholarship.
+
+## Academic Pathing Tool
+
+*   **Description:** A flowchart that can be interacted with, that shows students exactly what happens to their course load if they fail a class, and gives them an alternate path forward they request to bring straight to the administration for options.
+
+## Syllabus Transparency Portal (Approved by the Administration)
+
+*   **Description:** A standard syllabus format required for every class, so students wanting to study in advance could do so.
+
+## Note Generator
+
+*   **Description:** Even with good intentions such as studying, using AI online can still damage our environment. This is A free tool to convert your notes to flashcards, using locally-run, meaning, no environmental damage AI models, so reviewing for an exam doesn't depend on being able to afford a tutor, nor affecting our environment. Data is also yours, not used by datacenters.
+
+## Free Software Directory
+
+*   **Description:** A list of free, legitimate alternatives to the expensive software students are often buying for their hobbies or academics.
+
+## LaTeX tutorials
+
+*   **Description:** A step-by-step beginner guide on how to write anything math.
+
+## NMAT Online Repository
+
+*   **Description:** A collection of guides, academic notes, and shared experiences among real lasallians who took NMAT to give tips on how to ace the exam.
+
+--- Project 2 Semana ng Siyensya ---
+# Project 2: Semana ng Siyensya Sub-Projects
+
+## Academic Competitions (Wednesday)
+
+*   **Description:** Quiz Bee, On the Spot Research Making, and Science Terminologies Spelling Bee. Open to all COS students, with possible academic incentives being coordinated with faculty.
+
+## Department Merchandise Drive (All Week)
+
+*   **Description:** Five department lines covering Physics, Chemistry, Biology, Math, and Statistics. All proceeds go directly to the micro-grant and disaster relief pools.
+
+## COS Discord Gaming Night (Saturday)
+
+*   **Description:** Valorant, Deadlock, and MLBB, Genshin competitions and co-op for COS students who want one night that has nothing to do with a deadline.
+
+--- Project 3 Transparency Platform ---
+# Project 3: Transparency & Accountability Platform Sub-Projects
+
+## Centralized Grievance Channel
+
+*   **Description:** A private, secure way to report unfair grading or misconduct, with the council mediating directly and keeping every report confidential.
+
+## Financial Transparency Ledger
+
+*   **Description:** A public, regularly updated record of exactly where every peso of council funds goes.
+
+## Student Rights Charter
+
+*   **Description:** A clear, plain language guide to what every student can ask for, including grade breakdowns in any point of the term and the right to formally dispute a grade, among other things.
+
+## Suggestion Tab
+
+*   **Description:** A live, public space on the dashboard where any student can post an idea. The council reviews and replies to every single one, and if a student wants to head their own idea, we'll make room for it.
+
+--- Project 4 Inclusion Accessibility ---
+# Project 4: Inclusion, Accessibility & Representation Initiative Sub-Projects
+
+## Filipino Sign Language Training Program
+
+*   **Description:** Formal FSL training for students and faculty, so the Deaf and hard of hearing community isn't an afterthought in our classrooms and labs.
+
+## Laboratory Accessibility Audit
+
+*   **Description:** A real, student led review of every laboratory to find physical barriers for students with disabilities, with a formal report submitted to the administration for fixing.
+
+## Women and Minority in STEM
+
+*   **Description:** A public record and posting of the academic and professional achievements of women and minority graduates in this college, so current students have proof, not just encouragement, that they belong here.
+
+--- Project 5 Queer Trans Education ---
+# Project 5: Queer & Trans Identity Education Series Sub-Projects
+
+## Queer Identity Science Forum
+
+*   **Description:** An academic session on the biological, psychological, and sociological research behind queer identities, taught plainly and without apology.
+
+## Pre-Colonial Gender & Trans History
+
+*   **Description:** A look at gender diversity in pre-colonial Philippine history, including the Babaylan, so students understand this isn't a new conversation, it's a returning one.
+
+## Shanghay LayaΓÇôMalaya Maging Ikaw, Sa Gitna ng Lahat
+
+*   **Description:** A website that includes anything queer, trans, medical research, myths debunked, sources for hormones, therapy, and trusted news sites.
+
+--- Project 6 Emergency Response ---
+# Project 6: Student Emergency Response & Relief Program Sub-Projects
+
+## Food Security Pantry
+
+*   **Description:** No questions asked: access to rice, canned goods, and other essentials for any student facing hunger.
+
+## Emergency Micro-Grant Fund
+
+*   **Description:** Fast, small disbursements for students who suddenly cannot afford commute fare, medicine, or other urgent needs.
+
+## Welfare Outreach Registry
+
+*   **Description:** A registry students can opt into themselves to receive priority outreach during emergencies or disasters. All data is self-reported, never collected without consent, and handled only by elected council officers under strict confidentiality. Nothing is shared, sold, or kept longer than needed.
+
+--- Project 7 Financial Empowerment ---
+# Project 7: Student Financial Empowerment Initiative Sub-Projects
+
+## Equipment & Apparel Exchange
+
+*   **Description:** A donation channel where graduating or shifting students pass down lab gowns, calculators, and tools directly to students who need them.
+
+## Freelancing & Part-Time Work Seminar
+
+*   **Description:** A practical seminar on freelancing and legitimate part time work, so working through college doesn't have to mean a call center shift or a fast food line as the only option.
+
+--- Project 8 Fundraising Local Business ---
+# Project 8: Fundraising & Local Business Collaboration Initiative Sub-Projects
+
+## Fundraiser Events & Local Business Partnerships
+
+*   **Description:** A recurring partnership program with local businesses near campus. A percentage of proceeds from a promotion period goes to the Emergency Fund (70%) and Research Grants (30%).
+*   **Timeline:** Event/Partnerships. Requires Special Approval Slip (SCT) 1-3 days + External MOA 14 days per partner.
+*   **Feasibility:** Feasible if aiming for 3-5 small partners. Fallback plan: Emergency Crowdfunding Drive if 0 partners are secured.

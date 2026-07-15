@@ -1,10 +1,5 @@
 const data = window.__INITIAL_DATA__;
 
-// Helper: true when mobile-ui class is active (real phone OR desktop preview toggle)
-function isMobileUI() {
-  return document.documentElement.classList.contains('mobile-ui');
-}
-
 // Configure Marked to wrap tables in a responsive container safely
 if (typeof marked !== 'undefined') {
   const originalParse = marked.parse;
@@ -577,7 +572,7 @@ function renderFinances() {
     <div class="card" style="grid-column: span 2; background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2);">
       <h3 style="margin-top: 0; color: var(--secondary);">Initial Seed Fund Allocation (TBA)</h3>
       <p style="margin-bottom: 0; font-size: 14px; color: var(--text-primary); line-height: 1.5;">
-        Our specific initial seed fund amount is currently <strong>To Be Announced (TBA)</strong>, as we await final confirmation from the administration. Once the exact amount is provided, this page will be updated immediately. What we can confirm is our allocation ratio: the seed fund will be split evenly, <strong>50% toward the Sakuna Disaster/Emergency Pantry</strong> and <strong>50% toward Micro-Lending</strong>. All remaining projects (such as Transparency Platforms, Accessibility Initiatives, and Education Series) are <strong>zero-cost</strong> platforms. Any expansion of our funded initiatives will be fully supported through <strong>Semana ng Siyensya</strong> and the <strong>Fundraising & Local Business Collaboration Initiative</strong>, relying strictly on partnerships and merchandise, not student fees.<br><br><strong>NOTE:</strong> TO BE FULLY TRANSPARENT: I cannot guarantee that Project 6: Student Emergency Response & Relief Program will ultimately operate under the SCG. While it is entirely feasible under both the USG Financial Manual and the DAAM Manual, it is still subject to potential rejection by SLIFE. However, should that happen, I will personally ensure the continuation of this initiative independently, outside of the Science College Government. It will be the exact same project, with the exact same execution guidelines.
+        Our specific initial seed fund amount is currently <strong>To Be Announced (TBA)</strong>, as we await final confirmation from the administration. Once the exact amount is provided, this page will be updated immediately. What we can confirm is our allocation ratio: the seed fund will be split evenly, <strong>50% toward the Sakuna Disaster/Emergency Pantry</strong> and <strong>50% toward Micro-Lending</strong>. All remaining projects (such as Transparency Platforms, Accessibility Initiatives, and Education Series) are <strong>zero-cost</strong> platforms. Any expansion of our funded initiatives will be fully supported through <strong>Semana ng Siyensya</strong> and the <strong>Fundraising & Local Business Collaboration Initiative</strong>, relying strictly on partnerships and merchandise, not student fees.<br><br><i>"I believe that the USG is transparent when it comes to the finances, no doubt. But it's where money is placed I believe is where things could be better. I will ensure to spend nothing on what doesn't matter, and everything I have on what does."</i>
       </p>
     </div>
   `;
@@ -984,71 +979,13 @@ document.addEventListener('DOMContentLoaded', () => {
       navBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
+      // Trigger animation to top middle or center
       if (target === 'home') {
         immersiveNav.classList.remove('at-top-middle');
-        document.getElementById('immersive-side-nav').classList.remove('visible');
-        
-        let container = document.getElementById('immersive-content');
-        let navWidth = immersiveNav.offsetWidth || 800;
-        
-        // Remove scrollbar and padding for home screen (desktop only)
-        if (typeof isMobileUI === 'function' && isMobileUI()) {
-          // Mobile: keep CSS padding-top so content clears the nav bar
-          container.style.paddingTop = '';
-          container.style.paddingBottom = '';
-          container.style.overflow = '';
-        } else {
-          container.style.paddingTop = '0px';
-          container.style.paddingBottom = '0px';
-          container.style.overflow = 'visible';
-        }
-
-        // ── Mobile home: normal flow layout ──
-        if (typeof isMobileUI === 'function' && isMobileUI()) {
-          container.innerHTML = `
-            <div style="display: flex; flex-direction: column; align-items: center; padding: 20px 16px 40px; gap: 16px; min-height: 80vh; justify-content: center;">
-              <div class="animate-in" style="animation-delay:0.1s;">
-                <img src="welcomepng.png"
-                     style="width: 75vw; max-width: 280px; display: block; animation: breathe-scale-img 6s ease-in-out infinite;"
-                     alt="Welcome">
-              </div>
-              <div class="animate-in" style="animation-delay:0.3s; text-align: center; max-width: 320px;">
-                <p style="font-size: 0.9rem; line-height: 1.7; color: rgba(255,255,255,0.9); margin-bottom: 8px;">
-                  This is the official platform of Hanayan member
-                  <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; animation: breathe-glow-text 5s ease-in-out infinite; display: inline-block;">Pauline Galias</span>,
-                  running for SCG College President.
-                </p>
-                <p style="font-size: 0.82rem; color: rgba(255,255,255,0.6);">Feel free to explore the tabs.</p>
-              </div>
-            </div>
-          `;
-        } else {
-          // Desktop: original absolute-positioned layout
-          container.innerHTML = `
-            <div class="animate-in" style="position: absolute; top: -10vh; left: 5vw; z-index: 10; pointer-events: none; animation-delay: 0.1s;">
-              <img src="welcomepng.png" style="width: 540px; max-width: 70vw; animation: breathe-scale-img 6s ease-in-out infinite;">
-            </div>
-            <div style="position: absolute; top: calc(50vh + 50px); left: 50%; transform: translateX(-50%); width: 100%; display: flex; justify-content: center; pointer-events: auto;">
-              <div class="animate-in" style="width: ${navWidth}px; max-width: 90vw; padding: 24px 32px; text-align: center; animation-delay: 0.3s;">
-                <p style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.9); margin-bottom: 8px; font-weight: 400;">
-                  This is the official platform of Hanayan member <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; display: inline-block; animation: breathe-glow-text 5s ease-in-out infinite;">Pauline Galias</span>, running for SCG College President.
-                </p>
-                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 400;">
-                  Feel free to explore the tabs.
-                </p>
-              </div>
-            </div>
-          `;
-        }
-        document.getElementById('immersive-content').classList.add('active');
+        document.getElementById('immersive-content').classList.remove('active');
       } else {
         immersiveNav.classList.add('at-top-middle');
         
-        let container = document.getElementById('immersive-content');
-        // Restore scrollbar and padding for other tabs
-        container.style.paddingTop = '';
-        container.style.paddingBottom = '';
-        container.style.overflow = '';       
         // Render specific immersive section
         renderImmersiveView(target);
         
@@ -1066,25 +1003,6 @@ document.addEventListener('DOMContentLoaded', () => {
       // window.location.hash = '#' + target;
     });
   });
-
-  // Automatically trigger a click on the default active button on initial load
-  // to populate the immersive-content container (fixes the blank home tab bug)
-  document.querySelector('#immersive-nav .glassy-btn.active')?.click();
-
-  // Inject and wire scroll progress bar for mobile
-  const progressBar = document.createElement('div');
-  progressBar.id = 'mobile-scroll-progress';
-  document.body.appendChild(progressBar);
-
-  const scrollContent = document.getElementById('immersive-content');
-  if (scrollContent) {
-    scrollContent.addEventListener('scroll', () => {
-      const bar = document.getElementById('mobile-scroll-progress');
-      if (!bar) return;
-      const pct = (scrollContent.scrollTop / (scrollContent.scrollHeight - scrollContent.clientHeight)) * 100;
-      bar.style.width = Math.min(pct || 0, 100) + '%';
-    });
-  }
 });
 
 let projectObserver = null;
@@ -1101,7 +1019,7 @@ function renderImmersiveView(target) {
   if (target === 'projects') {
     // ---- OVERVIEW NAV ITEM ----
     sideNavHtml += `
-      <div class="nav-item animate-in" onclick="document.getElementById('project-constellation').scrollIntoView({behavior:'smooth',block:'start'})" data-index="overview" style="opacity:0.7; animation-delay: 0.1s;">
+      <div class="nav-item" onclick="document.getElementById('project-constellation').scrollIntoView({behavior:'smooth',block:'start'})" data-index="overview" style="opacity:0.7;">
         <div class="nav-dot" style="background:rgba(167,139,250,0.5);"></div>
         <div class="nav-label" style="font-style:italic;">Overview</div>
       </div>
@@ -1114,7 +1032,7 @@ function renderImmersiveView(target) {
       { idx:2, num:'03', title:'Transparency & Accountability Platform',     type:'Website · Free',              funded:false, top:'15%', left:'78%', anim:'float-3 5.1s', subs:['Centralized Grievance Channel','Financial Transparency Ledger','Student Rights Charter','Suggestion Tab'] },
       { idx:3, num:'04', title:'Inclusion, Accessibility & Representation',  type:'Advocacy · Free',             funded:false, top:'46%', left:'86%', anim:'float-4 4.6s', subs:['Filipino Sign Language Training','Laboratory Accessibility Audit','Women & Minority in STEM'] },
       { idx:4, num:'05', title:'Queer & Trans Identity Education Series',    type:'Education · Free',            funded:false, top:'78%', left:'78%', anim:'float-5 4.9s', subs:['Queer Identity Science Forum','Pre-Colonial Gender & Trans History','Shanghay Laya Support Website'] },
-      { idx:5, num:'06', title:'Emergency Relief & Food Security Program',   type:'Welfare · Funded',            funded:true,  top:'84%', left:'50%', anim:'float-6 3.5s', subs:['Food Security Pantry','Welfare Outreach Registry'] },
+      { idx:5, num:'06', title:'Emergency Relief & Food Security Program',   type:'Welfare · Funded',            funded:true,  top:'84%', left:'50%', anim:'float-6 3.5s', subs:['Food Security Pantry','Emergency Micro-Grant Fund','Welfare Outreach Registry'] },
       { idx:6, num:'07', title:'Student Financial Empowerment Initiative',   type:'Practical Aid · Free',        funded:false, top:'78%', left:'22%', anim:'float-7 5.5s', subs:['Equipment & Apparel Exchange','Freelancing & Part-Time Work Seminar'] },
       { idx:7, num:'08', title:'Fundraising & Local Business Collaboration', type:'Partnerships · Funded',       funded:true,  top:'46%', left:'14%', anim:'float-8 4.3s', subs:['Local Business Partnerships','Emergency Relief Fund Allocation','Public Transparency Tracking'] }
     ];
@@ -1125,11 +1043,12 @@ function renderImmersiveView(target) {
 
     html += `
       <div class="project-constellation" id="project-constellation">
-        <div class="animate-in" style="position: absolute; bottom: -50px; left: 0; width: 100%; text-align: center; z-index: 10; animation-delay: 1s; pointer-events: none;">
-          <div class="scroll-helper-text" style="color: #ffffff; opacity: 0.7; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.5px; animation: breathe-glow-text 4s ease-in-out infinite;">
-            Scroll down for each project, or click a project to go directly there
-          </div>
+        <div class="constellation-heading">
+          <span class="ch-micro">08 Projects</span>
+          <span class="ch-title">The Platform</span>
         </div>
+        
+        <div class="massive-bg-text">PROJECTS</div>
 
 
         <div class="constellation-core">
@@ -1143,57 +1062,28 @@ function renderImmersiveView(target) {
           </div>
         </div>
 
-        ${CNODES.map((n, i) => `
-          <div class="animate-in" style="position: absolute; top:${n.top}; left:${n.left}; animation-delay: ${0.2 + (i * 0.1)}s; z-index: 2;">
-            <div class="constellation-node" id="cnode-${n.idx}"
-                 style="position: relative; top: 0; left: 0; animation:${n.anim} ease-in-out infinite alternate;"
-                 onclick="scrollToImmersiveCard(${n.idx})">
-              <span class="node-number">${n.num}</span>
-              <div class="node-title">${n.title}</div>
-              <div class="node-type">${n.type}</div>
-              <div class="node-arrow">↗</div>
-              <div class="node-subs">
-                <ul class="node-subs-list">
-                  ${n.subs.map(s=>`<li>${s}</li>`).join('')}
-                </ul>
-              </div>
+        ${CNODES.map(n => `
+          <div class="constellation-node" id="cnode-${n.idx}"
+               style="top:${n.top};left:${n.left};animation:${n.anim} ease-in-out infinite alternate;"
+               onclick="scrollToImmersiveCard(${n.idx})">
+            <span class="node-number">${n.num}</span>
+            <div class="node-title">${n.title}</div>
+            <div class="node-type">${n.type}</div>
+            <div class="node-arrow">↗</div>
+            <div class="node-subs">
+              <ul class="node-subs-list">
+                ${n.subs.map(s=>`<li>${s}</li>`).join('')}
+              </ul>
             </div>
           </div>
         `).join('')}
       </div>
     `;
 
-    // ── Mobile swipe strip (CSS hides on desktop; shown in html.mobile-ui) ──
-    // Strip is FIRST: [General Direction card] [01] [02] … [08]
-    // Clicking GD card scrolls to #mobile-gd-section at the bottom.
-    html += `
-      <div class="mobile-project-section">
-        <span class="mobile-strip-label" style="text-align:center;">Swipe a project, tap the card to go there.</span>
-        <div class="mobile-project-strip">
-          <div class="mobile-project-card mobile-gd-card"
-               onclick="document.getElementById('mobile-gd-section')?.scrollIntoView({behavior:'smooth',block:'start'})"
-               tabindex="0" role="button" aria-label="General Direction">
-            <span class="mpn" style="font-size:10px;">DIRECTION</span>
-            <div class="mpt">General Direction</div>
-            <div class="mptype">My Vision</div>
-          </div>
-          ${CNODES.map(n => `
-            <div class="mobile-project-card${n.funded ? ' is-funded' : ''}"
-                 onclick="scrollToImmersiveCard(${n.idx})"
-                 tabindex="0" role="button" aria-label="Go to project ${n.num}">
-              <span class="mpn">${n.num}</span>
-              <div class="mpt">${n.title}</div>
-              <div class="mptype">${n.type}</div>
-            </div>
-          `).join('')}
-        </div>
-      </div>
-    `;
-
     data.projects.slice(0, 8).forEach((p, index) => {
       const pName = p.name.replace(/^Project \d+ /, '');
       sideNavHtml += `
-        <div class="nav-item animate-in" onclick="scrollToImmersiveCard(${index})" data-index="${index}" style="animation-delay: ${0.15 + (index * 0.05)}s;">
+        <div class="nav-item" onclick="scrollToImmersiveCard(${index})" data-index="${index}">
           <div class="nav-dot"></div>
           <div class="nav-label">${pName}</div>
         </div>
@@ -1246,20 +1136,9 @@ function renderImmersiveView(target) {
       }
       if (p.executionPlan) {
         html += `
-            <div class="immersive-glass-card animate-in faq-accordion" style="animation-delay: ${delay}s">
-              <div class="faq-header" onclick="toggleFaq(this)">
-                <div class="faq-title">
-                  <h3>${pName} &mdash; Execution Plan</h3>
-                  <span class="faq-subtitle">Dive into the precise implementation details, personnel in charge, operational dependencies, and actionable steps.</span>
-                </div>
-                <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </div>
-              <div class="faq-content">
-                <div class="faq-inner editable-block markdown-body" style="color: inherit;" data-file-path="${p.folderName}/01_Execution_Plan.md">
-                  ${marked.parse(p.executionPlan)}
-                </div>
+            <div class="immersive-glass-card animate-in" style="animation-delay: ${delay}s">
+              <div class="editable-block markdown-body" style="color: inherit;" data-file-path="${p.folderName}/01_Execution_Plan.md">
+                ${marked.parse(p.executionPlan)}
               </div>
             </div>
         `;
@@ -1267,21 +1146,6 @@ function renderImmersiveView(target) {
       }
       html += `</div>`;
     });
-
-    // \u2500\u2500 Mobile-only: General Direction section at the bottom \u2500\u2500
-    // The strip's GD card scrolls here via scrollIntoView
-    html += `
-      <div id="mobile-gd-section" class="mobile-gd-bottom animate-in" style="animation-delay:0.2s">
-        <span class="mobile-strip-label" style="margin-bottom: 12px; display: block;">My General Direction</span>
-        <div class="immersive-glass-card" style="margin: 0;">
-          <p style="font-size:14px; line-height:1.8; color:rgba(255,255,255,0.92);">${generalDirection}</p>
-          <p style="font-size:13px; font-style:italic; color:#d8b4fe; margin-top:16px; border-left:3px solid #a78bfa; padding-left:12px;">
-            I will spend nothing on what doesn&rsquo;t matter, and everything I have on the people who do.
-          </p>
-        </div>
-      </div>
-    `;
-
   } else if (target === 'preacts') {
     Object.values(data.preActs).forEach((p, index) => {
       sideNavHtml += `
@@ -1372,57 +1236,13 @@ function renderImmersiveView(target) {
               </div>
             </div>
           </div>
-
-          <!-- Mobile accordion org tree (shown only when html.mobile-ui is active) -->
-          <div class="mobile-org-tree">
-            <div class="mobile-org-president" onclick="showMobileOrgDetails('president')">★ President (Pauline)</div>
-
-            <div class="mobile-org-chief-block" id="mob-chief-staff">
-              <button class="mobile-org-chief-btn" onclick="toggleMobileChief('mob-chief-staff')">
-                Chief of Staff <span class="mobile-org-chief-icon">⌄</span>
-              </button>
-              <div class="mobile-org-dirs"><div class="mobile-org-dirs-inner">
-                <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-acad')"><span class="mobile-org-dir-name">Dir. Academics</span><span class="mobile-org-dir-arrow">›</span></div>
-                <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-rnd')"><span class="mobile-org-dir-name">Dir. R&amp;D</span><span class="mobile-org-dir-arrow">›</span></div>
-                <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-ss')"><span class="mobile-org-dir-name">Dir. Student Services</span><span class="mobile-org-dir-arrow">›</span></div>
-              </div></div>
-            </div>
-
-            <div class="mobile-org-chief-block" id="mob-chief-ops">
-              <button class="mobile-org-chief-btn" onclick="toggleMobileChief('mob-chief-ops')">
-                Chief of Ops <span class="mobile-org-chief-icon">⌄</span>
-              </button>
-              <div class="mobile-org-dirs"><div class="mobile-org-dirs-inner">
-                <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-log')"><span class="mobile-org-dir-name">Dir. Logistics</span><span class="mobile-org-dir-arrow">›</span></div>
-                <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-fin')"><span class="mobile-org-dir-name">Dir. Finance</span><span class="mobile-org-dir-arrow">›</span></div>
-                <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-docs')"><span class="mobile-org-dir-name">Dir. Documentations</span><span class="mobile-org-dir-arrow">›</span></div>
-              </div></div>
-            </div>
-
-            <div class="mobile-org-chief-block" id="mob-chief-comms">
-              <button class="mobile-org-chief-btn" onclick="toggleMobileChief('mob-chief-comms')">
-                Chief Comms <span class="mobile-org-chief-icon">⌄</span>
-              </button>
-              <div class="mobile-org-dirs"><div class="mobile-org-dirs-inner">
-                <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-creatives')"><span class="mobile-org-dir-name">Dir. Creatives</span><span class="mobile-org-dir-arrow">›</span></div>
-                <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-extint')"><span class="mobile-org-dir-name">Dir. EXT/INT</span><span class="mobile-org-dir-arrow">›</span></div>
-                <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-advocacy')"><span class="mobile-org-dir-name">Dir. Advocacy</span><span class="mobile-org-dir-arrow">›</span></div>
-                <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-nat')"><span class="mobile-org-dir-name">Dir. National Affairs</span><span class="mobile-org-dir-arrow">›</span></div>
-              </div></div>
-            </div>
-
-            <div class="mobile-org-details" id="mobile-org-details"></div>
-          </div>
-
         </div>
       </div>
 
       <div class="immersive-card-wrapper ecosystem-wrapper" style="margin-top: 3rem;">
-        <h2 class="immersive-section-title animate-in" style="animation-delay: ${delay + 0.15}s">
-          SCG Organizational Ecosystem & Communications
-        </h2>
         <div class="immersive-glass-card animate-in" style="animation-delay: ${delay + 0.2}s">
           <div class="ecosystem-explainer markdown-body">
+            <h3 style="color: var(--primary); margin-bottom: 1rem; margin-top: 0;">SCG Organizational Ecosystem & Communications</h3>
             <p>The SCG structure operates on strict reporting cadences and escalation paths to ensure no project stalls due to administrative blockades.</p>
             
             <h4>Reporting Cadences</h4>
@@ -1664,7 +1484,7 @@ function renderImmersiveView(target) {
           <div class="immersive-glass-card animate-in" style="animation-delay: ${delay + 0.5}s; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3);">
             <h3 style="margin-top: 0; color: #34d399;">Initial Seed Fund Allocation (TBA)</h3>
             <p style="margin-bottom: 0; line-height: 1.5;">
-              Our specific initial seed fund amount is currently <strong>To Be Announced (TBA)</strong>, as we await final confirmation from the administration. Once the exact amount is provided, this page will be updated immediately. What we can confirm is our allocation ratio: the seed fund will be split evenly, <strong>50% toward the Sakuna Disaster/Emergency Pantry</strong> and <strong>50% toward Micro-Lending</strong>. All remaining projects (such as Transparency Platforms, Accessibility Initiatives, and Education Series) are <strong>zero-cost</strong> platforms. Any expansion of our funded initiatives will be fully supported through <strong>Semana ng Siyensya</strong> and the <strong>Fundraising & Local Business Collaboration Initiative</strong>, relying strictly on partnerships and merchandise, not student fees.<br><br><strong>NOTE:</strong> TO BE FULLY TRANSPARENT: I cannot guarantee that Project 6: Student Emergency Response & Relief Program will ultimately operate under the SCG. While it is entirely feasible under both the USG Financial Manual and the DAAM Manual, it is still subject to potential rejection by SLIFE. However, should that happen, I will personally ensure the continuation of this initiative independently, outside of the Science College Government. It will be the exact same project, with the exact same execution guidelines.
+              Our specific initial seed fund amount is currently <strong>To Be Announced (TBA)</strong>, as we await final confirmation from the administration. Once the exact amount is provided, this page will be updated immediately. What we can confirm is our allocation ratio: the seed fund will be split evenly, <strong>50% toward the Sakuna Disaster/Emergency Pantry</strong> and <strong>50% toward Micro-Lending</strong>. All remaining projects (such as Transparency Platforms, Accessibility Initiatives, and Education Series) are <strong>zero-cost</strong> platforms. Any expansion of our funded initiatives will be fully supported through <strong>Semana ng Siyensya</strong> and the <strong>Fundraising & Local Business Collaboration Initiative</strong>, relying strictly on partnerships and merchandise, not student fees.<br><br><i>"I believe that the USG is transparent when it comes to the finances, no doubt. But it's where money is placed I believe is where things could be better. I will ensure to spend nothing on what doesn't matter, and everything I have on what does."</i>
             </p>
           </div>
         </div>
@@ -1715,212 +1535,12 @@ function renderImmersiveView(target) {
           
           <h3 class="stance-category-title">National Affairs</h3>
           <div class="stance-table">
-            
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Flood Control Projects, given the ongoing corruption scandal tied to their contracts</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Bataan Nuclear Power Plant Revival</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Arrest of Former President Rodrigo Duterte</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Impeachment of President Bongbong Marcos Jr.</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Impeachment of VP Sara Duterte</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Leni Robredo for President 2028</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Risa Hontiveros for President 2028</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Oil Deregulation Law</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Foreign Military Presence in the Philippines</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Lowering the Age of Criminal Liability</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Charter Change (Cha-Cha)</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Legalizing Same Sex Marriage</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Legalizing Abortion</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Legalizing Recreational Use of Marijuana</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Legalizing Divorce</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">CHED's New General Education Curriculum</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Comprehensive Sex Education</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Mandatory ROTC</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Harassment of Filipino Fishermen by Chinese Vessels</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Historical Revisionism</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Fining Criminals Based on Income Level</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Recognition of Palestine as a Sovereign Nation</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Recognition of Taiwan as a Sovereign Nation</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Jeepney Phaseout</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Jeepney Modernization, as currently implemented without adequate operator support</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">The Marcos Administration</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Legalizing Prostitution</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">NTF-ELCAC</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Use of Confidential Funds by Government Agencies</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Vote Buying</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Continuation of the Partylist System in its current form</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Continuation of the Balikatan Military Exercises</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">The Philippines Urging a Ceasefire in Gaza</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Contractualization (Endo)</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Across the Board Wage Hike</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Extrajudicial Killings (EJK)</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Death Penalty</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">POGO Ban</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Whether Israel is Committing Genocide in Palestine</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Rice Tariffication Law</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Sagip Saka Act</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Right to Care Bill</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">EDCA (Enhanced Defense Cooperation Agreement)</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
+            ${nationalHtml}
           </div>
 
           <h3 class="stance-category-title" style="margin-top: 3rem;">USG and University Affairs</h3>
           <div class="stance-table">
-            
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Tuition Fee Increase</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">DLSU's Current AI Policy</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Clearance Holds by University Offices</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Abstention Rights for Students in Elections</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Fraternity Ban</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">The Two Party System in DLSU USG Elections</div>
-                <div class="immersive-chip immersive-chip-against">AGAINST</div>
-              </div>
-              <div class="immersive-stance-row">
-                <div class="stance-issue">Latin Honors Campaign</div>
-                <div class="immersive-chip immersive-chip-for">FOR</div>
-              </div>
+            ${usgHtml}
           </div>
         </div>
       </div>
@@ -1937,8 +1557,7 @@ function renderImmersiveView(target) {
         </div>
       </div>
     `;
-  }
-
+  }  }
 
   container.innerHTML = html;
   sideNavContainer.innerHTML = sideNavHtml;
@@ -2256,120 +1875,5 @@ window.showOrgDetails = function(roleId) {
   if (orgWrapper) {
     orgWrapper.classList.add('expanded');
   }
-};
-
-// ── Mobile: Toggle chief accordion (one open at a time) ──
-window.toggleMobileChief = function(blockId) {
-  const target = document.getElementById(blockId);
-  if (!target) return;
-  const isOpen = target.classList.contains('open');
-
-  // Close all chiefs (accordion: only one open at a time)
-  document.querySelectorAll('.mobile-org-chief-block').forEach(b => b.classList.remove('open'));
-
-  // If it wasn't already open, open it now
-  if (!isOpen) {
-    target.classList.add('open');
-  }
-};
-
-// ── Mobile: Show role details in the mobile details panel ──
-window.showMobileOrgDetails = function(roleId) {
-  const orgData = {
-    'president': {
-      title: 'President (Pauline)',
-      desc: 'Sets the direction for the entire platform. Responsible for final approvals, external representation, and ensuring all projects remain on track.',
-      projects: ['Final sign-off on all DAAMs', 'Emergency Relief Fund decisions', 'External partnerships', 'Platform accountability']
-    },
-    'chief-staff': {
-      title: 'Chief of Staff',
-      desc: 'Internal operations backbone. Manages the Academics, R&D, and Student Services portfolios.',
-      projects: ['Academic Hub oversight', 'Research Grant coordination', 'Student Services alignment']
-    },
-    'chief-ops': {
-      title: 'Chief of Operations',
-      desc: 'Runs logistics, finance, and documentation. Nothing gets executed without COO clearance on the operational side.',
-      projects: ['Event logistics', 'Budget tracking', 'DAAM documentation pipeline']
-    },
-    'chief-comms': {
-      title: 'Chief of Communications',
-      desc: 'External face of the org. Manages all public-facing output, advocacy, and national linkages.',
-      projects: ['Pubmat clearance via P&M', 'Advocacy campaigns', 'National affairs monitoring']
-    },
-    'dir-acad': {
-      title: 'Director for Academics',
-      desc: 'Leads the Academic Survival Hub and all academic support initiatives.',
-      projects: ['COS Student Information Hub', 'Syllabus Transparency Portal', 'NMAT Repository', 'Academic Pathing Tool']
-    },
-    'dir-rnd': {
-      title: 'Director for R&D',
-      desc: 'Drives research support tools and the Research Readiness Survey.',
-      projects: ['Research Grants & Funding Portal', 'Research Job Board', 'Research Readiness Survey', 'Note Generator']
-    },
-    'dir-ss': {
-      title: 'Director for Student Services',
-      desc: 'Handles equipment exchange, scholarship tools, and direct student welfare outreach.',
-      projects: ['Equipment & Apparel Exchange', 'Scholarship Grade Calculator', 'Freelancing Seminar', 'Free Software Directory']
-    },
-    'dir-log': {
-      title: 'Director for Logistics',
-      desc: 'Coordinates all event logistics, venue bookings, and physical execution for funded projects.',
-      projects: ['Semana ng Siyensya logistics', 'Donation Drive coordination', 'Food Pantry supply chain']
-    },
-    'dir-fin': {
-      title: 'Director for Finance',
-      desc: 'Manages all money movement. No expenditure moves without an SCT and prior specimen signatures.',
-      projects: ['Budget burn tracking', 'SCT processing', 'Emergency Relief Fund disbursement', 'Micro-grant allocation']
-    },
-    'dir-docs': {
-      title: 'Director for Documentations',
-      desc: 'Administrative backbone. Tracks all SLIFE, APS, and Post-Act submissions across every project.',
-      projects: ['DAAM pipeline', 'Post-Act filing', 'Pre-Act compliance tracking']
-    },
-    'dir-creatives': {
-      title: 'Director for Creatives',
-      desc: 'Handles all P&M clearance and visual output. 24-hour minimum lead time for all public-facing materials.',
-      projects: ['Pubmat design & clearance', 'Social media assets', 'Semana ng Siyensya branding']
-    },
-    'dir-extint': {
-      title: 'Director for EXT/INT Linkages',
-      desc: 'Secures external partnerships, MOAs, and sponsorships.',
-      projects: ['Discord Gaming Night', 'FSL Partner MOA', 'Donation Drive', 'Local Business Outreach']
-    },
-    'dir-advocacy': {
-      title: 'Director for Advocacy',
-      desc: 'Leads social justice, inclusion, and minority representation initiatives.',
-      projects: ['FSL Training Program', 'Lab Accessibility Audit', 'Queer Identity Science Forum', 'History Session', 'Shanghay Laya']
-    },
-    'dir-nat': {
-      title: 'Director for National Affairs',
-      desc: 'Handles national issues campaigns and consults on socio-political alignment for advocacy projects.',
-      projects: ['National issues information campaigns', 'Queer identity forums consultation']
-    }
-  };
-
-  const role = orgData[roleId];
-  if (!role) return;
-
-  const detailsEl = document.getElementById('mobile-org-details');
-  if (!detailsEl) return;
-
-  const projectsHtml = role.projects.map(p => `<li>${p}</li>`).join('');
-
-  detailsEl.classList.remove('visible');
-  // Trigger reflow so animation replays on each open
-  void detailsEl.offsetWidth;
-
-  detailsEl.innerHTML = `
-    <h3>${role.title}</h3>
-    <p>${role.desc}</p>
-    <strong style="font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:rgba(255,255,255,0.45); display:block; margin-bottom:6px;">Key Projects</strong>
-    <ul>${projectsHtml}</ul>
-  `;
-  detailsEl.classList.add('visible');
-
-  setTimeout(() => {
-    detailsEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }, 80);
 };
 
