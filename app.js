@@ -1020,6 +1020,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 </p>
                 <p style="font-size: 0.82rem; color: rgba(255,255,255,0.6);">Feel free to explore the tabs.</p>
               </div>
+              <div class="animate-in" style="animation-delay:0.5s; text-align: center; margin-top: 24px; max-width: 320px;">
+                <p style="font-size: 0.75rem; color: rgba(255,255,255,0.5); line-height: 1.5;">
+                  To learn more about the coalition and the other members, visit:<br>
+                  <a href="https://hanayancoalition.vercel.app" target="_blank" style="color: #d8b4fe; text-decoration: none; font-weight: 500; display: inline-block; margin-top: 4px;">hanayancoalition.vercel.app</a>
+                </p>
+              </div>
             </div>
           `;
         } else {
@@ -1037,6 +1043,11 @@ document.addEventListener('DOMContentLoaded', () => {
                   Feel free to explore the tabs.
                 </p>
               </div>
+            </div>
+            <div class="animate-in" style="position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); width: 100%; text-align: center; pointer-events: auto; animation-delay: 0.5s;">
+              <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6);">
+                To learn more about the coalition and the other members, visit: <a href="https://hanayancoalition.vercel.app" target="_blank" style="color: #d8b4fe; text-decoration: none; font-weight: 500; padding-left: 4px;">hanayancoalition.vercel.app</a>
+              </p>
             </div>
           `;
         }
