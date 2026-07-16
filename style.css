@@ -2444,3 +2444,57 @@ html.inline-phone-mode #desktop-logo {
   display: block !important;
 }
 
+/* ── About Me Photo Layout ── */
+.me-content-layout {
+  display: flex;
+  gap: var(--spacing-8);
+}
+.me-text-content {
+  flex: 1;
+}
+.me-images-content {
+  width: 300px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+.me-photo {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+}
+.me-photo:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg), 0 0 15px rgba(216, 180, 254, 0.3);
+}
+.me-bottom-photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.me-photo-caption {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  color: #d8b4fe;
+  margin: 0 !important;
+  text-align: center;
+}
+
+html.mobile-ui .me-content-layout {
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+html.mobile-ui .me-images-content {
+  width: 100%;
+}
+html.mobile-ui .me-photo-top {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+

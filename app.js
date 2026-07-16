@@ -1700,19 +1700,30 @@ function renderImmersiveView(target) {
           About Me
         </h2>
         <div class="immersive-glass-card animate-in me-intro" style="animation-delay: ${delay + 0.1}s">
-          <p>Before I was a candidate, I was just a Physics student who spent most of her free time between a controller and a textbook. I think that matters, because everything on this platform came from somewhere real, not from a strategy meeting.</p>
-          
-          <p><strong>I am a gamer!</strong> Final Fantassy raised me. Then, Last of Us taught me more about grief and loyalty than most classes ever did. I have logged more hours on Valorant and Deadlock this year than I would like to admit, and this is genuinely the first week in months I have not touched either, because campaign season asked for that time instead. I bring this up because it is the reason the COS Discord Gaming Night exists under Semana ng Siyensya. I know what it feels like to want one night that has nothing to do with a deadline, and I wanted to build that for the rest of this college too.</p>
+          <div class="me-content-layout">
+            <div class="me-text-content">
+              <p>Before I was a candidate, I was just a Physics student who spent most of her free time between a controller and a textbook. I think that matters, because everything on this platform came from somewhere real, not from a strategy meeting.</p>
+              
+              <p><strong>I am a gamer!</strong> Final Fantassy raised me. Then, Last of Us taught me more about grief and loyalty than most classes ever did. I have logged more hours on Valorant and Deadlock this year than I would like to admit, and this is genuinely the first week in months I have not touched either, because campaign season asked for that time instead. I bring this up because it is the reason the COS Discord Gaming Night exists under Semana ng Siyensya. I know what it feels like to want one night that has nothing to do with a deadline, and I wanted to build that for the rest of this college too.</p>
 
-          <p>I took Physics at DLSU because of a question asked even before fire was discovered: are we alone in the universe? That question is what pulled me toward astrobiology, and it is also why the Research Grants and Funding Portal matters so much to me personally. I have spent enough time chasing down funding and orientation for my own research interests to know exactly how disorganized that process can be for a student with no existing connections. The Research Job Board and Research Readiness Survey exist because I lived that gap.</p>
+              <p>I took Physics at DLSU because of a question asked even before fire was discovered: are we alone in the universe? That question is what pulled me toward astrobiology, and it is also why the Research Grants and Funding Portal matters so much to me personally. I have spent enough time chasing down funding and orientation for my own research interests to know exactly how disorganized that process can be for a student with no existing connections. The Research Job Board and Research Readiness Survey exist because I lived that gap.</p>
 
-          <p>My current research focus is on <strong>radiation-based treatment protocols for transwomen who have undergone vaginoplasty</strong>. Existing treatment models for prostate related cancers were built around cisgender anatomy, and applying them without adjustment carries <strong>real risk of complications, such as formation of fistulas that can lead to death</strong>. This is not an abstract policy position for me. It is the reason trans healthcare visibility is something I will not soften on this platform, and it is part of why the Queer and Trans Identity Education Series and Shanghay Laya exist as real projects with real medical grounding, not just a page on a website.</p>
+              <p>My current research focus is on <strong>radiation-based treatment protocols for transwomen who have undergone vaginoplasty</strong>. Existing treatment models for prostate related cancers were built around cisgender anatomy, and applying them without adjustment carries <strong>real risk of complications, such as formation of fistulas that can lead to death</strong>. This is not an abstract policy position for me. It is the reason trans healthcare visibility is something I will not soften on this platform, and it is part of why the Queer and Trans Identity Education Series and Shanghay Laya exist as real projects with real medical grounding, not just a page on a website.</p>
 
-          <p>The rest of me is smaller things. I paint in watercolor, I practice calligraphy, and I read more BL movies than I probably should admit in a campaign document. None of that needs to be a project. But I wanted you to know it!</p>
+              <p>The rest of me is smaller things. I paint in watercolor, I practice calligraphy, and I read more BL movies than I probably should admit in a campaign document. None of that needs to be a project. But I wanted you to know it!</p>
 
-          <p>The remaining projects, the Transparency and Accountability Platform, the Inclusion and Accessibility Initiative, the Student Emergency Response Program, the Financial Empowerment Initiative, and the Fundraising and Local Business Collaboration Initiative, come from a different place. They come from watching this college fail specific students in specific ways and deciding I was done waiting for someone else to fix it.</p>
+              <p>The remaining projects, the Transparency and Accountability Platform, the Inclusion and Accessibility Initiative, the Student Emergency Response Program, the Financial Empowerment Initiative, and the Fundraising and Local Business Collaboration Initiative, come from a different place. They come from watching this college fail specific students in specific ways and deciding I was done waiting for someone else to fix it.</p>
 
-          <p>Below this section is a table of where I stand on national and university issues. I kept it because I do not believe a candidate should be vague about their politics just to stay likeable to everyone. Some of these stances will cost me votes. <strong>I would rather lose votes being honest than win them being unclear.</strong></p>
+              <p>Below this section is a table of where I stand on national and university issues. I kept it because I do not believe a candidate should be vague about their politics just to stay likeable to everyone. Some of these stances will cost me votes. <strong>I would rather lose votes being honest than win them being unclear.</strong></p>
+            </div>
+            <div class="me-images-content">
+              <img src="paulinephotofave.jpeg" alt="Pauline Photo" class="me-photo me-photo-top">
+              <div class="me-bottom-photo-wrapper">
+                <img src="firstday.jpg" alt="First Day of Campaign" class="me-photo me-photo-bottom">
+                <p class="me-photo-caption">my first day of campaign!</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
