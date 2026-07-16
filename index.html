@@ -7,7 +7,7 @@
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,700&f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Fleur+De+Leah&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=26">
+  <link rel="stylesheet" href="style.css?v=27">
   <style>
     /* Accordion Styles */
     .accordion {
@@ -263,8 +263,8 @@
 </head>
 <body>
   <!-- Phone Simulator Preview Button (desktop only) -->
-  <img id="desktop-logo" src="LOGO_Hanayan.png" alt="Hanayan Logo" title="Hanayan">
-
+  <img id="desktop-logo" src="LOGO_Hanayan.png" alt="Hanayan Logo" title="Hanayan" onclick="toggleInlinePhoneMode()" style="cursor: pointer;">
+  
   <!-- Phone Simulator Overlay -->
   <div id="phone-simulator">
     <div class="phone-sim-backdrop" onclick="closePhoneSimulator()"></div>
@@ -515,8 +515,8 @@
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
   <script src="https://unpkg.com/turndown-plugin-gfm/dist/turndown-plugin-gfm.js"></script>
-  <script src="data.js?v=26"></script>
-  <script src="app.js?v=26"></script>
+  <script src="data.js?v=27"></script>
+  <script src="app.js?v=27"></script>
 
   <script>
     /* ── Auto-detect real mobile and apply mobile-ui class ── */
@@ -540,6 +540,16 @@
         if (window.innerWidth <= 600) applyMobileUI();
       });
     })();
+
+    /* ── Inline Phone Mode Toggle ── */
+    window.toggleInlinePhoneMode = function() {
+      document.documentElement.classList.toggle('inline-phone-mode');
+      document.documentElement.classList.toggle('mobile-ui');
+      // Re-trigger the router to re-render the view
+      if (typeof handleRoute === 'function') {
+        handleRoute();
+      }
+    };
 
     /* ── Phone Simulator ── */
     (function () {

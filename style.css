@@ -2422,3 +2422,25 @@ html.mobile-ui .mobile-project-strip {
   box-sizing: border-box !important;
 }
 
+/* 📱📱 Inline Phone Mode Toggle 📱📱 */
+html.inline-phone-mode {
+  background-color: #000 !important;
+}
+html.inline-phone-mode body {
+  background-color: #000 !important;
+}
+html.inline-phone-mode #experiment {
+  width: 100vw !important;
+  max-width: 430px !important;
+  margin: 0 auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  box-shadow: 0 0 0 100vw #000 !important;
+  overflow-x: hidden !important;
+  position: fixed !important;
+}
+/* Ensure the logo remains visible so the user can toggle back */
+html.inline-phone-mode #desktop-logo {
+  display: block !important;
+}
+
