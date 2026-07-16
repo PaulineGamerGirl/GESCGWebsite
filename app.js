@@ -1039,15 +1039,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.9); margin-bottom: 8px; font-weight: 400; white-space: nowrap;">
                   This is the official platform of Hanayan member <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; display: inline-block; animation: breathe-glow-text 5s ease-in-out infinite;">Pauline Galias</span>, running for Science College Government President.
                 </p>
-                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 400;">
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 400; margin-bottom: 24px;">
                   Feel free to explore the tabs.
                 </p>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); font-weight: 400; margin-top: 16px;">
+                  To learn more about the coalition and the other members, visit:<br>
+                  <a href="https://hanayancoalition.vercel.app" target="_blank" style="color: #d8b4fe; text-decoration: none; font-weight: 500; display: inline-block; margin-top: 4px;">hanayancoalition.vercel.app</a>
+                </p>
               </div>
-            </div>
-            <div class="animate-in" style="position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); width: 100%; text-align: center; pointer-events: auto; animation-delay: 0.5s;">
-              <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6);">
-                To learn more about the coalition and the other members, visit: <a href="https://hanayancoalition.vercel.app" target="_blank" style="color: #d8b4fe; text-decoration: none; font-weight: 500; padding-left: 4px;">hanayancoalition.vercel.app</a>
-              </p>
             </div>
           `;
         }
