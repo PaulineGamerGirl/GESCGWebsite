@@ -1699,8 +1699,8 @@ function renderImmersiveView(target) {
         <h2 class="immersive-section-title animate-in" style="animation-delay: ${delay}s">
           About Me
         </h2>
-        <div class="immersive-glass-card animate-in me-intro" style="animation-delay: ${delay + 0.1}s">
-          <div class="me-content-layout">
+        <div class="me-content-layout">
+          <div class="immersive-glass-card animate-in me-intro" style="animation-delay: ${delay + 0.1}s" style="flex: 1;">
             <div class="me-text-content">
               <p>Before I was a candidate, I was just a Physics student who spent most of her free time between a controller and a textbook. I think that matters, because everything on this platform came from somewhere real, not from a strategy meeting.</p>
               
@@ -1716,12 +1716,12 @@ function renderImmersiveView(target) {
 
               <p>Below this section is a table of where I stand on national and university issues. I kept it because I do not believe a candidate should be vague about their politics just to stay likeable to everyone. Some of these stances will cost me votes. <strong>I would rather lose votes being honest than win them being unclear.</strong></p>
             </div>
-            <div class="me-images-content">
-              <img src="paulinephotofave.jpeg" alt="Pauline Photo" class="me-photo me-photo-top">
-              <div class="me-bottom-photo-wrapper">
-                <img src="firstday.jpg" alt="First Day of Campaign" class="me-photo me-photo-bottom">
-                <p class="me-photo-caption">my first day of campaign!</p>
-              </div>
+          </div>
+          <div class="me-images-content animate-in" style="animation-delay: ${delay + 0.2}s">
+            <img src="./paulinephotofave.jpeg" alt="Pauline Photo" class="me-photo me-photo-top">
+            <div class="me-bottom-photo-wrapper">
+              <img src="./firstday.jpg" alt="First Day of Campaign" class="me-photo me-photo-bottom">
+              <p class="me-photo-caption">my first day of campaign!</p>
             </div>
           </div>
         </div>
@@ -1992,14 +1992,51 @@ function renderImmersiveView(target) {
       }
     });
 
-    suggForm.addEventListener('submit', function(e) {
+    suggForm.addEventListener('submit', async function(e) {
       e.preventDefault();
-      const successMsg = document.getElementById('imm-suggestion-success');
-      successMsg.style.display = 'block';
-      this.reset();
-      document.getElementById('imm-lead-group').style.display = 'none';
-      setTimeout(() => { successMsg.style.display = 'none'; }, 3000);
+      
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerText;
+      submitBtn.innerText = "Submitting...";
+      submitBtn.disabled = true;
+
+      const formData = new FormData();
+      formData.append('Name', document.getElementById('imm-sugg-name').value || 'Anonymous');
+      formData.append('Email', document.getElementById('imm-sugg-email').value || 'N/A');
+      formData.append('Type', document.getElementById('imm-sugg-type').value);
+      formData.append('Content', document.getElementById('imm-sugg-content').value);
+      
+      const leadCheckbox = document.getElementById('imm-sugg-lead');
+      const isLeadVisible = document.getElementById('imm-lead-group').style.display !== 'none';
+      formData.append('WillingToLead', isLeadVisible && leadCheckbox.checked ? 'Yes' : 'No');
+
+      // TODO: Replace with the actual deployed Google Apps Script URL
+      const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_SCRIPT_URL_HERE";
+
+      try {
+        if (GOOGLE_SCRIPT_URL !== "YOUR_GOOGLE_SCRIPT_URL_HERE") {
+          await fetch(GOOGLE_SCRIPT_URL, {
+            method: 'POST',
+            body: formData,
+            mode: 'no-cors' // Google Apps Script requires this for cross-origin POSTs without preflight
+          });
+        }
+
+        const successMsg = document.getElementById('imm-suggestion-success');
+        successMsg.style.display = 'block';
+        this.reset();
+        document.getElementById('imm-lead-group').style.display = 'none';
+        setTimeout(() => { successMsg.style.display = 'none'; }, 3000);
+
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        alert("There was an error submitting your suggestion. Please try again.");
+      } finally {
+        submitBtn.innerText = originalBtnText;
+        submitBtn.disabled = false;
+      }
     });
+
   }
 
   // Setup Intersection Observer for scroll spy
