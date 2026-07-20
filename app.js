@@ -1695,12 +1695,12 @@ function renderImmersiveView(target) {
       </div>
     `;
     html += `
-      <div class="immersive-card-wrapper" id="immersive-card-0" data-index="0">
+      <div class="immersive-card-wrapper expanded" id="immersive-card-0" data-index="0">
         <h2 class="immersive-section-title animate-in" style="animation-delay: ${delay}s">
           About Me
         </h2>
         <div class="me-content-layout">
-          <div class="immersive-glass-card animate-in me-intro" style="animation-delay: ${delay + 0.1}s" style="flex: 1;">
+          <div class="immersive-glass-card animate-in me-intro" style="animation-delay: ${delay + 0.1}s; flex: 1; max-width: 900px;">
             <div class="me-text-content">
               <p>Before I was a candidate, I was just a Physics student who spent most of her free time between a controller and a textbook. I think that matters, because everything on this platform came from somewhere real, not from a strategy meeting.</p>
               
