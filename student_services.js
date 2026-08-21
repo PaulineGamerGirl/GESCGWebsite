@@ -35,7 +35,8 @@ const StudentServicesConfig = {
                 finance: { bg: "rgba(16, 185, 129, 0.15)", text: "#FFFFFF", border: "rgba(16, 185, 129, 0.4)", lightBg: "rgba(16, 185, 129, 0.05)" },    // Green Glass
                 advising: { bg: "rgba(139, 92, 246, 0.15)", text: "#FFFFFF", border: "rgba(139, 92, 246, 0.4)", lightBg: "rgba(139, 92, 246, 0.05)" },   // Purple Glass
                 grievance: { bg: "rgba(245, 158, 11, 0.15)", text: "#FFFFFF", border: "rgba(245, 158, 11, 0.4)", lightBg: "rgba(245, 158, 11, 0.05)" },  // Orange Glass
-                shifting: { bg: "rgba(14, 165, 233, 0.15)", text: "#FFFFFF", border: "rgba(14, 165, 233, 0.4)", lightBg: "rgba(14, 165, 233, 0.05)" }    // Blue Glass
+                shifting: { bg: "rgba(14, 165, 233, 0.15)", text: "#FFFFFF", border: "rgba(14, 165, 233, 0.4)", lightBg: "rgba(14, 165, 233, 0.05)" },    // Blue Glass
+                contact: { bg: "rgba(244, 63, 94, 0.15)", text: "#FFFFFF", border: "rgba(244, 63, 94, 0.4)", lightBg: "rgba(244, 63, 94, 0.05)" }     // Rose Glass
             }
         },
         typography: {
@@ -179,6 +180,25 @@ const StudentServicesConfig = {
                     {
                         type: "highlight",
                         content: "**Internal Shifting** is moving to another course *within* the College of Science.\n\n**External Shifting** is moving to a different college entirely (e.g., CLA or COB). Both require passing grades and clearance from your current department."
+                    }
+                ]
+            },
+            {
+                id: "contact",
+                title: "WHO TO CONTACT",
+                subtitle: "Your Student Representatives",
+                colorKey: "contact",
+                sections: [
+                    {
+                        type: "highlight",
+                        content: "**Pauline Galias**\nCollege President\n\nReach out to me directly if you have any urgent concerns or need administrative assistance that isn't covered by the regular portals."
+                    },
+                    {
+                        type: "links",
+                        title: "Contact Links",
+                        items: [
+                            { text: "Message on Facebook", url: "https://www.facebook.com/pauline.galias.2024/" }
+                        ]
                     }
                 ]
             }
