@@ -17,37 +17,37 @@ const StudentServicesConfig = {
     // 🎨 1. DESIGN SYSTEM (Change colors and fonts here)
     DESIGN_SYSTEM: {
         colors: {
-            primaryText: "#0A0A0A",        // Main text color
-            secondaryText: "#6B6B6B",      // Subtitles and softer text
+            primaryText: "#FFFFFF",        // Main text color
+            secondaryText: "rgba(255, 255, 255, 0.7)",      // Subtitles and softer text
             backgroundColor: "transparent",// Background of the tab
-            cardBackground: "#FFFFFF",     // Background of the white cards
-            borderColor: "#E8E8EC",        // Borders around cards
+            cardBackground: "rgba(255, 255, 255, 0.04)",     // Background of the glass cards
+            borderColor: "rgba(255, 255, 255, 0.1)",        // Borders around cards
             
             // Tooltip Colors (The [i] button)
-            tooltipIconBg: "#E0E7FF",
-            tooltipIconText: "#4F46E5",
-            tooltipPopupBg: "#1F2937",
-            tooltipPopupText: "#F9FAFB",
+            tooltipIconBg: "rgba(255, 255, 255, 0.1)",
+            tooltipIconText: "#d8b4fe",
+            tooltipPopupBg: "rgba(15, 15, 25, 0.95)",
+            tooltipPopupText: "#FFFFFF",
 
             // Bento Box Highlights (The big buttons)
             categoryColors: {
-                enlistment: { bg: "#EC4899", text: "#FFFFFF", lightBg: "#FDF2F8" }, // Pink
-                finance: { bg: "#10B981", text: "#FFFFFF", lightBg: "#ECFDF5" },    // Green
-                advising: { bg: "#8B5CF6", text: "#FFFFFF", lightBg: "#F5F3FF" },   // Purple
-                grievance: { bg: "#F59E0B", text: "#FFFFFF", lightBg: "#FFFBEB" },  // Orange
-                shifting: { bg: "#0EA5E9", text: "#FFFFFF", lightBg: "#F0F9FF" }    // Blue
+                enlistment: { bg: "rgba(236, 72, 153, 0.15)", text: "#FFFFFF", border: "rgba(236, 72, 153, 0.4)", lightBg: "rgba(236, 72, 153, 0.05)" }, // Pink Glass
+                finance: { bg: "rgba(16, 185, 129, 0.15)", text: "#FFFFFF", border: "rgba(16, 185, 129, 0.4)", lightBg: "rgba(16, 185, 129, 0.05)" },    // Green Glass
+                advising: { bg: "rgba(139, 92, 246, 0.15)", text: "#FFFFFF", border: "rgba(139, 92, 246, 0.4)", lightBg: "rgba(139, 92, 246, 0.05)" },   // Purple Glass
+                grievance: { bg: "rgba(245, 158, 11, 0.15)", text: "#FFFFFF", border: "rgba(245, 158, 11, 0.4)", lightBg: "rgba(245, 158, 11, 0.05)" },  // Orange Glass
+                shifting: { bg: "rgba(14, 165, 233, 0.15)", text: "#FFFFFF", border: "rgba(14, 165, 233, 0.4)", lightBg: "rgba(14, 165, 233, 0.05)" }    // Blue Glass
             }
         },
         typography: {
-            titleFont: "'General Sans', sans-serif",
-            bodyFont: "'DM Sans', sans-serif",
+            titleFont: "'Clash Display', sans-serif",
+            bodyFont: "'Poppins', sans-serif",
             
             // Font Sizes
-            heroTitleSize: "3rem",
-            heroSubtitleSize: "1.2rem",
+            heroTitleSize: "clamp(2rem, 5vw, 3rem)",
+            heroSubtitleSize: "1.1rem",
             cardTitleSize: "1.5rem",
             headingSize: "1.2rem",
-            textSize: "1rem",
+            textSize: "0.95rem",
             tooltipTextSize: "0.85rem"
         },
         layout: {
@@ -80,9 +80,8 @@ const StudentServicesConfig = {
                 colorKey: "enlistment",
                 sections: [
                     {
-                        type: "text",
-                        title: "The Process",
-                        content: "Enlistment happens via @Animosys@. Ensure your @Clearance@ is settled in @MLS@ before your scheduled date."
+                        type: "highlight",
+                        content: "**The Process:** Enlistment happens via @Animosys@. Ensure your @Clearance@ is settled in @MLS@ before your scheduled date."
                     },
                     {
                         type: "links",
@@ -145,6 +144,10 @@ const StudentServicesConfig = {
                 colorKey: "grievance",
                 sections: [
                     {
+                        type: "highlight",
+                        content: "**NOTE:** Always file a ticket to The Concierge first before reaching out to the SCG. Provide your Ticket Number when asking us for follow-ups!"
+                    },
+                    {
                         type: "table",
                         title: "Who to Contact",
                         headers: ["Issue", "DLSU Admin", "USG Help"],
@@ -171,9 +174,8 @@ const StudentServicesConfig = {
                 colorKey: "shifting",
                 sections: [
                     {
-                        type: "text",
-                        title: "Internal vs External",
-                        content: "**Internal Shifting** is moving to another course *within* the College of Science. **External Shifting** is moving to a different college entirely (e.g., CLA or COB). Both require passing grades and clearance from your current department."
+                        type: "highlight",
+                        content: "**Internal Shifting** is moving to another course *within* the College of Science.\n\n**External Shifting** is moving to a different college entirely (e.g., CLA or COB). Both require passing grades and clearance from your current department."
                     }
                 ]
             }
@@ -222,10 +224,14 @@ const StudentServicesConfig = {
             }
             .ss-card {
                 background-color: ${ds.colors.cardBackground};
+                backdrop-filter: blur(32px);
+                -webkit-backdrop-filter: blur(32px);
                 border: 1px solid ${ds.colors.borderColor};
+                border-right: 1px solid rgba(255, 255, 255, 0.03);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.03);
                 border-radius: ${ds.layout.cardRadius};
                 overflow: hidden;
-                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+                box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
                 transition: transform 0.2s, box-shadow 0.2s;
             }
             .ss-card-header {
@@ -235,7 +241,7 @@ const StudentServicesConfig = {
                 position: relative;
             }
             .ss-card-header:hover {
-                filter: brightness(0.95);
+                filter: brightness(1.1);
             }
             .ss-card-header::after {
                 content: "▼";
@@ -255,6 +261,7 @@ const StudentServicesConfig = {
                 font-size: ${ds.typography.cardTitleSize};
                 font-weight: 700;
                 margin-bottom: 0.25rem;
+                letter-spacing: 0.02em;
             }
             .ss-card-subtitle {
                 font-size: 0.95rem;
@@ -265,7 +272,7 @@ const StudentServicesConfig = {
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.4s ease-out, padding 0.4s ease;
-                background-color: ${ds.colors.cardBackground};
+                background-color: transparent;
             }
             .ss-card.expanded .ss-card-content {
                 padding: 1.5rem;
@@ -290,20 +297,31 @@ const StudentServicesConfig = {
                 line-height: 1.6;
                 color: ${ds.colors.secondaryText};
             }
+            .ss-highlight-block {
+                background: rgba(255, 255, 255, 0.04);
+                border-left: 3px solid #d8b4fe;
+                padding: 14px 18px;
+                border-radius: 0 12px 12px 0;
+                font-size: ${ds.typography.textSize};
+                line-height: 1.6;
+                color: ${ds.colors.primaryText};
+            }
             .ss-link {
                 display: inline-block;
                 padding: 0.5rem 1rem;
-                background-color: #F3F4F6;
+                background-color: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.2);
                 color: ${ds.colors.primaryText};
                 text-decoration: none;
                 border-radius: ${ds.layout.buttonRadius};
                 font-weight: 500;
                 margin-right: 0.5rem;
                 margin-bottom: 0.5rem;
-                transition: background-color 0.2s;
+                transition: background-color 0.2s, transform 0.2s;
             }
             .ss-link:hover {
-                background-color: #E5E7EB;
+                background-color: rgba(255, 255, 255, 0.2);
+                transform: translateY(-1px);
             }
             .ss-table {
                 width: 100%;
@@ -317,7 +335,7 @@ const StudentServicesConfig = {
             }
             .ss-table th {
                 font-weight: 600;
-                background-color: #F9FAFB;
+                background-color: rgba(255, 255, 255, 0.08);
                 color: ${ds.colors.primaryText};
             }
             
@@ -390,6 +408,10 @@ const StudentServicesConfig = {
                 .ss-card-header-${key} {
                     background-color: ${colors.bg};
                     color: ${colors.text};
+                    border-bottom: 1px solid ${colors.border};
+                }
+                .ss-card-${key}.expanded .ss-card-content {
+                    background-color: ${colors.lightBg};
                 }
                 .ss-card-header-${key} .ss-card-subtitle {
                     color: rgba(255,255,255,0.85);
@@ -434,6 +456,8 @@ const StudentServicesConfig = {
             
             if (sec.type === 'text') {
                 html += `<div class="ss-text">${parseText(sec.content)}</div>`;
+            } else if (sec.type === 'highlight') {
+                html += `<div class="ss-highlight-block">${parseText(sec.content)}</div>`;
             } else if (sec.type === 'links') {
                 html += `<div>`;
                 sec.items.forEach(link => {
@@ -481,7 +505,7 @@ const StudentServicesConfig = {
 
         content.categories.forEach(cat => {
             html += `
-                <div class="ss-card" onclick="this.classList.toggle('expanded')">
+                <div class="ss-card ss-card-${cat.colorKey}" onclick="this.classList.toggle('expanded')">
                     <div class="ss-card-header ss-card-header-${cat.colorKey}">
                         <div class="ss-card-title">${cat.title}</div>
                         <div class="ss-card-subtitle">${cat.subtitle}</div>
