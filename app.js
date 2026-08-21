@@ -71,6 +71,10 @@ function handleRoute() {
     document.getElementById('finances').classList.add('active');
     document.querySelector('.nav-links a[href="#finances"]')?.classList.add('active');
     renderFinances();
+  } else if (hash === '#student-services') {
+    document.getElementById('student-services').classList.add('active');
+    document.querySelector('.nav-links a[href="#student-services"]')?.classList.add('active');
+    if (window.renderStudentServices) window.renderStudentServices();
   } else if (hash === '#me') {
     document.getElementById('me').classList.add('active');
     document.querySelector('.nav-links a[href="#me"]')?.classList.add('active');
@@ -1679,6 +1683,14 @@ function renderImmersiveView(target) {
           </div>
         </div>
       `;
+  } else if (target === 'student-services') {
+      sideNavHtml = '';
+      html = '<div id="ss-immersive-container" style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 20px;"></div>';
+      setTimeout(() => {
+          if (window.renderStudentServices) {
+              window.renderStudentServices('ss-immersive-container');
+          }
+      }, 50);
   } else if (target === 'me') {
     sideNavHtml += `
       <div class="nav-item" onclick="scrollToImmersiveCard(0)" data-index="0">
