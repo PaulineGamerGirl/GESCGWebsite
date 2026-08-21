@@ -65,8 +65,7 @@ const StudentServicesConfig = {
         // Example: "You need your @EAF@ to enter."
         glossary: {
             "EAF": "Enrollment Assessment Form - Your official proof of enrollment showing your schedule and fees.",
-            "MLS": "My.LaSalle - The legacy portal for viewing grades, clearances, and printing your EAF.",
-            "Animosys": "The main portal where you actually add, drop, and enlist in classes.",
+            "Archers Hub": "The new centralized portal for enlistment, adding/dropping subjects, clearances, and administrative tickets.",
             "Clearance": "A status indicating you have no pending liabilities (financial, library, disciplinary). Required to enroll.",
             "Flowchart": "Your degree's map of subjects. You must follow the prerequisites listed here."
         },
@@ -76,19 +75,22 @@ const StudentServicesConfig = {
             {
                 id: "enlistment",
                 title: "ENLISTMENT",
-                subtitle: "Schedules, Flowcharts, & Animosys",
+                subtitle: "Schedules, Flowcharts, & Archers Hub",
                 colorKey: "enlistment",
                 sections: [
                     {
                         type: "highlight",
-                        content: "**The Process:** Enlistment happens via @Animosys@. Ensure your @Clearance@ is settled in @MLS@ before your scheduled date."
+                        content: "**The Process:** Enlistment happens via @Archers Hub@. Ensure your @Clearance@ is settled before your scheduled date."
                     },
                     {
                         type: "links",
                         title: "Important Links",
                         items: [
-                            { text: "Animosys Portal", url: "https://bit.ly/ANIMOSYS" },
-                            { text: "Term 2 Enrollment Guide", url: "https://bit.ly/TERM2ENROLLMENTGUIDE" },
+                            { text: "Archers Hub (Adding/Dropping Guide)", url: "https://www.facebook.com/share/p/186o9KhVcU/" },
+                            { text: "Archers Hub (Logging In)", url: "https://www.facebook.com/share/p/1AsMkTd53V/" },
+                            { text: "Steps for Dropping", url: "https://www.facebook.com/share/18AVQhCkDW/" },
+                            { text: "Schedule for Dropping & Withdrawal", url: "https://www.facebook.com/share/p/1BedQ96nJd/" },
+                            { text: "Term Enrollment Guide", url: "https://www.dlsu.edu.ph/wp-content/uploads/pdf/registrar/schedules/enroll_ug.pdf" },
                             { text: "ID124 Flowcharts", url: "https://bit.ly/COS_ID124FLOWCHARTS" },
                             { text: "COS Course Offerings", url: "https://bit.ly/COS_T2CourseOfferings" },
                             { text: "USG Enlistment Guide", url: "https://linktr.ee/USGOVPIA_Enlistment_Guide" }
@@ -103,14 +105,15 @@ const StudentServicesConfig = {
                 colorKey: "finance",
                 sections: [
                     {
-                        type: "text",
-                        title: "Settling Your Fees",
-                        content: "Once you have your @EAF@, you must settle your tuition to avoid being dropped from your classes. Late payments incur surcharges."
+                        type: "highlight",
+                        content: "**Settling Your Fees:** Once you have your @EAF@, you must settle your tuition to avoid being dropped from your classes. Late payments incur surcharges."
                     },
                     {
                         type: "links",
                         title: "Payment Resources",
                         items: [
+                            { text: "Settling Payment Guide", url: "https://www.facebook.com/share/p/174z5zFchQ/" },
+                            { text: "Updated Payment Channels", url: "https://www.facebook.com/share/p/1DZ8icCGa7/" },
                             { text: "View Tuition Fee Table", url: "https://enroll.dlsu.edu.ph/dlsu/view_fees_table" },
                             { text: "Glossary of Fees (What are you paying for?)", url: "https://www.dlsu.edu.ph/wp-content/uploads/pdf/registrar/glossary-of-fees.pdf" }
                         ]
@@ -140,20 +143,20 @@ const StudentServicesConfig = {
             {
                 id: "grievance",
                 title: "ADMIN & GRIEVANCES",
-                subtitle: "IT Support & Concierge Tickets",
+                subtitle: "IT Support & Admin Tickets",
                 colorKey: "grievance",
                 sections: [
                     {
                         type: "highlight",
-                        content: "**NOTE:** Always file a ticket to The Concierge first before reaching out to the SCG. Provide your Ticket Number when asking us for follow-ups!"
+                        content: "**NOTE:** Always file a ticket via @Archers Hub@ first before reaching out to the SCG. Provide your Ticket Number when asking us for follow-ups!"
                     },
                     {
                         type: "table",
                         title: "Who to Contact",
                         headers: ["Issue", "DLSU Admin", "USG Help"],
                         rows: [
-                            ["Cannot log into MLS/Animosys", "ITS Help Desk", "SCG Welfare Board"],
-                            ["Clearance Hold Issue", "The Concierge", "USG OVPIA"],
+                            ["Cannot log into Archers Hub", "ITS Help Desk", "SCG Welfare Board"],
+                            ["Clearance Hold Issue", "Archers Hub Admin Services", "USG OVPIA"],
                             ["Professor Grievance", "Department Vice Chair", "SCG Batch Rep"]
                         ]
                     },
@@ -161,7 +164,7 @@ const StudentServicesConfig = {
                         type: "links",
                         title: "Portals",
                         items: [
-                            { text: "The Concierge (Raise a Ticket)", url: "https://theconcierge.dlsu.edu.ph/support/home" },
+                            { text: "Archers Hub (Availing Admin Services)", url: "https://www.facebook.com/share/p/1DJDqpyZdD/" },
                             { text: "ITS FAQs", url: "https://www.dlsu.edu.ph/offices/its/frequently-asked-questions/#mls" }
                         ]
                     }
