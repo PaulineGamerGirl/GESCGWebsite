@@ -233,7 +233,6 @@ const StudentServicesConfig = {
                 border-right: 1px solid rgba(255, 255, 255, 0.03);
                 border-bottom: 1px solid rgba(255, 255, 255, 0.03);
                 border-radius: ${ds.layout.cardRadius};
-                overflow: hidden;
                 box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
                 transition: transform 0.2s, box-shadow 0.2s;
             }
@@ -242,6 +241,8 @@ const StudentServicesConfig = {
                 cursor: pointer;
                 transition: background-color 0.2s;
                 position: relative;
+                border-top-left-radius: ${ds.layout.cardRadius};
+                border-top-right-radius: ${ds.layout.cardRadius};
             }
             .ss-card-header:hover {
                 filter: brightness(1.1);
@@ -274,13 +275,15 @@ const StudentServicesConfig = {
                 padding: 0 1.5rem;
                 max-height: 0;
                 overflow: hidden;
-                transition: max-height 0.4s ease-out, padding 0.4s ease;
+                transition: max-height 0.4s ease-out, padding 0.4s ease, overflow 0s linear 0s;
                 background-color: transparent;
             }
             .ss-card.expanded .ss-card-content {
                 padding: 1.5rem;
                 max-height: 1000px;
                 border-top: 1px solid ${ds.colors.borderColor};
+                overflow: visible;
+                transition: max-height 0.4s ease-in, padding 0.4s ease, overflow 0s linear 0.4s;
             }
             .ss-section {
                 margin-bottom: 1.5rem;
@@ -383,7 +386,7 @@ const StudentServicesConfig = {
                 opacity: 0;
                 visibility: hidden;
                 transition: opacity 0.2s, transform 0.2s;
-                z-index: 100;
+                z-index: 999999;
                 box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
                 pointer-events: none;
                 font-weight: normal;
@@ -402,6 +405,11 @@ const StudentServicesConfig = {
                 opacity: 1;
                 visibility: visible;
                 transform: translateX(-50%) translateY(0);
+            }
+            
+            /* Elevate the entire scroll container so tooltip overlaps the fixed top nav */
+            .immersive-scroll-container:has(.ss-tooltip-trigger:hover) {
+                z-index: 1020 !important;
             }
         `;
 
