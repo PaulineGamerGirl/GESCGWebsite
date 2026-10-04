@@ -1,0 +1,762 @@
+[
+  {
+    "idx": 0,
+    "num": "01",
+    "id": "scg-p1",
+    "title": "H2Zero.ai — Standalone Offline AI Desktop Application",
+    "shortTitle": "H2Zero.ai",
+    "type": "Early Processed · Free",
+    "funded": false,
+    "top": "12%",
+    "left": "16%",
+    "anim": "float-1 4.2s",
+    "subs": [
+      "Offline Desktop AI Assistant",
+      "Zero Water Datacenter Footprint",
+      "100% Privacy for Academic Data"
+    ],
+    "classification": "Early Processed",
+    "nature": "Student Service",
+    "daamType": "thru APS; Others",
+    "date": "October 7, 2026 (Wednesday)",
+    "budget": "₱0.00",
+    "lead": "Director for Research & Development (Dir. R&D)",
+    "collab": "Dir. Academics, Dir. Creatives, Dir. Documentations",
+    "venue": "Desktop Application / Digital Distribution",
+    "issue": "Intense academic workloads, paywalled computational tools, student privacy concerns, and severe environmental water cooling footprints associated with centralized cloud datacenter AI models.",
+    "objective": "Provide a 100% offline, locally-run AI assistant and scientific calculation environment that uses zero datacenter water and preserves student academic privacy.",
+    "metric": "300+ unique student downloads in Term 1; zero telemetry transmitted; 100% offline functionality verified.",
+    "continuity": null,
+    "description": "A standalone, 100% offline, locally-run AI assistant and computational desktop application engineered specifically for College of Science students. Built to mitigate the immense water-cooling footprints of external commercial AI datacenters, H2Zero.ai runs locally on student hardware with zero server dependency, zero internet requirement, and zero telemetry tracking. Includes built-in support for LaTeX mathematical typesetting, scientific literature parsing, offline prompt guidance, and course-tailored STEM study flashcard generation.",
+    "phases": [
+      {
+        "name": "Phase 1: Local Packaging & Model Quantization",
+        "date": "Sept 24–Oct 2, 2026",
+        "lead": "Dir. R&D, ExA, ExB",
+        "check": "Verified offline binary for Windows & macOS",
+        "items": [
+          "Package and benchmark quantized local LLM & LaTeX math parser",
+          "Ensure zero telemetry, offline execution, and zero cloud API dependency",
+          "Chief of Staff check-in: Verify zero-water local execution and binary stability"
+        ]
+      },
+      {
+        "name": "Phase 2: DAAM Pre-Act Clearance & Install Documentation",
+        "date": "Sept 25–Oct 6, 2026",
+        "lead": "Dir. Docs, Dir. Creatives",
+        "check": "Approved APS package & P&M clear",
+        "items": [
+          "Dir. Docs: Submit Early Processing Letter + APS Form to DAAM",
+          "Dir. Creatives: Produce clean installation guide carousel and visual launch kit",
+          "Dir. Docs: Secure DAAM P&M clearance code for public launch broadcast"
+        ]
+      },
+      {
+        "name": "Phase 3: Platform Launch & College Distribution",
+        "date": "Oct 7, 2026",
+        "lead": "Dir. R&D, Chief Comms",
+        "check": "Live direct download & user setup guide",
+        "items": [
+          "Deploy public download distribution via SCG Centralized Portal",
+          "Dir. Promotions: Broadcast launch post across college channels and student groups",
+          "Deliver quick-start setup video and prompt engineering reference sheet"
+        ]
+      },
+      {
+        "name": "Phase 4: Feedback Triage & Bug Mitigation",
+        "date": "Oct 14–Nov 4, 2026",
+        "lead": "Dir. R&D, ExA",
+        "check": "Post-launch patch notes & triage report",
+        "items": [
+          "Monitor student bug reports, hardware compatibility, and feature suggestions",
+          "Release v1.1 performance patch for lower-spec student laptops",
+          "Compile user feedback and submit Post-Activity Compliance Report to DAAM"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 1,
+    "num": "02",
+    "id": "scg-p2",
+    "title": "SCG Centralized Student Portal (Integrated 7-Module Platform)",
+    "shortTitle": "SCG Student Portal",
+    "type": "Yearlong · Free",
+    "funded": false,
+    "top": "8%",
+    "left": "50%",
+    "anim": "float-2 3.8s",
+    "subs": [
+      "7-Module Digital Platform",
+      "Syllabus & Course Outline Vault",
+      "FLOSS Directory & Grade Tools"
+    ],
+    "classification": "Yearlong",
+    "nature": "Student Service",
+    "daamType": "thru SLIFE; Website Launch",
+    "date": "October 14, 2026 (Wednesday)",
+    "budget": "₱0.00",
+    "lead": "Director for Academics & Director for Student Services",
+    "collab": "Dir. Finance (Ledger), Dir. Creatives (UI/UX), Dir. Documentations, President (Grievances)",
+    "venue": "Online Web Portal (scg-portal.dlsu.edu.ph)",
+    "issue": "Fragmented academic materials, lost links, and disjointed college portals causing academic friction and missed opportunities across COS.",
+    "objective": "Centralize 7 core student services into one unified, ultra-responsive digital hub: (1) Syllabus Vault, (2) Scholarship Calculator, (3) Academic Pathing, (4) Centralized Grievances, (5) Financial Transparency Ledger, (6) Free Software/FLOSS Directory, and (7) Research Opportunity Board.",
+    "metric": "800+ unique student visits in Term 1; 100% of syllabus outlines uploaded; zero server maintenance costs.",
+    "continuity": null,
+    "description": "The SCG Centralized Student Portal is a modular, client-side digital platform designed to unite all vital college resources into a single access point. Built without ongoing server costs, it features an interactive Syllabus Transparency Vault, a customized Scholarship Grade Calculator tailored for COS ID systems, an Academic Pathing flowchart for course retakes, a secure Centralized Grievance mediation channel, a real-time Financial Transparency Ledger, an open-source FLOSS software directory, and an active student Research Job Board.",
+    "phases": [
+      {
+        "name": "Phase 1: 7-Module Architecture & Database Population",
+        "date": "Sept 24–Oct 8, 2026",
+        "lead": "Dir. Academics, Dir. SS, Creatives",
+        "check": "Staging portal functional across all 7 modules",
+        "items": [
+          "Build and integrate 7 responsive service modules with zero server overhead",
+          "Dir. Academics: Populate syllabus repository and scholarship criteria tables",
+          "President check-in: Audit grievance reporting security and confidential routing"
+        ]
+      },
+      {
+        "name": "Phase 2: DAAM SLIFE Pre-Act Clearance & User Testing",
+        "date": "Sept 25–Oct 12, 2026",
+        "lead": "Dir. Docs, Dir. Promotions",
+        "check": "Approved SLIFE clearance & mobile responsive QA",
+        "items": [
+          "Dir. Docs: Submit SLIFE Website Launch Pre-Activity package",
+          "Conduct end-to-end user testing across mobile and desktop browsers",
+          "Secure DAAM P&M promotional approval for portal launch campaign"
+        ]
+      },
+      {
+        "name": "Phase 3: Public Portal Deployment",
+        "date": "Oct 14, 2026",
+        "lead": "Dir. Academics, Dir. SS, Chief Comms",
+        "check": "Portal live at scg-portal.dlsu.edu.ph",
+        "items": [
+          "Deploy production build and open public student access",
+          "Dir. Promotions: Launch multi-platform video tour explaining all 7 modules",
+          "Release interactive Grade Calculator and Academic Pathing flowchart tools"
+        ]
+      },
+      {
+        "name": "Phase 4: Mid-Term Resource Updates & Post-Act",
+        "date": "Oct 21–Nov 18, 2026",
+        "lead": "Dir. Docs, Dir. Academics",
+        "check": "Mid-term update log & DAAM compliance report",
+        "items": [
+          "Dir. Finance: Publish real-time council budget transactions to Public Ledger",
+          "Dir. Academics: Ingest mid-term study guides and exam preparation resources",
+          "Dir. Docs: Submit formal Post-Activity report to DAAM"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 2,
+    "num": "03",
+    "id": "scg-p3",
+    "title": "Women and Minorities in STEM",
+    "shortTitle": "Women in STEM",
+    "type": "Yearlong · Free",
+    "funded": false,
+    "top": "12%",
+    "left": "84%",
+    "anim": "float-3 5.1s",
+    "subs": [
+      "Representation Spotlight",
+      "Interview Docu-Series",
+      "COS Science Scholar Profiles"
+    ],
+    "classification": "Yearlong",
+    "nature": "Issue Advocacy",
+    "daamType": "thru APS; Media Coverage",
+    "date": "October 21, 2026 (Ep. 1 Launch, Yearlong Ongoing)",
+    "budget": "₱0.00",
+    "lead": "Director for Promotions & Director for Advocacy",
+    "collab": "Dir. Creatives, Chief Communications, Dir. Documentations",
+    "venue": "Social Media Video Reels & Digital Web Archive",
+    "issue": "Systematic underrepresentation and lack of media visibility for women, queer scholars, and marginalized scientists within science departments and research laboratories.",
+    "objective": "Produce an inspiring multimedia spotlight and digital archive highlighting diverse science leaders, student researchers, and alumni.",
+    "metric": "3 episodic video features in Term 1; 1,500+ student engagements; permanent digital archive.",
+    "continuity": null,
+    "description": "A dedicated multimedia representation and advocacy campaign celebrating the breakthroughs, research journeys, and personal triumphs of women, queer scholars, and underrepresented minorities in the College of Science. Through professionally produced 60-second video spotlights, in-depth feature articles, and an online research archive, this yearlong series actively breaks stereotypes and creates accessible role models for incoming and current science scholars.",
+    "phases": [
+      {
+        "name": "Phase 1: Talent Outreach & Vetting",
+        "date": "Sept 24–Oct 10, 2026",
+        "lead": "Dir. Advocacy, Dir. Promotions",
+        "check": "Confirmed feature list & signed consent releases",
+        "items": [
+          "Identify and reach out to female and minority student researchers and faculty",
+          "Conduct pre-interviews and outline narrative focus for Episode 1",
+          "Secure RA 10173 data privacy and media publication consent forms"
+        ]
+      },
+      {
+        "name": "Phase 2: Pre-Act Clearance & Production",
+        "date": "Sept 25–Oct 16, 2026",
+        "lead": "Dir. Promotions, Dir. Creatives",
+        "check": "Approved P&M clearance & finalized video cut",
+        "items": [
+          "Dir. Docs: File APS Media Coverage Pre-Act form with DAAM",
+          "Dir. Creatives: Film high-definition video interview and design branding kit",
+          "Secure DAAM P&M publicity code for teaser and full feature releases"
+        ]
+      },
+      {
+        "name": "Phase 3: Episodic Broadcast (Episode 1)",
+        "date": "Oct 21, 2026",
+        "lead": "Dir. Promotions, Chief Comms",
+        "check": "Episode 1 video live across socials & web archive",
+        "items": [
+          "Publish Episode 1 spotlight reel across official SCG channels",
+          "Launch dedicated profile and research bibliography on SCG Portal archive",
+          "Foster discussions and student reflections in comment channels"
+        ]
+      },
+      {
+        "name": "Phase 4: Archival & Term Continuation",
+        "date": "Oct 28–Nov 20, 2026",
+        "lead": "Dir. Advocacy, Dir. Docs",
+        "check": "Portal feature page & pre-production for Ep. 2",
+        "items": [
+          "Collate audience reach, engagement metrics, and feedback",
+          "Begin candidate scoping and scheduling for Episodes 2 & 3",
+          "Dir. Docs: Submit DAAM compliance documentation"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 3,
+    "num": "04",
+    "id": "scg-p4",
+    "title": "HomeCOStasis — COS Comprehensive Student Guide (Batch 126 Refresh)",
+    "shortTitle": "HomeCOStasis (Batch 126)",
+    "type": "Termlong Continuity · Free",
+    "funded": false,
+    "top": "40%",
+    "left": "88%",
+    "anim": "float-4 4.6s",
+    "subs": [
+      "Last Year SCG Initiative Refreshed",
+      "COS Comprehensive Survival Guide",
+      "Enrollment, Labs & Prof Advising"
+    ],
+    "classification": "Termlong Continuity",
+    "nature": "Student Service",
+    "daamType": "thru APS; Others",
+    "date": "October 14, 2026 (Wednesday)",
+    "budget": "₱0.00",
+    "lead": "Director for Student Services",
+    "collab": "Dir. Academics, Dir. Creatives, Dir. Documentations",
+    "venue": "Centralized Digital Student Navigation Guide (Activity Code: G-SCG-25260011)",
+    "issue": "Incoming Batch 126 frosh, shiftees, transferees, and irregular students experience severe disorientation regarding campus laboratory safety protocols, course prerequisite tracking, and enrollment procedures.",
+    "objective": "Provide a unified, master navigation handbook and digital survival kit specifically refreshed and localized for Batch 126 and incoming science students.",
+    "metric": "Minimum of 10 guide modules refreshed; 100% of Batch 126 blocks reached via block representatives and digital links.",
+    "continuity": "Institutional Continuity: HomeCOStasis originates from last year's Science College Government initiative (AY 2025–2026, Activity Code: G-SCG-25260011). Under President Pauline Galias, this hallmark project is formally renewed, upgraded, and expanded to guarantee zero loss of institutional knowledge for Batch 126 and transferees.",
+    "description": "HomeCOStasis is the foundational student navigation manual of the College of Science. Originally initiated in AY 2025–2026 (ARC: G-SCG-25260011), this initiative is systematically refreshed and modernized for AY 2026–2027. It features audited course flowchart prerequisite guides, laboratory attire and safety rules, department faculty contact directories, step-by-step enlistment and petition tutorials, campus study spot listings, and academic FAQ modules. Available via high-speed digital download, Google Drive repository, and integrated directly into the SCG Centralized Portal.",
+    "phases": [
+      {
+        "name": "Phase 1: Content Audit & Institutional Review",
+        "date": "Sept 24–Oct 7, 2026",
+        "lead": "Dir. Student Services, Dir. Academics",
+        "check": "Updated AY 2026–2027 survival guide manuscript",
+        "items": [
+          "Audit AY 2025–2026 materials (ARC: G-SCG-25260011) for policy changes and faculty updates",
+          "Interface with College Dean's Office and department chairs to verify prerequisite flowcharts",
+          "Chief of Staff check-in: Verify laboratory safety guidelines and grading rules accuracy"
+        ]
+      },
+      {
+        "name": "Phase 2: Visual Styling & Mobile Digital Layout",
+        "date": "Sept 25–Oct 11, 2026",
+        "lead": "Dir. Creatives, Dir. Docs",
+        "check": "Formatted PDF manual & interactive web module",
+        "items": [
+          "Format 40-page comprehensive handbook into sleek, mobile-friendly PDF",
+          "Ingest interactive guide into the SCG Centralized Portal",
+          "Dir. Docs: File APS Pre-Activity and secure DAAM P&M publicity code"
+        ]
+      },
+      {
+        "name": "Phase 3: Rollout & Frosh Block Distribution",
+        "date": "Oct 14, 2026",
+        "lead": "Dir. Student Services, Batch 126 Reps",
+        "check": "Guide distributed to 100% of COS frosh blocks",
+        "items": [
+          "Broadcast digital handbook link via Telegram, Facebook, and Google Drive",
+          "Direct dissemination to all Batch 126 block chats and frosh orientations",
+          "Host live online Q&A thread addressing first-week student inquiries"
+        ]
+      },
+      {
+        "name": "Phase 4: Feedback & Midterm Advisory Supplement",
+        "date": "Oct 21–Nov 14, 2026",
+        "lead": "Dir. Student Services, Dir. Docs",
+        "check": "Midterm FAQ release & DAAM Post-Act",
+        "items": [
+          "Monitor incoming student inquiries and publish a Midterm Enlistment Addendum",
+          "Collate download statistics and student feedback survey results",
+          "Submit completed Post-Activity compliance report to DAAM"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 4,
+    "num": "05",
+    "id": "scg-p5",
+    "title": "COS Bulletin Board — Real-Time Telegram Broadcast",
+    "shortTitle": "COS Bulletin Board",
+    "type": "Termlong Continuity · Free",
+    "funded": false,
+    "top": "74%",
+    "left": "84%",
+    "anim": "float-5 4.9s",
+    "subs": [
+      "Real-Time Telegram Broadcast",
+      "Official Announcement Dispatch",
+      "Fast Alert Notifications"
+    ],
+    "classification": "Termlong Continuity",
+    "nature": "Student Service",
+    "daamType": "thru APS; Others",
+    "date": "October 14, 2026 (Wednesday)",
+    "budget": "₱0.00",
+    "lead": "Director for Student Services & Director for Documentations",
+    "collab": "Chief Communications, Executive Secretary",
+    "venue": "Telegram Broadcast Channel & SCG Social Media (Activity Code: G-SCG-25260016)",
+    "issue": "Critical academic announcements, room reassignments, weather suspensions, and enlistment deadlines are buried by social media algorithms, leading to missed student deadlines.",
+    "objective": "Provide a real-time, zero-noise, algorithm-free Telegram broadcast channel delivering instant verified advisories to College of Science students.",
+    "metric": "500+ verified COS subscribers in Term 1; 100% of urgent advisories broadcast within 20 minutes of official university release.",
+    "continuity": "Institutional Continuity: Originally established in AY 2025–2026 (ARC: G-SCG-25260016) and continued under President Pauline Galias. Upgraded with synchronized web notification banners on the SCG Centralized Portal.",
+    "description": "A direct, chronological, and noise-free Telegram broadcast channel alongside website alerts. Eliminates social media feed suppression so that students never miss urgent university notices, enlistment advisories, shifting deadlines, or emergency suspension alerts. All announcements are tagged with clear categories (#Academics, #Enrollment, #Suspensions, #Events) and verified directly with official university offices before dispatch.",
+    "phases": [
+      {
+        "name": "Phase 1: Telegram Channel Architecture & Bot Integration",
+        "date": "Sept 24–Oct 8, 2026",
+        "lead": "Dir. SS, Dir. Docs",
+        "check": "Telegram channel configured with categorization tags",
+        "items": [
+          "Establish hashtag categorization structure (#Enrollment, #Suspensions, #Academics, #Events)",
+          "Configure automated cross-broadcast relays and emergency push notifications",
+          "Establish verification protocol with USG and Dean's Office communication liaisons"
+        ]
+      },
+      {
+        "name": "Phase 2: DAAM Continuity & Promotion Clearance",
+        "date": "Sept 25–Oct 11, 2026",
+        "lead": "Dir. Docs, Dir. Promotions",
+        "check": "Approved APS continuity permit & P&M clear",
+        "items": [
+          "File DAAM APS form under continuing student services",
+          "Dir. Creatives: Produce high-visibility joining campaign ('One Channel. All Alerts.')",
+          "Secure DAAM P&M approval code"
+        ]
+      },
+      {
+        "name": "Phase 3: Launch Broadcast & College-Wide Onboarding",
+        "date": "Oct 14, 2026",
+        "lead": "Dir. SS, Chief Comms",
+        "check": "Channel live with 300+ initial member onboarding",
+        "items": [
+          "Publish invite link across all batch groups, block chats, and student org pages",
+          "Release first official weekly digest and college operational bulletin",
+          "Synchronize real-time feed with SCG Centralized Portal dashboard"
+        ]
+      },
+      {
+        "name": "Phase 4: Operational Cadence & Term Archival",
+        "date": "Oct 15–Nov 28, 2026",
+        "lead": "Dir. Docs, Dir. SS",
+        "check": "Daily dispatch log & DAAM post-act",
+        "items": [
+          "Maintain active dispatch protocol with daily verification checks",
+          "Collate subscriber retention, engagement metrics, and alert speed benchmarks",
+          "File DAAM Post-Activity Compliance Report at term conclusion"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 5,
+    "num": "06",
+    "id": "scg-p6",
+    "title": "Taft Food Crawl: COS Student Food & Local Business Guide",
+    "shortTitle": "Taft Food Crawl",
+    "type": "Multiple Dates · Free",
+    "funded": false,
+    "top": "84%",
+    "left": "50%",
+    "anim": "float-6 3.5s",
+    "subs": [
+      "Batch 126 Collaboration",
+      "Budget Meals Under ₱150",
+      "Study Cafes & Downloadable Map"
+    ],
+    "classification": "Multiple Dates",
+    "nature": "Student Service / Promotional",
+    "daamType": "thru APS; Media Coverage",
+    "date": "October 19, 20, 21, 2026 (Monday–Wednesday)",
+    "budget": "₱0.00",
+    "lead": "Director for Promotions & Director for EXT/INT Linkages",
+    "collab": "Batch 126 Government, Dir. Creatives, Dir. Documentations",
+    "venue": "Local Taft Avenue Merchants & Digital Media Channels",
+    "issue": "Frosh students, scholars, and irregulars experience budget constraints and unfamiliarity with safe, affordable food spots, quiet study cafes, and reliable Wi-Fi locations around the Manila campus.",
+    "objective": "Produce a high-engagement 3-episode video series and downloadable digital Taft Food Map curated specifically for student budgets in collaboration with Batch 126.",
+    "metric": "3 released video episodes; 2,000+ views; 500+ digital food map downloads; zero student fee expense.",
+    "continuity": null,
+    "description": "A collaborative digital lifestyle and student survival series produced in close partnership with the Batch 126 Government. Over three consecutive days, this initiative reviews budget-friendly student meals (under ₱150), quiet cafes with strong Wi-Fi and power outlets for study sessions, and hidden food gems around Taft Avenue. Paired with a downloadable, high-resolution visual Taft Food Map Infographic available on the SCG Portal.",
+    "phases": [
+      {
+        "name": "Phase 1: Merchant Outreach & Scripting",
+        "date": "Sept 24–Oct 12, 2026",
+        "lead": "Dir. Promotions, Dir. EXT/INT, Batch 126 Reps",
+        "check": "Confirmed merchant list via DM/verbal — NO MOA needed",
+        "items": [
+          "Finalize 3-episode route: Ep. 1 Budget Meals (<₱150), Ep. 2 Top Study Cafes, Ep. 3 Hidden Gems",
+          "Reach out to 6–8 small food vendors and student cafes for on-site filming access",
+          "Script short, engaging video reels featuring Batch 126 frosh co-hosts"
+        ]
+      },
+      {
+        "name": "Phase 2: DAAM Pre-Act & Video Filming",
+        "date": "Sept 25–Oct 14, 2026",
+        "lead": "Dir. Promotions, Dir. Creatives, Dir. Docs",
+        "check": "Approved APS package & P&M video/infographic clearances",
+        "items": [
+          "Submit APS Media Coverage package and PPR Table 1 to DAAM",
+          "Shoot on-site footage around Taft Avenue and University Mall",
+          "Dir. Creatives: Edit three 60-second video reels and design printable/downloadable Taft Food Map PDF"
+        ]
+      },
+      {
+        "name": "Phase 3: Multi-Day Episodic Rollout",
+        "date": "Oct 19–21, 2026",
+        "lead": "Dir. Promotions, Chief Comms, ExA, ExB",
+        "check": "3 Video Reels published + Map Infographic live",
+        "items": [
+          "Mon, Oct 19: Release Episode 1 (Best Budget Meals under ₱150)",
+          "Tue, Oct 20: Release Episode 2 (Top Study-Friendly Cafes with Wi-Fi & Outlets)",
+          "Wed, Oct 21: Release Episode 3 (Hidden Gems) + Downloadable Taft Food Map"
+        ]
+      },
+      {
+        "name": "Phase 4: Impact Collation & Post-Act",
+        "date": "Oct 22–Nov 4, 2026",
+        "lead": "Dir. EXT/INT, Dir. Docs",
+        "check": "Engagement metrics report & DAAM Post-Act filed",
+        "items": [
+          "Collate audience metrics (reach, saves, food map download count)",
+          "Gather merchant feedback and student comments",
+          "Submit DAAM Post-Activity Compliance Report"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 6,
+    "num": "07",
+    "id": "scg-p7",
+    "title": "Scientific Terminologies Spelling Bee: Biology Edition",
+    "shortTitle": "Scientific Spelling Bee",
+    "type": "Single Date · Free",
+    "funded": false,
+    "top": "74%",
+    "left": "16%",
+    "anim": "float-7 5.5s",
+    "subs": [
+      "Biology Terminology Tournament",
+      "Inter-Batch Competition",
+      "Certificates & Champion Token"
+    ],
+    "classification": "Single Date",
+    "nature": "Academic Competitions",
+    "daamType": "thru APS; Others",
+    "date": "October 28, 2026 (Wednesday, 2:00 PM – 5:00 PM)",
+    "budget": "₱0.00",
+    "lead": "Director for Academics & Director for Promotions",
+    "collab": "Dir. Logistics, Dir. Creatives, Dir. Documentations, Biology Faculty",
+    "venue": "Teresa Yuchengco Hall Y508",
+    "issue": "Midterm academic fatigue, intense memorization stress, and lack of interactive, community-building academic events that reinforce scientific rigor.",
+    "objective": "Host a lively, high-energy academic competition testing complex biological nomenclature, medical terminology, and evolutionary taxonomy in a supportive environment.",
+    "metric": "30+ student competitors; 50+ spectators; certificates awarded; zero registration fees.",
+    "continuity": null,
+    "description": "A competitive yet highly supportive academic spelling bee specifically centered on advanced biological terminology, physiological processes, cellular anatomy, and taxonomy. Open to all College of Science batches, this tournament promotes mastery of foundational scientific vocabulary while fostering inter-batch camaraderie prior to midterm examinations. Winners receive formal certificates of academic distinction and token recognition.",
+    "phases": [
+      {
+        "name": "Phase 1: Venue Booking & Academic Mechanics",
+        "date": "Sept 24–Oct 9, 2026",
+        "lead": "Dir. Academics, Dir. Logistics",
+        "check": "RRS Room Reservation & vetted word bank",
+        "items": [
+          "Reserve Teresa Yuchengco Hall Y508 via DLSU Room Reservation System (RRS)",
+          "Curate comprehensive 3-tier word bank (Easy, Moderate, Hard) vetted by Biology faculty",
+          "Establish competition rulebook, buzzer guidelines, and tie-breaker mechanics"
+        ]
+      },
+      {
+        "name": "Phase 2: DAAM Pre-Act Clearance & Registration",
+        "date": "Sept 25–Oct 21, 2026",
+        "lead": "Dir. Docs, Dir. Creatives, Dir. Academics",
+        "check": "Approved APS permit & registration roster of 30+ students",
+        "items": [
+          "Submit APS Pre-Activity form and Activity Project Proposal to DAAM",
+          "Dir. Creatives: Release promotional pubmat series and rule explainer",
+          "Open online participant registration and confirm event judges"
+        ]
+      },
+      {
+        "name": "Phase 3: Competition Execution",
+        "date": "Oct 28, 2026",
+        "lead": "Dir. Academics, Dir. Logistics, ExA, ExB",
+        "check": "Live event successfully conducted @ Y508",
+        "items": [
+          "Coordinate stage setup, audio-visual equipment, and live buzzer system in Y508",
+          "Facilitate Preliminary, Semifinal, and Championship rounds",
+          "Award certificates of recognition, academic commendations, and championship token"
+        ]
+      },
+      {
+        "name": "Phase 4: Evaluation & Post-Act",
+        "date": "Oct 29–Nov 11, 2026",
+        "lead": "Dir. Docs, Dir. Academics",
+        "check": "Digital AET collated & DAAM Post-Act approved",
+        "items": [
+          "Administer digital Activity Evaluation Tool (AET) to participants and spectators",
+          "Publish official winner announcement pubmat across SCG social channels",
+          "Dir. Docs: Submit complete Post-Activity Report to DAAM"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 7,
+    "num": "08",
+    "id": "scg-p8",
+    "title": "SCG General Assembly & Officer Workshop Training",
+    "shortTitle": "SCG General Assembly",
+    "type": "Single Date · Free",
+    "funded": false,
+    "top": "40%",
+    "left": "12%",
+    "anim": "float-8 4.3s",
+    "subs": [
+      "Internal Governance Alignment",
+      "USG Manual & DAAM Workflows",
+      "Leadership Development"
+    ],
+    "classification": "Single Date",
+    "nature": "Organizational Development",
+    "daamType": "thru APS; Others",
+    "date": "October 21, 2026 (Wednesday, 1:00 PM – 5:00 PM)",
+    "budget": "₱0.00",
+    "lead": "Executive Secretary & Director for Logistics",
+    "collab": "President Pauline Galias, Chief of Staff, Dir. Documentations, Dir. Finance",
+    "venue": "Teresa Yuchengco Hall Y508",
+    "issue": "Governance friction caused by lack of familiarization with USG DAAM compliance, OTREAS financial manual rules, and inter-committee coordination workflows among newly appointed officers.",
+    "objective": "Convene all executive board members, committee directors, and executive associates for an intensive operational alignment and capacity-building workshop.",
+    "metric": "100% officer attendance across executive committees; 100% passing rate on internal DAAM workflow assessments.",
+    "continuity": null,
+    "description": "A comprehensive general assembly and operational leadership workshop uniting the full roster of Science College Government officers, executive associates, and committee directors. The session delivers intensive training on USG DAAM documentation standards, OTREAS financial manual compliance, PR/pubmat branding pipelines, and confidential student grievance mediation. Designed to establish unified teamwork and bulletproof operational discipline.",
+    "phases": [
+      {
+        "name": "Phase 1: Venue Booking & Agenda Formulation",
+        "date": "Sept 24–Oct 7, 2026",
+        "lead": "Executive Secretary, Dir. Logistics",
+        "check": "Confirmed Y508 booking & finalized master agenda",
+        "items": [
+          "Reserve Teresa Yuchengco Hall Y508 via RRS",
+          "Formulate workshop modules: DAAM Pre-Act/Post-Act routing, OTREAS liquidation, and media standards",
+          "Issue formal attendance notices to all elected and appointed SCG officers"
+        ]
+      },
+      {
+        "name": "Phase 2: DAAM Pre-Act Clearance & Training Kits",
+        "date": "Sept 25–Oct 14, 2026",
+        "lead": "Dir. Docs, Executive Secretary",
+        "check": "Approved APS package & digital training handbook",
+        "items": [
+          "Submit APS Organizational Development Pre-Act package to DAAM",
+          "Compile digital SCG Officer Handbook and interactive compliance templates",
+          "Chief of Staff check-in: Audit presentation decks and inter-committee breakout workflows"
+        ]
+      },
+      {
+        "name": "Phase 3: Assembly Execution & Simulation Labs",
+        "date": "Oct 21, 2026",
+        "lead": "President, Chief of Staff, Exec Sec",
+        "check": "4-hour workshop executed with full council quorum",
+        "items": [
+          "Conduct presidential address, operational state of the college, and committee targets",
+          "Run hands-on paperwork simulation: Drafting A-Forms, PPR tables, and liquidation workflows",
+          "Facilitate breakout planning sessions for Term 1 project committees"
+        ]
+      },
+      {
+        "name": "Phase 4: Minutes Documentation & Post-Act",
+        "date": "Oct 22–Oct 28, 2026",
+        "lead": "Executive Secretary, Dir. Docs",
+        "check": "Official assembly minutes & DAAM Post-Act filed",
+        "items": [
+          "Finalize comprehensive meeting minutes and resolution registry",
+          "Collate officer evaluation feedback and action commitment sheets",
+          "Dir. Docs: Submit complete Post-Activity Compliance Report to DAAM"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 8,
+    "num": "09",
+    "id": "scg-p9",
+    "title": "LaTeX Essentials: Scientific Typesetting Seminar",
+    "shortTitle": "LaTeX Essentials Seminar",
+    "type": "Single Date · Free",
+    "funded": false,
+    "top": "26%",
+    "left": "33%",
+    "anim": "float-1 3.9s",
+    "subs": [
+      "Scientific Typesetting Workshop",
+      "Math Circle & PhySoc Collab",
+      "Starter Templates & Live Compiling"
+    ],
+    "classification": "Single Date",
+    "nature": "Educational / Academic Seminar",
+    "daamType": "thru APS; Others",
+    "date": "November 4, 2026 (Wednesday, 2:00 PM – 5:00 PM)",
+    "budget": "₱0.00",
+    "lead": "Director for Academics",
+    "collab": "Physics Society (PhySoc), Mathematics Circle (Math Circle), Dir. Logistics, Dir. Creatives, Dir. Docs",
+    "venue": "Br. Andrew Gonzalez Hall A903 (E-Classroom)",
+    "issue": "Science students face severe difficulty formatting complex mathematical equations, scientific notations, chemical structures, and thesis manuscripts in standard word processors.",
+    "objective": "Equip 40+ science students with foundational to intermediate LaTeX typesetting proficiency through hands-on compilation in Overleaf and TeX Live.",
+    "metric": "40+ student participants; free starter template bundle distributed; 100% successful document compilation rate.",
+    "continuity": null,
+    "description": "A hands-on, peer-led scientific typesetting seminar tailored for College of Science students, particularly Mathematics, Physics, Chemistry, and Biology majors preparing for research thesis submissions. Held in a campus computer laboratory with peer facilitators from the Mathematics Circle and Physics Society, participants learn equation syntax, matrix formatting, chemical formulas, Overleaf collaboration, and BibTeX citation management.",
+    "phases": [
+      {
+        "name": "Phase 1: Venue Booking & Speaker Alignment",
+        "date": "Sept 24–Oct 9, 2026",
+        "lead": "Dir. Academics, Dir. Logistics",
+        "check": "RRS A903 booking & speaker credentials form",
+        "items": [
+          "Reserve Br. Andrew Hall A903 (E-Classroom) via RRS",
+          "Coordinate with Math Circle and PhySoc peer instructors; draft DAAM speaker credential forms",
+          "Develop hands-on LaTeX starter template bundle (Mathematics, Thesis, Lab Report)"
+        ]
+      },
+      {
+        "name": "Phase 2: DAAM Pre-Act Clearance & Promo",
+        "date": "Sept 25–Oct 21, 2026",
+        "lead": "Dir. Docs, Dir. Creatives, Dir. Promotions",
+        "check": "Approved APS clearance & room permit",
+        "items": [
+          "Dir. Docs: Submit APS package (A-Form, PPR Tables 1 & 2, Speaker Credentials) to DAAM",
+          "Dir. Creatives: Design promotional pubmats emphasizing 100% FREE admission",
+          "Open online registration desk (capped at 45 seats for computer lab capacity)"
+        ]
+      },
+      {
+        "name": "Phase 3: Hands-On Seminar Execution",
+        "date": "Nov 4, 2026",
+        "lead": "Dir. Academics, Dir. Logistics, ExA, ExB",
+        "check": "Live hands-on masterclass conducted @ A903",
+        "items": [
+          "Coordinate A903 projector, terminal workstations, and Overleaf environment check",
+          "Facilitate 3-hour hands-on typesetting workshop: Equation syntax, tables, BibTeX citations",
+          "Record high-definition video of seminar for permanent archival on SCG Portal"
+        ]
+      },
+      {
+        "name": "Phase 4: Video Archival & Post-Act",
+        "date": "Nov 5–Nov 11, 2026",
+        "lead": "Dir. Docs, Dir. Academics",
+        "check": "Seminar archive live on Portal & Post-Act approved",
+        "items": [
+          "Administer digital AET evaluation survey before attendees exit",
+          "Upload recorded masterclass and templates to SCG Centralized Portal Resource Hub",
+          "Submit completed Post-Activity Compliance Report to DAAM"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 9,
+    "num": "10",
+    "id": "scg-p10",
+    "title": "Shanghay Laya: Sa Gitna ng Lahat Pt. 2 (Platform Launch)",
+    "shortTitle": "Shanghay Laya",
+    "type": "Single Date · Free",
+    "funded": false,
+    "top": "26%",
+    "left": "67%",
+    "anim": "float-3 4.5s",
+    "subs": [
+      "Term 1 Culminating Activity",
+      "LGBTQIA+ Healthcare Directory",
+      "Affirming Resources & Advocacy"
+    ],
+    "classification": "Single Date (Term 1 Culmination)",
+    "nature": "Issue Advocacy",
+    "daamType": "thru SLIFE; Website Launch",
+    "date": "November 7, 2026 (Saturday) — FINAL ACTIVITY OF TERM 1",
+    "budget": "₱0.00",
+    "lead": "Director for Advocacy & Director for Promotions",
+    "collab": "Chief of Staff, Dir. Creatives, Dir. Documentations",
+    "venue": "Digital Educational Platform Launch (scg-portal.dlsu.edu.ph/laya)",
+    "issue": "Queer and transgender science students navigate unscientific gender stereotypes, lack of verified LGBTQIA+-affirming healthcare information, and institutional isolation in STEM spaces.",
+    "objective": "Launch an affirming, evidence-based digital resource portal featuring vetted queer health directories, science-backed literature on gender diversity, and peer support networks.",
+    "metric": "Culminating initiative of Term 1; 1,000+ views; 100% verified clinic directory listings; zero council expense.",
+    "continuity": null,
+    "description": "Official public launch of the specialized queer health and identity platform as the culminating activity of Term 1. Featuring vetted directories of LGBTQIA+-affirming endocrinologists and mental health professionals, scientific research debunking biological essentialism, and historical contexts of gender diversity, Shanghay Laya creates an uncompromisingly safe, evidence-grounded sanctuary for queer science students.",
+    "phases": [
+      {
+        "name": "Phase 1: Content Curation & Legal Review",
+        "date": "Sept 24–Oct 12, 2026",
+        "lead": "Dir. Advocacy, Chief of Staff, President",
+        "check": "Signed Legal Disclaimer Review Memo",
+        "items": [
+          "Compile vetted directory of LGBTQIA+-affirming endocrinologists and mental health practitioners",
+          "Curate scientific studies on gender diversity and biological variation",
+          "Draft and endorse mandatory Legal Disclaimer Memo in compliance with university policy"
+        ]
+      },
+      {
+        "name": "Phase 2: Web Sub-Portal Build & SLIFE Submission",
+        "date": "Sept 25–Oct 26, 2026",
+        "lead": "Dir. Creatives, Dir. Docs, Dir. Promotions",
+        "check": "Approved SLIFE Form & P&M clearances",
+        "items": [
+          "Dir. Docs: Submit SLIFE Integrated Form + PPR Table 1 + Legal Disclaimer",
+          "Build dedicated, responsive educational sub-portal on the SCG Centralized Portal",
+          "Clear launch trailer video and educational infographic carousel through DAAM P&M"
+        ]
+      },
+      {
+        "name": "Phase 3: Public Platform Launch — Final Activity",
+        "date": "Nov 7, 2026",
+        "lead": "Dir. Advocacy, Dir. Promotions, Chief Comms",
+        "check": "Live platform traffic & public deployment",
+        "items": [
+          "Deploy public platform link across college channels as the Term 1 culminating release",
+          "Release launch video reel explaining platform mission and evidence-based science",
+          "Distribute digital mental health and support resource cards to student networks"
+        ]
+      },
+      {
+        "name": "Phase 4: Feedback & Post-Act Filing",
+        "date": "Nov 8–Nov 18, 2026",
+        "lead": "Dir. Docs, Dir. Advocacy, ExA",
+        "check": "Approved Post-Act filed with DAAM",
+        "items": [
+          "Monitor anonymous feedback on resource accuracy, directory links, and safety",
+          "Collate platform engagement traffic and digital access logs",
+          "File comprehensive DAAM Post-Activity Compliance Report, closing out Term 1 operations"
+        ]
+      }
+    ]
+  }
+]

@@ -1016,40 +1016,75 @@ document.addEventListener('DOMContentLoaded', () => {
                      style="width: 75vw; max-width: 280px; display: block; animation: breathe-scale-img 6s ease-in-out infinite;"
                      alt="Welcome">
               </div>
-              <div class="animate-in" style="animation-delay:0.3s; text-align: center; max-width: 320px;">
-                <p style="font-size: 0.9rem; line-height: 1.7; color: rgba(255,255,255,0.9); margin-bottom: 8px;">
-                  This is the official platform of Hanayan member
-                  <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; animation: breathe-glow-text 5s ease-in-out infinite; display: inline-block;">Pauline Galias</span>,
-                  running for Science College Government President.
+              <div class="animate-in" style="animation-delay:0.3s; text-align: center; max-width: 340px;">
+                <p style="font-size: 0.92rem; line-height: 1.6; color: rgba(255,255,255,0.92); margin-bottom: 8px;">
+                  This is the official platform and operations hub of the
+                  <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; animation: breathe-glow-text 5s ease-in-out infinite; display: inline-block;">Science College Government (SCG)</span> for Academic Year 2026–2027.
                 </p>
-                <p style="font-size: 0.82rem; color: rgba(255,255,255,0.6);">Feel free to explore the tabs.</p>
+                <p style="font-size: 0.82rem; color: rgba(255,255,255,0.65);">Explore our Term 1 initiatives, governance frameworks, and student services.</p>
               </div>
-              <div class="animate-in" style="animation-delay:0.5s; text-align: center; margin-top: 24px; max-width: 320px;">
-                <p style="font-size: 0.75rem; color: rgba(255,255,255,0.5); line-height: 1.5;">
-                  To learn more about the coalition and the other members, visit:<br>
-                  <a href="https://hanayancoalition.vercel.app" target="_blank" style="color: #d8b4fe; text-decoration: none; font-weight: 500; display: inline-block; margin-top: 4px;">hanayancoalition.vercel.app</a>
-                </p>
+              <div class="animate-in" style="animation-delay:0.5s; width: 100%; max-width: 380px;">
+                <div class="scg-assistance-card" style="margin-top: 8px; padding: 14px 16px;">
+                  <div class="scg-assistance-label">For any assistance, message:</div>
+                  <div class="scg-assistance-title" style="font-size: 0.86rem; margin-bottom: 10px;">SCG EXECUTIVE BOARD</div>
+                  <div class="scg-assistance-grid">
+                    <div class="scg-assistance-row">
+                      <span class="scg-assistance-name">Pauline Galias, President</span>
+                      <a href="https://t.me/PaulineGalias07" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@PaulineGalias07</a>
+                    </div>
+                    <div class="scg-assistance-row">
+                      <span class="scg-assistance-name">Trish Longboy, Chief of Staff</span>
+                      <a href="https://t.me/onetwo_trish" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@onetwo_trish</a>
+                    </div>
+                    <div class="scg-assistance-row">
+                      <span class="scg-assistance-name">Ace Licuanan, Chief Operating Officer</span>
+                      <a href="https://t.me/acecarloo" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@acecarloo</a>
+                    </div>
+                    <div class="scg-assistance-row">
+                      <span class="scg-assistance-name">Ann Farala, Chief Communications Officer</span>
+                      <a href="https://t.me/annfarala" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@annfarala</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           `;
         } else {
-          // Desktop: original absolute-positioned layout
+          // Desktop: centered layout
           container.innerHTML = `
             <div class="animate-in" style="position: absolute; top: -10vh; left: 5vw; z-index: 10; pointer-events: none; animation-delay: 0.1s;">
               <img src="welcomepng.png" style="width: 540px; max-width: 70vw; animation: breathe-scale-img 6s ease-in-out infinite;">
             </div>
-            <div style="position: absolute; top: calc(50vh + 50px); left: 50%; transform: translateX(-50%); width: 100%; display: flex; justify-content: center; pointer-events: auto;">
-              <div class="animate-in" style="width: auto; max-width: 95vw; padding: 24px 32px; text-align: center; animation-delay: 0.3s;">
-                <p style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.9); margin-bottom: 8px; font-weight: 400; white-space: nowrap;">
-                  This is the official platform of Hanayan member <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; display: inline-block; animation: breathe-glow-text 5s ease-in-out infinite;">Pauline Galias</span>, running for Science College Government President.
+            <div style="position: absolute; top: calc(50vh + 35px); left: 50%; transform: translateX(-50%); width: 100%; display: flex; justify-content: center; pointer-events: auto;">
+              <div class="animate-in" style="width: auto; max-width: 95vw; padding: 12px 24px; text-align: center; animation-delay: 0.3s;">
+                <p style="font-size: 1rem; line-height: 1.6; color: rgba(255,255,255,0.95); margin-bottom: 6px; font-weight: 500;">
+                  This is the official platform and operations hub of the <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; display: inline-block; animation: breathe-glow-text 5s ease-in-out infinite;">Science College Government (SCG)</span> for Academic Year 2026–2027.
                 </p>
-                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 400; margin-bottom: 24px;">
-                  Feel free to explore the tabs.
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 400; margin-bottom: 14px;">
+                  Explore our Term 1 initiatives, governance frameworks, and student services.
                 </p>
-                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); font-weight: 400; margin-top: 16px;">
-                  To learn more about the coalition and the other members, visit:<br>
-                  <a href="https://hanayancoalition.vercel.app" target="_blank" style="color: #d8b4fe; text-decoration: none; font-weight: 500; display: inline-block; margin-top: 4px;">hanayancoalition.vercel.app</a>
-                </p>
+                <div class="scg-assistance-card">
+                  <div class="scg-assistance-label">For any assistance, message:</div>
+                  <div class="scg-assistance-title">SCG EXECUTIVE BOARD</div>
+                  <div class="scg-assistance-grid">
+                    <div class="scg-assistance-row">
+                      <span class="scg-assistance-name">Pauline Galias, President</span>
+                      <a href="https://t.me/PaulineGalias07" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@PaulineGalias07</a>
+                    </div>
+                    <div class="scg-assistance-row">
+                      <span class="scg-assistance-name">Trish Longboy, Chief of Staff</span>
+                      <a href="https://t.me/onetwo_trish" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@onetwo_trish</a>
+                    </div>
+                    <div class="scg-assistance-row">
+                      <span class="scg-assistance-name">Ace Licuanan, Chief Operating Officer</span>
+                      <a href="https://t.me/acecarloo" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@acecarloo</a>
+                    </div>
+                    <div class="scg-assistance-row">
+                      <span class="scg-assistance-name">Ann Farala, Chief Communications Officer</span>
+                      <a href="https://t.me/annfarala" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@annfarala</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           `;
@@ -1113,6 +1148,769 @@ function renderImmersiveView(target) {
   let delay = 0.2; // Stagger animation delay
 
   if (target === 'projects') {
+    const SCG_TERM1_PROJECTS = [
+  {
+    "idx": 0,
+    "num": "01",
+    "id": "scg-p1",
+    "title": "H2Zero.ai — Standalone Offline AI Desktop Application",
+    "shortTitle": "H2Zero.ai",
+    "type": "Early Processed · Free",
+    "funded": false,
+    "top": "12%",
+    "left": "16%",
+    "anim": "float-1 4.2s",
+    "subs": [
+      "Offline Desktop AI Assistant",
+      "Zero Water Datacenter Footprint",
+      "100% Privacy for Academic Data"
+    ],
+    "classification": "Early Processed",
+    "nature": "Student Service",
+    "daamType": "thru APS; Others",
+    "date": "October 7, 2026 (Wednesday)",
+    "budget": "₱0.00",
+    "lead": "Director for Research & Development (Dir. R&D)",
+    "collab": "Dir. Academics, Dir. Creatives, Dir. Documentations",
+    "venue": "Desktop Application / Digital Distribution",
+    "issue": "Intense academic workloads, paywalled computational tools, student privacy concerns, and severe environmental water cooling footprints associated with centralized cloud datacenter AI models.",
+    "objective": "Provide a 100% offline, locally-run AI assistant and scientific calculation environment that uses zero datacenter water and preserves student academic privacy.",
+    "metric": "300+ unique student downloads in Term 1; zero telemetry transmitted; 100% offline functionality verified.",
+    "continuity": null,
+    "description": "A standalone, 100% offline, locally-run AI assistant and computational desktop application engineered specifically for College of Science students. Built to mitigate the immense water-cooling footprints of external commercial AI datacenters, H2Zero.ai runs locally on student hardware with zero server dependency, zero internet requirement, and zero telemetry tracking. Includes built-in support for LaTeX mathematical typesetting, scientific literature parsing, offline prompt guidance, and course-tailored STEM study flashcard generation.",
+    "phases": [
+      {
+        "name": "Phase 1: Local Packaging & Model Quantization",
+        "date": "Sept 24–Oct 2, 2026",
+        "lead": "Dir. R&D, ExA, ExB",
+        "check": "Verified offline binary for Windows & macOS",
+        "items": [
+          "Package and benchmark quantized local LLM & LaTeX math parser",
+          "Ensure zero telemetry, offline execution, and zero cloud API dependency",
+          "Chief of Staff check-in: Verify zero-water local execution and binary stability"
+        ]
+      },
+      {
+        "name": "Phase 2: DAAM Pre-Act Clearance & Install Documentation",
+        "date": "Sept 25–Oct 6, 2026",
+        "lead": "Dir. Docs, Dir. Creatives",
+        "check": "Approved APS package & P&M clear",
+        "items": [
+          "Dir. Docs: Submit Early Processing Letter + APS Form to DAAM",
+          "Dir. Creatives: Produce clean installation guide carousel and visual launch kit",
+          "Dir. Docs: Secure DAAM P&M clearance code for public launch broadcast"
+        ]
+      },
+      {
+        "name": "Phase 3: Platform Launch & College Distribution",
+        "date": "Oct 7, 2026",
+        "lead": "Dir. R&D, Chief Comms",
+        "check": "Live direct download & user setup guide",
+        "items": [
+          "Deploy public download distribution via SCG Centralized Portal",
+          "Dir. Promotions: Broadcast launch post across college channels and student groups",
+          "Deliver quick-start setup video and prompt engineering reference sheet"
+        ]
+      },
+      {
+        "name": "Phase 4: Feedback Triage & Bug Mitigation",
+        "date": "Oct 14–Nov 4, 2026",
+        "lead": "Dir. R&D, ExA",
+        "check": "Post-launch patch notes & triage report",
+        "items": [
+          "Monitor student bug reports, hardware compatibility, and feature suggestions",
+          "Release v1.1 performance patch for lower-spec student laptops",
+          "Compile user feedback and submit Post-Activity Compliance Report to DAAM"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 1,
+    "num": "02",
+    "id": "scg-p2",
+    "title": "SCG Centralized Student Portal (Integrated 7-Module Platform)",
+    "shortTitle": "SCG Student Portal",
+    "type": "Yearlong · Free",
+    "funded": false,
+    "top": "8%",
+    "left": "50%",
+    "anim": "float-2 3.8s",
+    "subs": [
+      "7-Module Digital Platform",
+      "Syllabus & Course Outline Vault",
+      "FLOSS Directory & Grade Tools"
+    ],
+    "classification": "Yearlong",
+    "nature": "Student Service",
+    "daamType": "thru SLIFE; Website Launch",
+    "date": "October 14, 2026 (Wednesday)",
+    "budget": "₱0.00",
+    "lead": "Director for Academics & Director for Student Services",
+    "collab": "Dir. Finance (Ledger), Dir. Creatives (UI/UX), Dir. Documentations, President (Grievances)",
+    "venue": "Online Web Portal (scg-portal.dlsu.edu.ph)",
+    "issue": "Fragmented academic materials, lost links, and disjointed college portals causing academic friction and missed opportunities across COS.",
+    "objective": "Centralize 7 core student services into one unified, ultra-responsive digital hub: (1) Syllabus Vault, (2) Scholarship Calculator, (3) Academic Pathing, (4) Centralized Grievances, (5) Financial Transparency Ledger, (6) Free Software/FLOSS Directory, and (7) Research Opportunity Board.",
+    "metric": "800+ unique student visits in Term 1; 100% of syllabus outlines uploaded; zero server maintenance costs.",
+    "continuity": null,
+    "description": "The SCG Centralized Student Portal is a modular, client-side digital platform designed to unite all vital college resources into a single access point. Built without ongoing server costs, it features an interactive Syllabus Transparency Vault, a customized Scholarship Grade Calculator tailored for COS ID systems, an Academic Pathing flowchart for course retakes, a secure Centralized Grievance mediation channel, a real-time Financial Transparency Ledger, an open-source FLOSS software directory, and an active student Research Job Board.",
+    "phases": [
+      {
+        "name": "Phase 1: 7-Module Architecture & Database Population",
+        "date": "Sept 24–Oct 8, 2026",
+        "lead": "Dir. Academics, Dir. SS, Creatives",
+        "check": "Staging portal functional across all 7 modules",
+        "items": [
+          "Build and integrate 7 responsive service modules with zero server overhead",
+          "Dir. Academics: Populate syllabus repository and scholarship criteria tables",
+          "President check-in: Audit grievance reporting security and confidential routing"
+        ]
+      },
+      {
+        "name": "Phase 2: DAAM SLIFE Pre-Act Clearance & User Testing",
+        "date": "Sept 25–Oct 12, 2026",
+        "lead": "Dir. Docs, Dir. Promotions",
+        "check": "Approved SLIFE clearance & mobile responsive QA",
+        "items": [
+          "Dir. Docs: Submit SLIFE Website Launch Pre-Activity package",
+          "Conduct end-to-end user testing across mobile and desktop browsers",
+          "Secure DAAM P&M promotional approval for portal launch campaign"
+        ]
+      },
+      {
+        "name": "Phase 3: Public Portal Deployment",
+        "date": "Oct 14, 2026",
+        "lead": "Dir. Academics, Dir. SS, Chief Comms",
+        "check": "Portal live at scg-portal.dlsu.edu.ph",
+        "items": [
+          "Deploy production build and open public student access",
+          "Dir. Promotions: Launch multi-platform video tour explaining all 7 modules",
+          "Release interactive Grade Calculator and Academic Pathing flowchart tools"
+        ]
+      },
+      {
+        "name": "Phase 4: Mid-Term Resource Updates & Post-Act",
+        "date": "Oct 21–Nov 18, 2026",
+        "lead": "Dir. Docs, Dir. Academics",
+        "check": "Mid-term update log & DAAM compliance report",
+        "items": [
+          "Dir. Finance: Publish real-time council budget transactions to Public Ledger",
+          "Dir. Academics: Ingest mid-term study guides and exam preparation resources",
+          "Dir. Docs: Submit formal Post-Activity report to DAAM"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 2,
+    "num": "03",
+    "id": "scg-p3",
+    "title": "Women and Minorities in STEM",
+    "shortTitle": "Women in STEM",
+    "type": "Yearlong · Free",
+    "funded": false,
+    "top": "12%",
+    "left": "84%",
+    "anim": "float-3 5.1s",
+    "subs": [
+      "Representation Spotlight",
+      "Interview Docu-Series",
+      "COS Science Scholar Profiles"
+    ],
+    "classification": "Yearlong",
+    "nature": "Issue Advocacy",
+    "daamType": "thru APS; Media Coverage",
+    "date": "October 21, 2026 (Ep. 1 Launch, Yearlong Ongoing)",
+    "budget": "₱0.00",
+    "lead": "Director for Promotions & Director for Advocacy",
+    "collab": "Dir. Creatives, Chief Communications, Dir. Documentations",
+    "venue": "Social Media Video Reels & Digital Web Archive",
+    "issue": "Systematic underrepresentation and lack of media visibility for women, queer scholars, and marginalized scientists within science departments and research laboratories.",
+    "objective": "Produce an inspiring multimedia spotlight and digital archive highlighting diverse science leaders, student researchers, and alumni.",
+    "metric": "3 episodic video features in Term 1; 1,500+ student engagements; permanent digital archive.",
+    "continuity": null,
+    "description": "A dedicated multimedia representation and advocacy campaign celebrating the breakthroughs, research journeys, and personal triumphs of women, queer scholars, and underrepresented minorities in the College of Science. Through professionally produced 60-second video spotlights, in-depth feature articles, and an online research archive, this yearlong series actively breaks stereotypes and creates accessible role models for incoming and current science scholars.",
+    "phases": [
+      {
+        "name": "Phase 1: Talent Outreach & Vetting",
+        "date": "Sept 24–Oct 10, 2026",
+        "lead": "Dir. Advocacy, Dir. Promotions",
+        "check": "Confirmed feature list & signed consent releases",
+        "items": [
+          "Identify and reach out to female and minority student researchers and faculty",
+          "Conduct pre-interviews and outline narrative focus for Episode 1",
+          "Secure RA 10173 data privacy and media publication consent forms"
+        ]
+      },
+      {
+        "name": "Phase 2: Pre-Act Clearance & Production",
+        "date": "Sept 25–Oct 16, 2026",
+        "lead": "Dir. Promotions, Dir. Creatives",
+        "check": "Approved P&M clearance & finalized video cut",
+        "items": [
+          "Dir. Docs: File APS Media Coverage Pre-Act form with DAAM",
+          "Dir. Creatives: Film high-definition video interview and design branding kit",
+          "Secure DAAM P&M publicity code for teaser and full feature releases"
+        ]
+      },
+      {
+        "name": "Phase 3: Episodic Broadcast (Episode 1)",
+        "date": "Oct 21, 2026",
+        "lead": "Dir. Promotions, Chief Comms",
+        "check": "Episode 1 video live across socials & web archive",
+        "items": [
+          "Publish Episode 1 spotlight reel across official SCG channels",
+          "Launch dedicated profile and research bibliography on SCG Portal archive",
+          "Foster discussions and student reflections in comment channels"
+        ]
+      },
+      {
+        "name": "Phase 4: Archival & Term Continuation",
+        "date": "Oct 28–Nov 20, 2026",
+        "lead": "Dir. Advocacy, Dir. Docs",
+        "check": "Portal feature page & pre-production for Ep. 2",
+        "items": [
+          "Collate audience reach, engagement metrics, and feedback",
+          "Begin candidate scoping and scheduling for Episodes 2 & 3",
+          "Dir. Docs: Submit DAAM compliance documentation"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 3,
+    "num": "04",
+    "id": "scg-p4",
+    "title": "HomeCOStasis — COS Comprehensive Student Guide (Batch 126 Refresh)",
+    "shortTitle": "HomeCOStasis (Batch 126)",
+    "type": "Termlong Continuity · Free",
+    "funded": false,
+    "top": "40%",
+    "left": "88%",
+    "anim": "float-4 4.6s",
+    "subs": [
+      "Last Year SCG Initiative Refreshed",
+      "COS Comprehensive Survival Guide",
+      "Enrollment, Labs & Prof Advising"
+    ],
+    "classification": "Termlong Continuity",
+    "nature": "Student Service",
+    "daamType": "thru APS; Others",
+    "date": "October 14, 2026 (Wednesday)",
+    "budget": "₱0.00",
+    "lead": "Director for Student Services",
+    "collab": "Dir. Academics, Dir. Creatives, Dir. Documentations",
+    "venue": "Centralized Digital Student Navigation Guide (Activity Code: G-SCG-25260011)",
+    "issue": "Incoming Batch 126 frosh, shiftees, transferees, and irregular students experience severe disorientation regarding campus laboratory safety protocols, course prerequisite tracking, and enrollment procedures.",
+    "objective": "Provide a unified, master navigation handbook and digital survival kit specifically refreshed and localized for Batch 126 and incoming science students.",
+    "metric": "Minimum of 10 guide modules refreshed; 100% of Batch 126 blocks reached via block representatives and digital links.",
+    "continuity": "Institutional Continuity: HomeCOStasis originates from last year's Science College Government initiative (AY 2025–2026, Activity Code: G-SCG-25260011). Under President Pauline Galias, this hallmark project is formally renewed, upgraded, and expanded to guarantee zero loss of institutional knowledge for Batch 126 and transferees.",
+    "description": "HomeCOStasis is the foundational student navigation manual of the College of Science. Originally initiated in AY 2025–2026 (ARC: G-SCG-25260011), this initiative is systematically refreshed and modernized for AY 2026–2027. It features audited course flowchart prerequisite guides, laboratory attire and safety rules, department faculty contact directories, step-by-step enlistment and petition tutorials, campus study spot listings, and academic FAQ modules. Available via high-speed digital download, Google Drive repository, and integrated directly into the SCG Centralized Portal.",
+    "phases": [
+      {
+        "name": "Phase 1: Content Audit & Institutional Review",
+        "date": "Sept 24–Oct 7, 2026",
+        "lead": "Dir. Student Services, Dir. Academics",
+        "check": "Updated AY 2026–2027 survival guide manuscript",
+        "items": [
+          "Audit AY 2025–2026 materials (ARC: G-SCG-25260011) for policy changes and faculty updates",
+          "Interface with College Dean's Office and department chairs to verify prerequisite flowcharts",
+          "Chief of Staff check-in: Verify laboratory safety guidelines and grading rules accuracy"
+        ]
+      },
+      {
+        "name": "Phase 2: Visual Styling & Mobile Digital Layout",
+        "date": "Sept 25–Oct 11, 2026",
+        "lead": "Dir. Creatives, Dir. Docs",
+        "check": "Formatted PDF manual & interactive web module",
+        "items": [
+          "Format 40-page comprehensive handbook into sleek, mobile-friendly PDF",
+          "Ingest interactive guide into the SCG Centralized Portal",
+          "Dir. Docs: File APS Pre-Activity and secure DAAM P&M publicity code"
+        ]
+      },
+      {
+        "name": "Phase 3: Rollout & Frosh Block Distribution",
+        "date": "Oct 14, 2026",
+        "lead": "Dir. Student Services, Batch 126 Reps",
+        "check": "Guide distributed to 100% of COS frosh blocks",
+        "items": [
+          "Broadcast digital handbook link via Telegram, Facebook, and Google Drive",
+          "Direct dissemination to all Batch 126 block chats and frosh orientations",
+          "Host live online Q&A thread addressing first-week student inquiries"
+        ]
+      },
+      {
+        "name": "Phase 4: Feedback & Midterm Advisory Supplement",
+        "date": "Oct 21–Nov 14, 2026",
+        "lead": "Dir. Student Services, Dir. Docs",
+        "check": "Midterm FAQ release & DAAM Post-Act",
+        "items": [
+          "Monitor incoming student inquiries and publish a Midterm Enlistment Addendum",
+          "Collate download statistics and student feedback survey results",
+          "Submit completed Post-Activity compliance report to DAAM"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 4,
+    "num": "05",
+    "id": "scg-p5",
+    "title": "COS Bulletin Board — Real-Time Telegram Broadcast",
+    "shortTitle": "COS Bulletin Board",
+    "type": "Termlong Continuity · Free",
+    "funded": false,
+    "top": "74%",
+    "left": "84%",
+    "anim": "float-5 4.9s",
+    "subs": [
+      "Real-Time Telegram Broadcast",
+      "Official Announcement Dispatch",
+      "Fast Alert Notifications"
+    ],
+    "classification": "Termlong Continuity",
+    "nature": "Student Service",
+    "daamType": "thru APS; Others",
+    "date": "October 14, 2026 (Wednesday)",
+    "budget": "₱0.00",
+    "lead": "Director for Student Services & Director for Documentations",
+    "collab": "Chief Communications, Executive Secretary",
+    "venue": "Telegram Broadcast Channel & SCG Social Media (Activity Code: G-SCG-25260016)",
+    "issue": "Critical academic announcements, room reassignments, weather suspensions, and enlistment deadlines are buried by social media algorithms, leading to missed student deadlines.",
+    "objective": "Provide a real-time, zero-noise, algorithm-free Telegram broadcast channel delivering instant verified advisories to College of Science students.",
+    "metric": "500+ verified COS subscribers in Term 1; 100% of urgent advisories broadcast within 20 minutes of official university release.",
+    "continuity": "Institutional Continuity: Originally established in AY 2025–2026 (ARC: G-SCG-25260016) and continued under President Pauline Galias. Upgraded with synchronized web notification banners on the SCG Centralized Portal.",
+    "description": "A direct, chronological, and noise-free Telegram broadcast channel alongside website alerts. Eliminates social media feed suppression so that students never miss urgent university notices, enlistment advisories, shifting deadlines, or emergency suspension alerts. All announcements are tagged with clear categories (#Academics, #Enrollment, #Suspensions, #Events) and verified directly with official university offices before dispatch.",
+    "phases": [
+      {
+        "name": "Phase 1: Telegram Channel Architecture & Bot Integration",
+        "date": "Sept 24–Oct 8, 2026",
+        "lead": "Dir. SS, Dir. Docs",
+        "check": "Telegram channel configured with categorization tags",
+        "items": [
+          "Establish hashtag categorization structure (#Enrollment, #Suspensions, #Academics, #Events)",
+          "Configure automated cross-broadcast relays and emergency push notifications",
+          "Establish verification protocol with USG and Dean's Office communication liaisons"
+        ]
+      },
+      {
+        "name": "Phase 2: DAAM Continuity & Promotion Clearance",
+        "date": "Sept 25–Oct 11, 2026",
+        "lead": "Dir. Docs, Dir. Promotions",
+        "check": "Approved APS continuity permit & P&M clear",
+        "items": [
+          "File DAAM APS form under continuing student services",
+          "Dir. Creatives: Produce high-visibility joining campaign ('One Channel. All Alerts.')",
+          "Secure DAAM P&M approval code"
+        ]
+      },
+      {
+        "name": "Phase 3: Launch Broadcast & College-Wide Onboarding",
+        "date": "Oct 14, 2026",
+        "lead": "Dir. SS, Chief Comms",
+        "check": "Channel live with 300+ initial member onboarding",
+        "items": [
+          "Publish invite link across all batch groups, block chats, and student org pages",
+          "Release first official weekly digest and college operational bulletin",
+          "Synchronize real-time feed with SCG Centralized Portal dashboard"
+        ]
+      },
+      {
+        "name": "Phase 4: Operational Cadence & Term Archival",
+        "date": "Oct 15–Nov 28, 2026",
+        "lead": "Dir. Docs, Dir. SS",
+        "check": "Daily dispatch log & DAAM post-act",
+        "items": [
+          "Maintain active dispatch protocol with daily verification checks",
+          "Collate subscriber retention, engagement metrics, and alert speed benchmarks",
+          "File DAAM Post-Activity Compliance Report at term conclusion"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 5,
+    "num": "06",
+    "id": "scg-p6",
+    "title": "Taft Food Crawl: COS Student Food & Local Business Guide",
+    "shortTitle": "Taft Food Crawl",
+    "type": "Multiple Dates · Free",
+    "funded": false,
+    "top": "84%",
+    "left": "50%",
+    "anim": "float-6 3.5s",
+    "subs": [
+      "Batch 126 Collaboration",
+      "Budget Meals Under ₱150",
+      "Study Cafes & Downloadable Map"
+    ],
+    "classification": "Multiple Dates",
+    "nature": "Student Service / Promotional",
+    "daamType": "thru APS; Media Coverage",
+    "date": "October 19, 20, 21, 2026 (Monday–Wednesday)",
+    "budget": "₱0.00",
+    "lead": "Director for Promotions & Director for EXT/INT Linkages",
+    "collab": "Batch 126 Government, Dir. Creatives, Dir. Documentations",
+    "venue": "Local Taft Avenue Merchants & Digital Media Channels",
+    "issue": "Frosh students, scholars, and irregulars experience budget constraints and unfamiliarity with safe, affordable food spots, quiet study cafes, and reliable Wi-Fi locations around the Manila campus.",
+    "objective": "Produce a high-engagement 3-episode video series and downloadable digital Taft Food Map curated specifically for student budgets in collaboration with Batch 126.",
+    "metric": "3 released video episodes; 2,000+ views; 500+ digital food map downloads; zero student fee expense.",
+    "continuity": null,
+    "description": "A collaborative digital lifestyle and student survival series produced in close partnership with the Batch 126 Government. Over three consecutive days, this initiative reviews budget-friendly student meals (under ₱150), quiet cafes with strong Wi-Fi and power outlets for study sessions, and hidden food gems around Taft Avenue. Paired with a downloadable, high-resolution visual Taft Food Map Infographic available on the SCG Portal.",
+    "phases": [
+      {
+        "name": "Phase 1: Merchant Outreach & Scripting",
+        "date": "Sept 24–Oct 12, 2026",
+        "lead": "Dir. Promotions, Dir. EXT/INT, Batch 126 Reps",
+        "check": "Confirmed merchant list via DM/verbal — NO MOA needed",
+        "items": [
+          "Finalize 3-episode route: Ep. 1 Budget Meals (<₱150), Ep. 2 Top Study Cafes, Ep. 3 Hidden Gems",
+          "Reach out to 6–8 small food vendors and student cafes for on-site filming access",
+          "Script short, engaging video reels featuring Batch 126 frosh co-hosts"
+        ]
+      },
+      {
+        "name": "Phase 2: DAAM Pre-Act & Video Filming",
+        "date": "Sept 25–Oct 14, 2026",
+        "lead": "Dir. Promotions, Dir. Creatives, Dir. Docs",
+        "check": "Approved APS package & P&M video/infographic clearances",
+        "items": [
+          "Submit APS Media Coverage package and PPR Table 1 to DAAM",
+          "Shoot on-site footage around Taft Avenue and University Mall",
+          "Dir. Creatives: Edit three 60-second video reels and design printable/downloadable Taft Food Map PDF"
+        ]
+      },
+      {
+        "name": "Phase 3: Multi-Day Episodic Rollout",
+        "date": "Oct 19–21, 2026",
+        "lead": "Dir. Promotions, Chief Comms, ExA, ExB",
+        "check": "3 Video Reels published + Map Infographic live",
+        "items": [
+          "Mon, Oct 19: Release Episode 1 (Best Budget Meals under ₱150)",
+          "Tue, Oct 20: Release Episode 2 (Top Study-Friendly Cafes with Wi-Fi & Outlets)",
+          "Wed, Oct 21: Release Episode 3 (Hidden Gems) + Downloadable Taft Food Map"
+        ]
+      },
+      {
+        "name": "Phase 4: Impact Collation & Post-Act",
+        "date": "Oct 22–Nov 4, 2026",
+        "lead": "Dir. EXT/INT, Dir. Docs",
+        "check": "Engagement metrics report & DAAM Post-Act filed",
+        "items": [
+          "Collate audience metrics (reach, saves, food map download count)",
+          "Gather merchant feedback and student comments",
+          "Submit DAAM Post-Activity Compliance Report"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 6,
+    "num": "07",
+    "id": "scg-p7",
+    "title": "Scientific Terminologies Spelling Bee: Biology Edition",
+    "shortTitle": "Scientific Spelling Bee",
+    "type": "Single Date · Free",
+    "funded": false,
+    "top": "74%",
+    "left": "16%",
+    "anim": "float-7 5.5s",
+    "subs": [
+      "Biology Terminology Tournament",
+      "Inter-Batch Competition",
+      "Certificates & Champion Token"
+    ],
+    "classification": "Single Date",
+    "nature": "Academic Competitions",
+    "daamType": "thru APS; Others",
+    "date": "October 28, 2026 (Wednesday, 2:00 PM – 5:00 PM)",
+    "budget": "₱0.00",
+    "lead": "Director for Academics & Director for Promotions",
+    "collab": "Dir. Logistics, Dir. Creatives, Dir. Documentations, Biology Faculty",
+    "venue": "Teresa Yuchengco Hall Y508",
+    "issue": "Midterm academic fatigue, intense memorization stress, and lack of interactive, community-building academic events that reinforce scientific rigor.",
+    "objective": "Host a lively, high-energy academic competition testing complex biological nomenclature, medical terminology, and evolutionary taxonomy in a supportive environment.",
+    "metric": "30+ student competitors; 50+ spectators; certificates awarded; zero registration fees.",
+    "continuity": null,
+    "description": "A competitive yet highly supportive academic spelling bee specifically centered on advanced biological terminology, physiological processes, cellular anatomy, and taxonomy. Open to all College of Science batches, this tournament promotes mastery of foundational scientific vocabulary while fostering inter-batch camaraderie prior to midterm examinations. Winners receive formal certificates of academic distinction and token recognition.",
+    "phases": [
+      {
+        "name": "Phase 1: Venue Booking & Academic Mechanics",
+        "date": "Sept 24–Oct 9, 2026",
+        "lead": "Dir. Academics, Dir. Logistics",
+        "check": "RRS Room Reservation & vetted word bank",
+        "items": [
+          "Reserve Teresa Yuchengco Hall Y508 via DLSU Room Reservation System (RRS)",
+          "Curate comprehensive 3-tier word bank (Easy, Moderate, Hard) vetted by Biology faculty",
+          "Establish competition rulebook, buzzer guidelines, and tie-breaker mechanics"
+        ]
+      },
+      {
+        "name": "Phase 2: DAAM Pre-Act Clearance & Registration",
+        "date": "Sept 25–Oct 21, 2026",
+        "lead": "Dir. Docs, Dir. Creatives, Dir. Academics",
+        "check": "Approved APS permit & registration roster of 30+ students",
+        "items": [
+          "Submit APS Pre-Activity form and Activity Project Proposal to DAAM",
+          "Dir. Creatives: Release promotional pubmat series and rule explainer",
+          "Open online participant registration and confirm event judges"
+        ]
+      },
+      {
+        "name": "Phase 3: Competition Execution",
+        "date": "Oct 28, 2026",
+        "lead": "Dir. Academics, Dir. Logistics, ExA, ExB",
+        "check": "Live event successfully conducted @ Y508",
+        "items": [
+          "Coordinate stage setup, audio-visual equipment, and live buzzer system in Y508",
+          "Facilitate Preliminary, Semifinal, and Championship rounds",
+          "Award certificates of recognition, academic commendations, and championship token"
+        ]
+      },
+      {
+        "name": "Phase 4: Evaluation & Post-Act",
+        "date": "Oct 29–Nov 11, 2026",
+        "lead": "Dir. Docs, Dir. Academics",
+        "check": "Digital AET collated & DAAM Post-Act approved",
+        "items": [
+          "Administer digital Activity Evaluation Tool (AET) to participants and spectators",
+          "Publish official winner announcement pubmat across SCG social channels",
+          "Dir. Docs: Submit complete Post-Activity Report to DAAM"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 7,
+    "num": "08",
+    "id": "scg-p8",
+    "title": "SCG General Assembly & Officer Workshop Training",
+    "shortTitle": "SCG General Assembly",
+    "type": "Single Date · Free",
+    "funded": false,
+    "top": "40%",
+    "left": "12%",
+    "anim": "float-8 4.3s",
+    "subs": [
+      "Internal Governance Alignment",
+      "USG Manual & DAAM Workflows",
+      "Leadership Development"
+    ],
+    "classification": "Single Date",
+    "nature": "Organizational Development",
+    "daamType": "thru APS; Others",
+    "date": "October 21, 2026 (Wednesday, 1:00 PM – 5:00 PM)",
+    "budget": "₱0.00",
+    "lead": "Executive Secretary & Director for Logistics",
+    "collab": "President Pauline Galias, Chief of Staff, Dir. Documentations, Dir. Finance",
+    "venue": "Teresa Yuchengco Hall Y508",
+    "issue": "Governance friction caused by lack of familiarization with USG DAAM compliance, OTREAS financial manual rules, and inter-committee coordination workflows among newly appointed officers.",
+    "objective": "Convene all executive board members, committee directors, and executive associates for an intensive operational alignment and capacity-building workshop.",
+    "metric": "100% officer attendance across executive committees; 100% passing rate on internal DAAM workflow assessments.",
+    "continuity": null,
+    "description": "A comprehensive general assembly and operational leadership workshop uniting the full roster of Science College Government officers, executive associates, and committee directors. The session delivers intensive training on USG DAAM documentation standards, OTREAS financial manual compliance, PR/pubmat branding pipelines, and confidential student grievance mediation. Designed to establish unified teamwork and bulletproof operational discipline.",
+    "phases": [
+      {
+        "name": "Phase 1: Venue Booking & Agenda Formulation",
+        "date": "Sept 24–Oct 7, 2026",
+        "lead": "Executive Secretary, Dir. Logistics",
+        "check": "Confirmed Y508 booking & finalized master agenda",
+        "items": [
+          "Reserve Teresa Yuchengco Hall Y508 via RRS",
+          "Formulate workshop modules: DAAM Pre-Act/Post-Act routing, OTREAS liquidation, and media standards",
+          "Issue formal attendance notices to all elected and appointed SCG officers"
+        ]
+      },
+      {
+        "name": "Phase 2: DAAM Pre-Act Clearance & Training Kits",
+        "date": "Sept 25–Oct 14, 2026",
+        "lead": "Dir. Docs, Executive Secretary",
+        "check": "Approved APS package & digital training handbook",
+        "items": [
+          "Submit APS Organizational Development Pre-Act package to DAAM",
+          "Compile digital SCG Officer Handbook and interactive compliance templates",
+          "Chief of Staff check-in: Audit presentation decks and inter-committee breakout workflows"
+        ]
+      },
+      {
+        "name": "Phase 3: Assembly Execution & Simulation Labs",
+        "date": "Oct 21, 2026",
+        "lead": "President, Chief of Staff, Exec Sec",
+        "check": "4-hour workshop executed with full council quorum",
+        "items": [
+          "Conduct presidential address, operational state of the college, and committee targets",
+          "Run hands-on paperwork simulation: Drafting A-Forms, PPR tables, and liquidation workflows",
+          "Facilitate breakout planning sessions for Term 1 project committees"
+        ]
+      },
+      {
+        "name": "Phase 4: Minutes Documentation & Post-Act",
+        "date": "Oct 22–Oct 28, 2026",
+        "lead": "Executive Secretary, Dir. Docs",
+        "check": "Official assembly minutes & DAAM Post-Act filed",
+        "items": [
+          "Finalize comprehensive meeting minutes and resolution registry",
+          "Collate officer evaluation feedback and action commitment sheets",
+          "Dir. Docs: Submit complete Post-Activity Compliance Report to DAAM"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 8,
+    "num": "09",
+    "id": "scg-p9",
+    "title": "LaTeX Essentials: Scientific Typesetting Seminar",
+    "shortTitle": "LaTeX Essentials Seminar",
+    "type": "Single Date · Free",
+    "funded": false,
+    "top": "26%",
+    "left": "33%",
+    "anim": "float-1 3.9s",
+    "subs": [
+      "Scientific Typesetting Workshop",
+      "Math Circle & PhySoc Collab",
+      "Starter Templates & Live Compiling"
+    ],
+    "classification": "Single Date",
+    "nature": "Educational / Academic Seminar",
+    "daamType": "thru APS; Others",
+    "date": "November 4, 2026 (Wednesday, 2:00 PM – 5:00 PM)",
+    "budget": "₱0.00",
+    "lead": "Director for Academics",
+    "collab": "Physics Society (PhySoc), Mathematics Circle (Math Circle), Dir. Logistics, Dir. Creatives, Dir. Docs",
+    "venue": "Br. Andrew Gonzalez Hall A903 (E-Classroom)",
+    "issue": "Science students face severe difficulty formatting complex mathematical equations, scientific notations, chemical structures, and thesis manuscripts in standard word processors.",
+    "objective": "Equip 40+ science students with foundational to intermediate LaTeX typesetting proficiency through hands-on compilation in Overleaf and TeX Live.",
+    "metric": "40+ student participants; free starter template bundle distributed; 100% successful document compilation rate.",
+    "continuity": null,
+    "description": "A hands-on, peer-led scientific typesetting seminar tailored for College of Science students, particularly Mathematics, Physics, Chemistry, and Biology majors preparing for research thesis submissions. Held in a campus computer laboratory with peer facilitators from the Mathematics Circle and Physics Society, participants learn equation syntax, matrix formatting, chemical formulas, Overleaf collaboration, and BibTeX citation management.",
+    "phases": [
+      {
+        "name": "Phase 1: Venue Booking & Speaker Alignment",
+        "date": "Sept 24–Oct 9, 2026",
+        "lead": "Dir. Academics, Dir. Logistics",
+        "check": "RRS A903 booking & speaker credentials form",
+        "items": [
+          "Reserve Br. Andrew Hall A903 (E-Classroom) via RRS",
+          "Coordinate with Math Circle and PhySoc peer instructors; draft DAAM speaker credential forms",
+          "Develop hands-on LaTeX starter template bundle (Mathematics, Thesis, Lab Report)"
+        ]
+      },
+      {
+        "name": "Phase 2: DAAM Pre-Act Clearance & Promo",
+        "date": "Sept 25–Oct 21, 2026",
+        "lead": "Dir. Docs, Dir. Creatives, Dir. Promotions",
+        "check": "Approved APS clearance & room permit",
+        "items": [
+          "Dir. Docs: Submit APS package (A-Form, PPR Tables 1 & 2, Speaker Credentials) to DAAM",
+          "Dir. Creatives: Design promotional pubmats emphasizing 100% FREE admission",
+          "Open online registration desk (capped at 45 seats for computer lab capacity)"
+        ]
+      },
+      {
+        "name": "Phase 3: Hands-On Seminar Execution",
+        "date": "Nov 4, 2026",
+        "lead": "Dir. Academics, Dir. Logistics, ExA, ExB",
+        "check": "Live hands-on masterclass conducted @ A903",
+        "items": [
+          "Coordinate A903 projector, terminal workstations, and Overleaf environment check",
+          "Facilitate 3-hour hands-on typesetting workshop: Equation syntax, tables, BibTeX citations",
+          "Record high-definition video of seminar for permanent archival on SCG Portal"
+        ]
+      },
+      {
+        "name": "Phase 4: Video Archival & Post-Act",
+        "date": "Nov 5–Nov 11, 2026",
+        "lead": "Dir. Docs, Dir. Academics",
+        "check": "Seminar archive live on Portal & Post-Act approved",
+        "items": [
+          "Administer digital AET evaluation survey before attendees exit",
+          "Upload recorded masterclass and templates to SCG Centralized Portal Resource Hub",
+          "Submit completed Post-Activity Compliance Report to DAAM"
+        ]
+      }
+    ]
+  },
+  {
+    "idx": 9,
+    "num": "10",
+    "id": "scg-p10",
+    "title": "Shanghay Laya: Sa Gitna ng Lahat Pt. 2 (Platform Launch)",
+    "shortTitle": "Shanghay Laya",
+    "type": "Single Date · Free",
+    "funded": false,
+    "top": "26%",
+    "left": "67%",
+    "anim": "float-3 4.5s",
+    "subs": [
+      "Term 1 Culminating Activity",
+      "LGBTQIA+ Healthcare Directory",
+      "Affirming Resources & Advocacy"
+    ],
+    "classification": "Single Date (Term 1 Culmination)",
+    "nature": "Issue Advocacy",
+    "daamType": "thru SLIFE; Website Launch",
+    "date": "November 7, 2026 (Saturday) — FINAL ACTIVITY OF TERM 1",
+    "budget": "₱0.00",
+    "lead": "Director for Advocacy & Director for Promotions",
+    "collab": "Chief of Staff, Dir. Creatives, Dir. Documentations",
+    "venue": "Digital Educational Platform Launch (scg-portal.dlsu.edu.ph/laya)",
+    "issue": "Queer and transgender science students navigate unscientific gender stereotypes, lack of verified LGBTQIA+-affirming healthcare information, and institutional isolation in STEM spaces.",
+    "objective": "Launch an affirming, evidence-based digital resource portal featuring vetted queer health directories, science-backed literature on gender diversity, and peer support networks.",
+    "metric": "Culminating initiative of Term 1; 1,000+ views; 100% verified clinic directory listings; zero council expense.",
+    "continuity": null,
+    "description": "Official public launch of the specialized queer health and identity platform as the culminating activity of Term 1. Featuring vetted directories of LGBTQIA+-affirming endocrinologists and mental health professionals, scientific research debunking biological essentialism, and historical contexts of gender diversity, Shanghay Laya creates an uncompromisingly safe, evidence-grounded sanctuary for queer science students.",
+    "phases": [
+      {
+        "name": "Phase 1: Content Curation & Legal Review",
+        "date": "Sept 24–Oct 12, 2026",
+        "lead": "Dir. Advocacy, Chief of Staff, President",
+        "check": "Signed Legal Disclaimer Review Memo",
+        "items": [
+          "Compile vetted directory of LGBTQIA+-affirming endocrinologists and mental health practitioners",
+          "Curate scientific studies on gender diversity and biological variation",
+          "Draft and endorse mandatory Legal Disclaimer Memo in compliance with university policy"
+        ]
+      },
+      {
+        "name": "Phase 2: Web Sub-Portal Build & SLIFE Submission",
+        "date": "Sept 25–Oct 26, 2026",
+        "lead": "Dir. Creatives, Dir. Docs, Dir. Promotions",
+        "check": "Approved SLIFE Form & P&M clearances",
+        "items": [
+          "Dir. Docs: Submit SLIFE Integrated Form + PPR Table 1 + Legal Disclaimer",
+          "Build dedicated, responsive educational sub-portal on the SCG Centralized Portal",
+          "Clear launch trailer video and educational infographic carousel through DAAM P&M"
+        ]
+      },
+      {
+        "name": "Phase 3: Public Platform Launch — Final Activity",
+        "date": "Nov 7, 2026",
+        "lead": "Dir. Advocacy, Dir. Promotions, Chief Comms",
+        "check": "Live platform traffic & public deployment",
+        "items": [
+          "Deploy public platform link across college channels as the Term 1 culminating release",
+          "Release launch video reel explaining platform mission and evidence-based science",
+          "Distribute digital mental health and support resource cards to student networks"
+        ]
+      },
+      {
+        "name": "Phase 4: Feedback & Post-Act Filing",
+        "date": "Nov 8–Nov 18, 2026",
+        "lead": "Dir. Docs, Dir. Advocacy, ExA",
+        "check": "Approved Post-Act filed with DAAM",
+        "items": [
+          "Monitor anonymous feedback on resource accuracy, directory links, and safety",
+          "Collate platform engagement traffic and digital access logs",
+          "File comprehensive DAAM Post-Activity Compliance Report, closing out Term 1 operations"
+        ]
+      }
+    ]
+  }
+];
+
     // ---- OVERVIEW NAV ITEM ----
     sideNavHtml += `
       <div class="nav-item animate-in" onclick="document.getElementById('project-constellation').scrollIntoView({behavior:'smooth',block:'start'})" data-index="overview" style="opacity:0.7; animation-delay: 0.1s;">
@@ -1121,21 +1919,16 @@ function renderImmersiveView(target) {
       </div>
     `;
 
-    // ---- CONSTELLATION DATA ----
-    const CNODES = [
-      { idx:0, num:'01', title:'Academic Survival Hub',                      type:'Website · Free',              funded:false, top:'15%', left:'22%', anim:'float-1 4.2s', subs:['COS Student Information Hub','Research Grants & Funding Portal','Research Job Board','Research Readiness Survey','Scholarship Grade Calculator','Academic Pathing Tool','Syllabus Transparency Portal','Note Generator','Free Software Directory','LaTeX Tutorials','NMAT Online Repository'] },
-      { idx:1, num:'02', title:'Semana ng Siyensya',                         type:'Main Fundraiser · Funded',     funded:true,  top:'10%', left:'50%', anim:'float-2 3.8s', subs:['Academic Competitions','Department Merchandise Drive','COS Discord Gaming Night'] },
-      { idx:2, num:'03', title:'Transparency & Accountability Platform',     type:'Website · Free',              funded:false, top:'15%', left:'78%', anim:'float-3 5.1s', subs:['Centralized Grievance Channel','Financial Transparency Ledger','Student Rights Charter','Suggestion Tab'] },
-      { idx:3, num:'04', title:'Inclusion, Accessibility & Representation',  type:'Advocacy · Free',             funded:false, top:'46%', left:'86%', anim:'float-4 4.6s', subs:['Filipino Sign Language Training','Laboratory Accessibility Audit','Women & Minority in STEM'] },
-      { idx:4, num:'05', title:'Queer & Trans Identity Education Series',    type:'Education · Free',            funded:false, top:'78%', left:'78%', anim:'float-5 4.9s', subs:['Queer Identity Science Forum','Pre-Colonial Gender & Trans History','Shanghay Laya Support Website'] },
-      { idx:5, num:'06', title:'Emergency Relief & Food Security Program',   type:'Welfare · Funded',            funded:true,  top:'84%', left:'50%', anim:'float-6 3.5s', subs:['Food Security Pantry','Welfare Outreach Registry'] },
-      { idx:6, num:'07', title:'Student Financial Empowerment Initiative',   type:'Practical Aid · Free',        funded:false, top:'78%', left:'22%', anim:'float-7 5.5s', subs:['Equipment & Apparel Exchange','Freelancing & Part-Time Work Seminar'] },
-      { idx:7, num:'08', title:'Fundraising & Local Business Collaboration', type:'Partnerships · Funded',       funded:true,  top:'46%', left:'14%', anim:'float-8 4.3s', subs:['Local Business Partnerships','Emergency Relief Fund Allocation','Public Transparency Tracking'] }
-    ];
+    SCG_TERM1_PROJECTS.forEach((p, index) => {
+      sideNavHtml += `
+        <div class="nav-item animate-in" onclick="scrollToImmersiveCard(${index})" data-index="${index}" style="animation-delay: ${0.15 + (index * 0.04)}s;">
+          <div class="nav-dot"></div>
+          <div class="nav-label">${p.shortTitle}</div>
+        </div>
+      `;
+    });
 
-    const LINE_DURS = ['2.6s','3.2s','2.9s','3.7s','2.4s','3.5s','2.8s','3.1s'];
-
-    const generalDirection = `I'm not spending council money on anything that doesn't directly protect or support a student. No paid general assemblies, no events for the sake of having events. The only things I will ever put real funds toward are the fundraisers to raise more money, and the emergency relief and micro grants — because those are the moments where money is the difference between a student making it through the semester or not. Everything else costs zero pesos. It is already feasible the day I take office. This platform doesn't close once published. The suggestion tab means any student can add an idea at any point in the term, and they will get an actual reply. If they want to lead it themselves, we will help them do it.`;
+    const generalDirection = `Every single Term 1 project under the Science College Government operates with zero pesos in council fee charges (₱0.00 student budget impact). We prioritize direct, tangible student utility: high-performance academic tooling, transparent grievance mediation, institutional continuity from previous administrations, and verified welfare initiatives. This is a disciplined, step-by-step operational governance model with strict DAAM clearance gates and measurable student outcomes.`;
 
     html += `
       <div class="project-constellation" id="project-constellation">
@@ -1145,10 +1938,9 @@ function renderImmersiveView(target) {
           </div>
         </div>
 
-
         <div class="constellation-core">
           <div class="core-label-wrapper">
-            <div class="core-label">My General<br>Direction</div>
+            <div class="core-label">SCG Operations<br>Direction</div>
             <div class="core-hint">Hover to read</div>
           </div>
           <div class="core-content-expanded">
@@ -1157,18 +1949,18 @@ function renderImmersiveView(target) {
           </div>
         </div>
 
-        ${CNODES.map((n, i) => `
-          <div class="animate-in" style="position: absolute; top:${n.top}; left:${n.left}; animation-delay: ${0.2 + (i * 0.1)}s; z-index: 2;">
+        ${SCG_TERM1_PROJECTS.map((n, i) => `
+          <div class="animate-in" style="position: absolute; top:${n.top}; left:${n.left}; animation-delay: ${0.2 + (i * 0.08)}s; z-index: 2;">
             <div class="constellation-node" id="cnode-${n.idx}"
                  style="position: relative; top: 0; left: 0; animation:${n.anim} ease-in-out infinite alternate;"
                  onclick="scrollToImmersiveCard(${n.idx})">
               <span class="node-number">${n.num}</span>
-              <div class="node-title">${n.title}</div>
+              <div class="node-title">${n.shortTitle}</div>
               <div class="node-type">${n.type}</div>
               <div class="node-arrow">↗</div>
               <div class="node-subs">
                 <ul class="node-subs-list">
-                  ${n.subs.map(s=>`<li>${s}</li>`).join('')}
+                  ${n.subs.map(s => `<li>${s}</li>`).join('')}
                 </ul>
               </div>
             </div>
@@ -1177,26 +1969,24 @@ function renderImmersiveView(target) {
       </div>
     `;
 
-    // ── Mobile swipe strip (CSS hides on desktop; shown in html.mobile-ui) ──
-    // Strip is FIRST: [General Direction card] [01] [02] … [08]
-    // Clicking GD card scrolls to #mobile-gd-section at the bottom.
+    // ── Mobile swipe strip (shown on mobile-ui) ──
     html += `
       <div class="mobile-project-section">
         <span class="mobile-strip-label" style="text-align:center;">Swipe a project, tap the card to go there.</span>
         <div class="mobile-project-strip">
           <div class="mobile-project-card mobile-gd-card"
                onclick="document.getElementById('mobile-gd-section')?.scrollIntoView({behavior:'smooth',block:'start'})"
-               tabindex="0" role="button" aria-label="General Direction">
+               tabindex="0" role="button" aria-label="Governance Direction">
             <span class="mpn" style="font-size:10px;">DIRECTION</span>
-            <div class="mpt">General Direction</div>
-            <div class="mptype">My Vision</div>
+            <div class="mpt">Operations Hub</div>
+            <div class="mptype">AY 2026–2027</div>
           </div>
-          ${CNODES.map(n => `
-            <div class="mobile-project-card${n.funded ? ' is-funded' : ''}"
+          ${SCG_TERM1_PROJECTS.map(n => `
+            <div class="mobile-project-card"
                  onclick="scrollToImmersiveCard(${n.idx})"
                  tabindex="0" role="button" aria-label="Go to project ${n.num}">
               <span class="mpn">${n.num}</span>
-              <div class="mpt">${n.title}</div>
+              <div class="mpt">${n.shortTitle}</div>
               <div class="mptype">${n.type}</div>
             </div>
           `).join('')}
@@ -1204,89 +1994,112 @@ function renderImmersiveView(target) {
       </div>
     `;
 
-    data.projects.slice(0, 8).forEach((p, index) => {
-      const pName = p.name.replace(/^Project \d+ /, '');
-      sideNavHtml += `
-        <div class="nav-item animate-in" onclick="scrollToImmersiveCard(${index})" data-index="${index}" style="animation-delay: ${0.15 + (index * 0.05)}s;">
-          <div class="nav-dot"></div>
-          <div class="nav-label">${pName}</div>
-        </div>
-      `;
+    // ── Individual Project Cards ──
+    SCG_TERM1_PROJECTS.forEach((p, index) => {
       html += `
         <div class="immersive-card-wrapper" id="immersive-card-${index}" data-index="${index}">
           <h2 class="immersive-section-title animate-in" style="animation-delay: ${delay}s">
-            ${p.name}
+            Project ${p.num} &mdash; ${p.shortTitle}
           </h2>
       `;
-      delay += 0.1;
+      delay += 0.08;
+
       html += `
           <div class="immersive-glass-card animate-in" style="animation-delay: ${delay}s">
-            <div class="editable-block markdown-body" style="color: inherit;" data-file-path="${p.folderName}/04_Project_Description.md">
-              ${marked.parse(p.description || '*No description available*')}
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px;">
+              <span class="gosm-badge gosm-badge-green">${p.classification}</span>
+              <span class="gosm-badge gosm-badge-purple">${p.nature}</span>
+              <span class="gosm-badge gosm-badge-purple">${p.daamType}</span>
+              <span class="gosm-badge gosm-badge-green">Budget: ${p.budget}</span>
+            </div>
+
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: #fff; margin-top: 0; margin-bottom: 8px; line-height: 1.4;">
+              ${p.title}
+            </h3>
+
+            <div class="gosm-meta-box">
+              <div class="gosm-meta-item">
+                <span class="gosm-meta-label">Target Launch / Execution Date</span>
+                <span class="gosm-meta-val" style="color: #d8b4fe;">${p.date}</span>
+              </div>
+              <div class="gosm-meta-item">
+                <span class="gosm-meta-label">Lead Committee</span>
+                <span class="gosm-meta-val">${p.lead}</span>
+              </div>
+              <div class="gosm-meta-item">
+                <span class="gosm-meta-label">Collaborators & Partners</span>
+                <span class="gosm-meta-val">${p.collab}</span>
+              </div>
+              <div class="gosm-meta-item">
+                <span class="gosm-meta-label">Venue / Platform Infrastructure</span>
+                <span class="gosm-meta-val">${p.venue}</span>
+              </div>
+            </div>
+
+            ${p.continuity ? `
+              <div style="background: rgba(167, 139, 250, 0.08); border-left: 3px solid #a78bfa; border-radius: 0 10px 10px 0; padding: 12px 16px; margin-bottom: 16px;">
+                <div style="font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.08em; color: #c4b5fd; font-weight: 700; margin-bottom: 4px;">Institutional Continuity</div>
+                <p style="font-size: 0.88rem; line-height: 1.5; color: rgba(255,255,255,0.92); margin: 0;">${p.continuity}</p>
+              </div>
+            ` : ''}
+
+            <div class="gosm-issue-card">
+              <div class="gosm-issue-label">Issue & Student Concern Addressed</div>
+              <p class="gosm-issue-desc">${p.issue}</p>
+            </div>
+
+            <div style="margin-bottom: 18px;">
+              <h4 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em; color: #e9d5ff; margin-bottom: 8px;">Project Scope & Description</h4>
+              <p style="font-size: 0.92rem; line-height: 1.7; color: rgba(255, 255, 255, 0.9); margin: 0;">
+                ${p.description}
+              </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 20px; background: rgba(0,0,0,0.22); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
+              <div>
+                <div style="font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.5); font-weight: 600; margin-bottom: 4px;">Core Objective</div>
+                <div style="font-size: 0.88rem; color: #fff; line-height: 1.5;">${p.objective}</div>
+              </div>
+              <div>
+                <div style="font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.5); font-weight: 600; margin-bottom: 4px;">Quantifiable Target Metric</div>
+                <div style="font-size: 0.88rem; color: #6ee7b7; font-weight: 600; line-height: 1.5;">${p.metric}</div>
+              </div>
+            </div>
+
+            <div class="gosm-deliverables-header">
+              <h4 class="gosm-deliverables-title">Phased Execution Plan & CPD Deliverables</h4>
+              <span class="gosm-deliverables-subtitle">USG DAAM Compliant &bull; 4 Phased Gates</span>
+            </div>
+
+            <div class="phase-timeline-container">
+              ${p.phases.map((ph, phIdx) => `
+                <div class="phase-step-card">
+                  <div class="phase-step-header">
+                    <span class="phase-step-name">${ph.name}</span>
+                    <span class="phase-step-date">${ph.date}</span>
+                  </div>
+                  <div class="phase-step-meta">
+                    <span><strong>Lead Committee:</strong> ${ph.lead}</span>
+                  </div>
+                  <ul class="phase-step-checklist">
+                    ${ph.items.map(it => `<li>${it}</li>`).join('')}
+                  </ul>
+                  <div class="phase-verification-badge">
+                    Gate Check: ${ph.check}
+                  </div>
+                </div>
+              `).join('')}
             </div>
           </div>
+        </div>
       `;
-      delay += 0.1;
-      if (p.subprojects) {
-        html += `
-            <div class="immersive-glass-card animate-in" style="animation-delay: ${delay}s">
-              <div class="editable-block markdown-body" style="color: inherit;" data-file-path="${p.folderName}/05_Subprojects.md">
-                ${marked.parse(p.subprojects)}
-              </div>
-            </div>
-        `;
-        delay += 0.1;
-      }
-      if (p.faq) {
-        html += `
-            <div class="immersive-glass-card animate-in faq-accordion" style="animation-delay: ${delay}s">
-              <div class="faq-header" onclick="toggleFaq(this)">
-                <div class="faq-title">
-                  <h3>${pName} &mdash; FAQ</h3>
-                  <span class="faq-subtitle">Click the drop down to read</span>
-                </div>
-                <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </div>
-              <div class="faq-content">
-                <div class="faq-inner editable-block markdown-body" style="color: inherit;" data-file-path="${p.folderName}/03_FAQ.md">
-                  ${marked.parse(p.faq)}
-                </div>
-              </div>
-            </div>
-        `;
-        delay += 0.1;
-      }
-      if (p.executionPlan) {
-        html += `
-            <div class="immersive-glass-card animate-in faq-accordion" style="animation-delay: ${delay}s">
-              <div class="faq-header" onclick="toggleFaq(this)">
-                <div class="faq-title">
-                  <h3>${pName} &mdash; Execution Plan</h3>
-                  <span class="faq-subtitle">Dive into the precise implementation details, personnel in charge, operational dependencies, and actionable steps.</span>
-                </div>
-                <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </div>
-              <div class="faq-content">
-                <div class="faq-inner editable-block markdown-body" style="color: inherit;" data-file-path="${p.folderName}/01_Execution_Plan.md">
-                  ${marked.parse(p.executionPlan)}
-                </div>
-              </div>
-            </div>
-        `;
-        delay += 0.1;
-      }
-      html += `</div>`;
+      delay += 0.08;
     });
 
-    // \u2500\u2500 Mobile-only: General Direction section at the bottom \u2500\u2500
-    // The strip's GD card scrolls here via scrollIntoView
+    // ── Mobile-only: Governance Direction section at the bottom ──
     html += `
       <div id="mobile-gd-section" class="mobile-gd-bottom animate-in" style="animation-delay:0.2s">
-        <span class="mobile-strip-label" style="margin-bottom: 12px; display: block;">My General Direction</span>
+        <span class="mobile-strip-label" style="margin-bottom: 12px; display: block;">Governance Direction & Finance Principle</span>
         <div class="immersive-glass-card" style="margin: 0;">
           <p style="font-size:14px; line-height:1.8; color:rgba(255,255,255,0.92);">${generalDirection}</p>
           <p style="font-size:13px; font-style:italic; color:#d8b4fe; margin-top:16px; border-left:3px solid #a78bfa; padding-left:12px;">
@@ -1295,7 +2108,6 @@ function renderImmersiveView(target) {
         </div>
       </div>
     `;
-
   } else if (target === 'preacts') {
     Object.values(data.preActs).forEach((p, index) => {
       sideNavHtml += `
@@ -1341,7 +2153,13 @@ function renderImmersiveView(target) {
           <p style="opacity: 0.8; margin-bottom: 2rem;">Click on any role in the interactive tree to view specific responsibilities and projects.</p>
           <div class="org-layout" id="org-layout-container">
             <div class="org-tree-container">
-              <div class="org-node president" onclick="showOrgDetails('president')">President (Pauline)</div>
+              <div class="org-presidential-cluster">
+                <div class="org-node president" onclick="showOrgDetails('president')">President (Pauline)</div>
+                <div class="org-secretary-wrapper">
+                  <div class="org-sec-connector"></div>
+                  <div class="org-node secretary" onclick="showOrgDetails('secretary')">Secretary</div>
+                </div>
+              </div>
               
               <div class="org-branches">
                 
@@ -1351,6 +2169,7 @@ function renderImmersiveView(target) {
                     <div class="org-node sm" onclick="showOrgDetails('dir-acad')">Dir. Academics</div>
                     <div class="org-node sm" onclick="showOrgDetails('dir-rnd')">Dir. R&D</div>
                     <div class="org-node sm" onclick="showOrgDetails('dir-ss')">Dir. Student Services</div>
+                    <div class="org-node sm" onclick="showOrgDetails('dir-welfare')">Dir. Student Welfare</div>
                   </div>
                 </div>
 
@@ -1367,9 +2186,9 @@ function renderImmersiveView(target) {
                   <div class="org-node chief" onclick="showOrgDetails('chief-comms')">Chief Comms</div>
                   <div class="org-directors">
                     <div class="org-node sm" onclick="showOrgDetails('dir-creatives')">Dir. Creatives</div>
+                    <div class="org-node sm" onclick="showOrgDetails('dir-promotions')">Dir. Promotions</div>
                     <div class="org-node sm" onclick="showOrgDetails('dir-extint')">Dir. EXT/INT</div>
                     <div class="org-node sm" onclick="showOrgDetails('dir-advocacy')">Dir. Advocacy</div>
-                    <div class="org-node sm" onclick="showOrgDetails('dir-nat')">Dir. National Affairs</div>
                   </div>
                 </div>
 
@@ -1390,6 +2209,7 @@ function renderImmersiveView(target) {
           <!-- Mobile accordion org tree (shown only when html.mobile-ui is active) -->
           <div class="mobile-org-tree">
             <div class="mobile-org-president" onclick="showMobileOrgDetails('president')">★ President (Pauline)</div>
+            <div class="mobile-org-secretary" onclick="showMobileOrgDetails('secretary')">📋 Secretary (to the President)</div>
 
             <div class="mobile-org-chief-block" id="mob-chief-staff">
               <button class="mobile-org-chief-btn" onclick="toggleMobileChief('mob-chief-staff')">
@@ -1399,6 +2219,7 @@ function renderImmersiveView(target) {
                 <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-acad')"><span class="mobile-org-dir-name">Dir. Academics</span><span class="mobile-org-dir-arrow">›</span></div>
                 <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-rnd')"><span class="mobile-org-dir-name">Dir. R&amp;D</span><span class="mobile-org-dir-arrow">›</span></div>
                 <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-ss')"><span class="mobile-org-dir-name">Dir. Student Services</span><span class="mobile-org-dir-arrow">›</span></div>
+                <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-welfare')"><span class="mobile-org-dir-name">Dir. Student Welfare</span><span class="mobile-org-dir-arrow">›</span></div>
               </div></div>
             </div>
 
@@ -1419,9 +2240,9 @@ function renderImmersiveView(target) {
               </button>
               <div class="mobile-org-dirs"><div class="mobile-org-dirs-inner">
                 <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-creatives')"><span class="mobile-org-dir-name">Dir. Creatives</span><span class="mobile-org-dir-arrow">›</span></div>
+                <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-promotions')"><span class="mobile-org-dir-name">Dir. Promotions</span><span class="mobile-org-dir-arrow">›</span></div>
                 <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-extint')"><span class="mobile-org-dir-name">Dir. EXT/INT</span><span class="mobile-org-dir-arrow">›</span></div>
                 <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-advocacy')"><span class="mobile-org-dir-name">Dir. Advocacy</span><span class="mobile-org-dir-arrow">›</span></div>
-                <div class="mobile-org-dir-item" onclick="showMobileOrgDetails('dir-nat')"><span class="mobile-org-dir-name">Dir. National Affairs</span><span class="mobile-org-dir-arrow">›</span></div>
               </div></div>
             </div>
 
@@ -1442,23 +2263,26 @@ function renderImmersiveView(target) {
             <h4>Reporting Cadences</h4>
             <ul>
               <li><strong>Director-to-Chief (Weekly):</strong> Every Friday by 5:00 PM, Directors submit status updates to their respective Chief via Telegram, explicitly highlighting blocked tasks.</li>
-              <li><strong>Chief-to-President (Biweekly):</strong> Chiefs consolidate reports and meet with the President biweekly to assess platform health, DAAM statuses, and budget burn rates.</li>
+              <li><strong>Chief-to-President & Secretary (Biweekly):</strong> Chiefs consolidate reports and align with the President and Secretary biweekly to assess platform health, DAAM statuses, and budget burn rates.</li>
+              <li><strong>Executive Secretary Daily Sync:</strong> The Secretary continuously monitors project calendars and milestone trackers, liaising across all three Chiefs to brief the President on imminent deadlines, blocked dependencies, and priority reminders.</li>
             </ul>
 
             <h4>Escalation Path for Blocked Dependencies</h4>
             <ol>
               <li><strong>24 Hours Blocked:</strong> Director notifies their Chief via Telegram. Chief attempts to unblock directly.</li>
-              <li><strong>48 Hours Blocked:</strong> Chief escalates the issue to the President.</li>
-              <li><strong>72 Hours Blocked / Imminent Risk:</strong> President calls an emergency alignment meeting with the affected Director and Chief to trigger fallback plans.</li>
+              <li><strong>48 Hours Blocked:</strong> Chief escalates the issue to the President and Secretary.</li>
+              <li><strong>72 Hours Blocked / Imminent Risk:</strong> President calls an emergency alignment meeting with the affected Director, Chief, and Secretary to trigger fallback plans.</li>
               <li><strong>Administrative Blockade:</strong> If blocked by administration (e.g. Dean refuses LOA), the President and Chief of Staff assume direct control of communications to force a resolution.</li>
             </ol>
 
             <h4>Cross-Committee Synergy</h4>
             <p>Our projects overlap systematically based on the RACI matrices:</p>
             <ul>
+              <li><strong>Secretary (Executive Office):</strong> Central custodian for master timelines, council calendar syncs, cross-chief monitoring, and presidential reminders across all 12 GOSM initiatives.</li>
+              <li><strong>Dir. Student Welfare (Under Chief of Staff):</strong> Frontline intake and triage for confidential student grievances (referring formal advocacy to the College President) and student grievance intake support.</li>
+              <li><strong>Dir. Promotions & Dir. Creatives (Under Chief Comms):</strong> Synergistic creative powerhouse. Creatives leads visual branding, UI/UX, and pubmat design; Promotions directs video reels, documentary featurettes, scripts, actors/cameramen, and interactive booth activations.</li>
               <li><strong>Dir. Documentations (Under COO):</strong> Acts as the administrative backbone, tracking all SLIFE, APS, and Post-Act submissions across all projects.</li>
               <li><strong>Dir. Finance:</strong> Manages all money movement. No expenditure moves without an SCT, and specimen signatures must be filed prior to event execution.</li>
-              <li><strong>Dir. Creatives:</strong> Secures P&M clearance with a 24-hour minimum lead time for all public-facing materials.</li>
             </ul>
 
             <h4>How Telegram Works</h4>
@@ -2191,83 +3015,95 @@ window.showOrgDetails = function(roleId) {
   const orgData = {
     'president': {
       title: 'President (Pauline)',
-      desc: 'Ultimate accountability for the execution, legality, and financial integrity of the platform.',
-      projects: ['Signs DAAM LOAs', 'Decides Calamity Tier Activations (P6)', 'Signs Officer Advance Protocols (P6)', 'Primary speaker for Freelancing Seminar (P7)']
+      desc: 'Ultimate executive accountability for the College of Science Government. Holds sole constitutional authority (as an elected officer) to formally advocate and escalate student grievances before University Administration and Faculty Boards. Oversees platform execution, legal DAAM sign-offs, and emergency relief fund activations.',
+      projects: ['Formal Administrative Representation for Escalated Student Grievances', 'Final Sign-Off on all DAAM Submissions & LOAs', 'Emergency Student Assistance Protocols', 'General Assembly Keynote & Officer Workshop Training (Oct 21)']
+    },
+    'secretary': {
+      title: 'Secretary (to the President)',
+      desc: 'The President\'s executive right-hand and master timeline custodian. Manages the master project tracker, deadlines, and council calendar across all 12 GOSM initiatives. Liaises directly with the three Chiefs to monitor deliverable dates, unblock bottlenecks, and provide high-priority daily briefings and reminders to the President.',
+      projects: ['Master GOSM Milestone & Deadline Tracker (All 12 Initiatives)', 'Cross-Chief Progress Sync & Daily Presidential Reminders', 'SCG Master Calendar & Meeting Minutes Management', 'SCG General Assembly & Officer Workshop Logistics Tracking (Oct 21)'],
+      execs: 'Executive Office Secretariat (Meeting documentation, calendar dispatch, task reminders)'
     },
     'chief-staff': {
       title: 'Chief of Staff',
-      desc: 'Enforces policy compliance, handles sensitive legal/administrative roadblocks, and oversees student welfare projects.',
-      projects: ['External Mediator coordination (P3)', 'Student Rights Charter (P3)', 'Lab Audit Access Letter (P4)', 'Legal Disclaimer Review (P5)']
+      desc: 'Internal governance backbone. Enforces policy compliance, oversees Academics, R&D, Student Services, and Student Welfare portfolios to ensure seamless execution and student rights protection.',
+      projects: ['Academic & Research Infrastructure Alignment', 'Student Welfare & Grievance Protocol Compliance', 'Cross-Departmental Synergy with Dean\'s Office & Faculty', 'Lab Accessibility & Inclusion Reviews']
     },
     'chief-ops': {
       title: 'Chief of Operations',
-      desc: 'Ensures physical events run smoothly and financial protocols (transparency, FRA reports) are strictly followed.',
-      projects: ['Overall Semana ng Siyensya Coordination (P2)', 'Accountability for Pantry Ops (P6) and Fundraising (P8)']
+      desc: 'Ensures physical events run smoothly and operational/financial protocols (transparency, FRA reports, venue reservations) are strictly followed.',
+      projects: ['SCG General Assembly Logistics Coordination (Oct 21)', 'Operational Oversight for Competitions & Academic Events', 'Overall Operational Flow for Spelling Bee & Seminars']
     },
     'chief-comms': {
-      title: 'Chief Communications',
-      desc: 'Oversees all public messaging, P&M clearances, advocacy initiatives, and external partnerships.',
-      projects: ['Plan B Crowdfunding Drive (P8)']
+      title: 'Chief of Communications',
+      desc: 'External voice and engagement engine of SCG. Oversees Creatives, Promotions, EXT/INT Linkages, and Advocacy to ensure high-visibility outreach and community engagement.',
+      projects: ['Unified P&M Clearance Pipeline (24-hour lead time)', 'Taft Food Crawl Sponsorships & Merchant Outreach', 'Shanghay Laya Multimedia Advocacy Campaign']
     },
     'dir-acad': {
       title: 'Director for Academics',
-      desc: 'Manages all educational resources and faculty coordination.',
-      projects: ['COS Student Info Hub', 'Scholarship Calculator', 'Syllabus Transparency Portal', 'Academic Competitions and Faculty Incentives'],
-      execs: 'Academics Executives (Data gathering, module building, faculty liaising)'
+      desc: 'Manages all educational resources, academic seminars, and academic survival tools.',
+      projects: ['LaTeX Essentials: Scientific Typesetting Seminar (Nov 4)', 'Scientific Terminologies Spelling Bee: Biology Edition (Oct 28)', 'Academic Pathing Tool & Prerequisite Maps', 'Syllabus Transparency Repository'],
+      execs: 'Academics Executives (Data gathering, module building, seminar coordination)'
     },
     'dir-rnd': {
       title: 'Director for Research & Development',
-      desc: 'Expands student research opportunities and funding.',
-      projects: ['Research Grants Portal', 'Research Job Board', 'Research Readiness Survey'],
-      execs: 'R&D Executives (Survey deployment, job board vetting)'
+      desc: 'Expands undergraduate student research opportunities, tools, and funding pipelines.',
+      projects: ['Research Grants & Funding Portal', 'Research Job Board', 'Research Readiness Survey', 'H2Zero.ai Offline Study Companion Integration'],
+      execs: 'R&D Executives (Survey deployment, job board vetting, developer support)'
     },
     'dir-ss': {
       title: 'Director for Student Services',
-      desc: 'Directly manages student grievances, welfare programs, and direct-aid initiatives.',
-      projects: ['Grievance Channel', 'Suggestion Tab Moderation', 'Micro-Grant Fund Operations', 'Welfare Registry', 'Equipment Exchange Platform', 'Freelancing Seminar'],
-      execs: 'Student Services Executives (Case logging, item condition checks, registry tracking)'
+      desc: 'Manages student service platforms, lounge facilities, and material exchanges.',
+      projects: ['HomeCOStasis Student Lounge Operations (Oct 14)', 'Batch 126 Academic Guidance Modules', 'COS Bulletin Board Centralized Telegram Hub (Oct 14)', 'Scholarship Grade Calculator & Free Software Directory'],
+      execs: 'Student Services Executives (Lounge management, item condition checks, exchange cataloging)'
+    },
+    'dir-welfare': {
+      title: 'Director for Student Welfare',
+      desc: 'Frontline guardian of student wellbeing and emergency aid. Operates the confidential grievance intake channel, vets and documents cases, and formally refers cases to the College President (ensuring full compliance with USG elected officer representation rules). Oversees the massive logistics and supply chain for emergency disaster relief and food security.',
+      projects: ['Confidential Grievance Intake Channel & Case Triage (Referrals to President)', 'Student Crisis Support & Emergency Case Mediation', 'Confidential Case Registry & Welfare Outreach', 'Student Welfare Assistance & Well-being Inquiries'],
+      execs: 'Student Welfare Executives (Case logging & intake triage, pantry inventory managers, emergency relief volunteers)'
     },
     'dir-docs': {
       title: 'Director for Documentations',
-      desc: 'The administrative backbone. Tracks all SLIFE, APS, SCT, and ADM Pre/Post-Acts.',
-      projects: ['DAAM submissions', '14-day External MOA tracking', 'AET feedback collection', '48-hour seminar archive uploads'],
+      desc: 'The administrative backbone. Tracks all SLIFE, APS, SCT, and ADM Pre/Post-Acts across all 12 initiatives.',
+      projects: ['DAAM Pre-Act Submissions & Archiving', '14-day External MOA tracking', 'AET feedback collection', 'Post-Activity Compliance Filings'],
       execs: 'Docs Executives (Filing paperwork, minute-taking, clearance chasing)'
     },
     'dir-log': {
       title: 'Director for Logistics',
-      desc: 'Handles physical venue bookings, equipment, and inventory management.',
-      projects: ['Venue booking for Gaming Night', 'Lab Audit walkthroughs', 'Freelancing Seminar', 'Food Security Pantry Restock Triggers'],
+      desc: 'Handles physical venue bookings, equipment reservations, and inventory management.',
+      projects: ['Physical Venue Booking (Yuchengco, Andrew, Amphitheater)', 'Spelling Bee & General Assembly Stage Setup', 'Event Stage Logistics & Technical Setup', 'Materials Dispatch & Registration Desks'],
       execs: 'Logistics Executives (Booth setups, physical inventory counting, equipment transport)'
     },
     'dir-fin': {
       title: 'Director for Finance',
-      desc: 'Manages all money movement, SCT processing, and transparency.',
-      projects: ['Financial Transparency Ledger', 'Merch Pre-orders', 'Initial Pantry Stock Procurement', 'DF Ring-Fence Declarations', 'FRA Reports & Proceeds Splits'],
+      desc: 'Manages all money movement, SCT processing, depository funds, and financial transparency.',
+      projects: ['Financial Transparency Ledger (72-hour rule)', 'Operational Budget Monitoring & Financial Ledger', 'Depository Fund Ring-Fence Declarations', 'FRA Reports & Post-Activity Liquidations'],
       execs: 'Finance Executives (Receipt logging, budget tracking, deposit slips)'
     },
     'dir-creatives': {
       title: 'Director for Creatives',
-      desc: 'Produces all visual assets and secures P&M clearances (24-hour lead time) before anything goes public.',
-      projects: ['Merchandise Design', 'UI/UX for Web Platforms'],
-      execs: 'Creatives Executives (Graphic design, copywriting, video editing)'
+      desc: 'Leads visual branding, graphic design, and UI/UX design across all digital and physical touchpoints. Enforces the visual style system and guarantees P&M clearance submissions with strict 24-hour lead times.',
+      projects: ['SCG Centralized Student Portal UI/UX Design', 'Official Event Pubmats & Social Media Branding', 'LaTeX Essentials & Spelling Bee Identity Kits', 'Promotional Collateral & Banner Guidelines'],
+      execs: 'Creatives Executives (Graphic designers, brand illustrators, UI/UX designers)'
+    },
+    'dir-promotions': {
+      title: 'Director for Promotions',
+      desc: 'The creative media production powerhouse. Directs video reels, documentary featurettes, scripted skits, and hype reels. Houses scriptwriters, on-cam talent/actors, and videographers/cameramen. Conceives experiential marketing and interactive booth concepts for physical activations.',
+      projects: ['Women & Minorities in STEM Video Featurette Series', 'Taft Food Crawl Video Reels & Merchant Spotlights (Oct 19-21)', 'Scientific Spelling Bee Interactive Booth Concepts (Oct 28)', 'Shanghay Laya Platform Launch Multimedia Assets (Nov 7)'],
+      execs: 'Promotions Executives (Scriptwriters, Actors/Hosts, Videographers/Cameramen, Booth Activation Designers)'
     },
     'dir-extint': {
       title: 'Director for EXT/INT Linkages',
-      desc: 'Secures external partnerships, MOAs, and sponsorships.',
-      projects: ['Discord Gaming Night', 'FSL Partner MOA Negotiation', 'Donation Drive', 'Local Business Partner Outreach & MOAs'],
-      execs: 'EXT/INT Executives (Drafting emails, partner follow-ups, Discord moderation)'
+      desc: 'Secures external partnerships, merchant sponsorships, and inter-organizational linkages.',
+      projects: ['Taft Food Crawl Local Business Outreach & MOAs (Oct 19-21)', 'Inter-College SCG Collaborations', 'Sponsorship Packages for Physical Events', 'Student Discount Directory Partnerships'],
+      execs: 'EXT/INT Executives (Partner pitches, MOA drafting, merchant liaison)'
     },
     'dir-advocacy': {
       title: 'Director for Advocacy',
-      desc: 'Leads social justice, inclusion, and minority representation initiatives.',
-      projects: ['FSL Training Program', 'STEM Archive', 'Lab Accessibility Audit', 'Queer Identity Science Forum', 'History Session', 'Shanghay Laya'],
-      execs: 'Advocacy Executives (Speaker vetting, consent form collection, resource verification)'
-    },
-    'dir-nat': {
-      title: 'Director for National Affairs',
-      desc: 'In charge of publication materials on national issues, encourages COS students to be more politically active, and consults on socio-political alignment for advocacy projects.',
-      projects: ['National issues information campaigns', 'Queer identity forums consultation'],
-      execs: 'National Affairs Executives (Policy review, content research, and student engagement)'
+      desc: 'Leads social justice, inclusion, queer/trans representation, and student empowerment initiatives.',
+      projects: ['Shanghay Laya: Malaya Maging Ikaw (Platform Launch, Nov 7)', 'Women and Minorities in STEM Digital Research Archive', 'Campus Inclusion & Accessibility Audits', 'Gender-Affirming Policy & Representation Dialogues'],
+      execs: 'Advocacy Executives (Speaker coordination, consent compliance, advocacy research)'
     }
   };
 
@@ -2348,73 +3184,83 @@ window.showMobileOrgDetails = function(roleId) {
   const orgData = {
     'president': {
       title: 'President (Pauline)',
-      desc: 'Sets the direction for the entire platform. Responsible for final approvals, external representation, and ensuring all projects remain on track.',
-      projects: ['Final sign-off on all DAAMs', 'Emergency Relief Fund decisions', 'External partnerships', 'Platform accountability']
+      desc: 'Ultimate executive accountability for SCG. Holds sole constitutional authority (as an elected officer) to formally advocate and escalate student grievances before University Administration. Oversees platform execution, legal DAAM sign-offs, and emergency relief fund activations.',
+      projects: ['Formal Grievance Escalation & Representation', 'Final sign-off on all DAAMs & LOAs', 'Emergency Relief Fund decisions', 'SCG General Assembly & Workshop Direction (Oct 21)']
+    },
+    'secretary': {
+      title: 'Secretary (to the President)',
+      desc: 'The President\'s executive right-hand and master timeline custodian. Manages the master project tracker, deadlines, and council calendar across all 12 GOSM initiatives. Liaises directly with the three Chiefs and provides daily briefings and reminders to the President.',
+      projects: ['Master GOSM Milestone & Deadline Tracker (All 12 Initiatives)', 'Cross-Chief Progress Sync & Daily Presidential Reminders', 'SCG Master Calendar & Meeting Minutes', 'General Assembly & Workshop Tracking (Oct 21)']
     },
     'chief-staff': {
       title: 'Chief of Staff',
-      desc: 'Internal operations backbone. Manages the Academics, R&D, and Student Services portfolios.',
-      projects: ['Academic Hub oversight', 'Research Grant coordination', 'Student Services alignment']
+      desc: 'Internal operations backbone. Manages Academics, R&D, Student Services, and Student Welfare portfolios to ensure policy compliance and student rights protection.',
+      projects: ['Academic Hub oversight', 'Research Grant coordination', 'Student Services & Welfare alignment', 'Grievance Protocol Compliance']
     },
     'chief-ops': {
       title: 'Chief of Operations',
-      desc: 'Runs logistics, finance, and documentation. Nothing gets executed without COO clearance on the operational side.',
-      projects: ['Event logistics', 'Budget tracking', 'DAAM documentation pipeline']
+      desc: 'Runs logistics, finance, and documentation. Ensures physical event execution and strict compliance with USG finance and venue protocols.',
+      projects: ['General Assembly Logistics (Oct 21)', 'Budget burn tracking & SCT clearances', 'DAAM documentation pipeline', 'Physical Venue Bookings']
     },
     'chief-comms': {
       title: 'Chief of Communications',
-      desc: 'External face of the org. Manages all public-facing output, advocacy, and national linkages.',
-      projects: ['Pubmat clearance via P&M', 'Advocacy campaigns', 'National affairs monitoring']
+      desc: 'External face and media engine of SCG. Oversees Creatives, Promotions, EXT/INT Linkages, and Advocacy to maximize student engagement.',
+      projects: ['Pubmat clearance via P&M (24-hour lead time)', 'Taft Food Crawl media coverage & merchant MOAs', 'Shanghay Laya platform launch campaign (Nov 7)']
     },
     'dir-acad': {
       title: 'Director for Academics',
-      desc: 'Leads the Academic Survival Hub and all academic support initiatives.',
-      projects: ['COS Student Information Hub', 'Syllabus Transparency Portal', 'NMAT Repository', 'Academic Pathing Tool']
+      desc: 'Leads academic support initiatives, seminars, and survival tools.',
+      projects: ['LaTeX Essentials Seminar (Nov 4)', 'Scientific Spelling Bee: Biology Edition (Oct 28)', 'Academic Pathing Tool', 'Syllabus Transparency Repository']
     },
     'dir-rnd': {
       title: 'Director for R&D',
-      desc: 'Drives research support tools and the Research Readiness Survey.',
-      projects: ['Research Grants & Funding Portal', 'Research Job Board', 'Research Readiness Survey', 'Note Generator']
+      desc: 'Drives research support tools, funding pipelines, and the Research Readiness Survey.',
+      projects: ['Research Grants & Funding Portal', 'Research Job Board', 'Research Readiness Survey', 'H2Zero.ai Offline Study Companion']
     },
     'dir-ss': {
       title: 'Director for Student Services',
-      desc: 'Handles equipment exchange, scholarship tools, and direct student welfare outreach.',
-      projects: ['Equipment & Apparel Exchange', 'Scholarship Grade Calculator', 'Freelancing Seminar', 'Free Software Directory']
+      desc: 'Manages student service platforms, lounge facilities, and material exchanges.',
+      projects: ['HomeCOStasis Student Lounge (Oct 14)', 'Batch 126 Guidance Modules', 'COS Bulletin Board Telegram Hub (Oct 14)', 'Scholarship Calculator & Free Software Directory']
+    },
+    'dir-welfare': {
+      title: 'Director for Student Welfare',
+      desc: 'Frontline guardian of student wellbeing and emergency aid. Operates confidential grievance intake channel (referring formal advocacy to the College President) and manages the massive logistics of disaster relief.',
+      projects: ['Confidential Grievance Intake Channel (Referrals to President)', 'Student Crisis Support & Emergency Case Mediation', 'Confidential Case Registry & Welfare Outreach', 'Student Welfare Assistance & Inquiries']
     },
     'dir-log': {
       title: 'Director for Logistics',
-      desc: 'Coordinates all event logistics, venue bookings, and physical execution for funded projects.',
-      projects: ['Semana ng Siyensya logistics', 'Donation Drive coordination', 'Food Pantry supply chain']
+      desc: 'Coordinates physical venue bookings, equipment reservations, and event floor execution.',
+      projects: ['Physical Venue Booking (Yuchengco, Andrew, Amphitheater)', 'Spelling Bee & General Assembly Stage Setup', 'Event Stage Logistics & Technical Setup']
     },
     'dir-fin': {
       title: 'Director for Finance',
-      desc: 'Manages all money movement. No expenditure moves without an SCT and prior specimen signatures.',
-      projects: ['Budget burn tracking', 'SCT processing', 'Emergency Relief Fund disbursement', 'Micro-grant allocation']
+      desc: 'Manages all money movement. No expenditure moves without an SCT, budget tracking, and transparency.',
+      projects: ['Financial Transparency Ledger (72-hour rule)', 'Operational Budget Monitoring & Financial Ledger', 'SCT processing & Depository Fund tracking', 'FRA Post-Activity Liquidations']
     },
     'dir-docs': {
       title: 'Director for Documentations',
       desc: 'Administrative backbone. Tracks all SLIFE, APS, and Post-Act submissions across every project.',
-      projects: ['DAAM pipeline', 'Post-Act filing', 'Pre-Act compliance tracking']
+      projects: ['DAAM Pre-Act submissions', 'Post-Act compliance filing', 'AET feedback tracking', '14-day External MOA chasing']
     },
     'dir-creatives': {
       title: 'Director for Creatives',
-      desc: 'Handles all P&M clearance and visual output. 24-hour minimum lead time for all public-facing materials.',
-      projects: ['Pubmat design & clearance', 'Social media assets', 'Semana ng Siyensya branding']
+      desc: 'Handles visual branding, UI/UX design, and pubmats. 24-hour minimum lead time for all public-facing materials.',
+      projects: ['SCG Centralized Student Portal UI/UX', 'Official Event Pubmats & Branding', 'LaTeX Essentials & Spelling Bee Identity Kits']
+    },
+    'dir-promotions': {
+      title: 'Director for Promotions',
+      desc: 'Creative multimedia production powerhouse. Directs video reels, documentary featurettes, scripts, and actors/cameramen, and conceives interactive booth activations.',
+      projects: ['Women & Minorities in STEM Video Featurettes', 'Taft Food Crawl Video Reels & Spotlights (Oct 19-21)', 'Scientific Spelling Bee Interactive Booth Concepts (Oct 28)', 'Shanghay Laya Platform Multimedia Assets (Nov 7)']
     },
     'dir-extint': {
       title: 'Director for EXT/INT Linkages',
-      desc: 'Secures external partnerships, MOAs, and sponsorships.',
-      projects: ['Discord Gaming Night', 'FSL Partner MOA', 'Donation Drive', 'Local Business Outreach']
+      desc: 'Secures external partnerships, sponsorships, and local merchant linkages.',
+      projects: ['Taft Food Crawl Merchant Outreach & MOAs (Oct 19-21)', 'Inter-College SCG Collaborations', 'Sponsorship Packages for Physical Events']
     },
     'dir-advocacy': {
       title: 'Director for Advocacy',
-      desc: 'Leads social justice, inclusion, and minority representation initiatives.',
-      projects: ['FSL Training Program', 'Lab Accessibility Audit', 'Queer Identity Science Forum', 'History Session', 'Shanghay Laya']
-    },
-    'dir-nat': {
-      title: 'Director for National Affairs',
-      desc: 'Handles national issues campaigns and consults on socio-political alignment for advocacy projects.',
-      projects: ['National issues information campaigns', 'Queer identity forums consultation']
+      desc: 'Leads social justice, inclusion, diversity, and student empowerment initiatives.',
+      projects: ['Shanghay Laya: Malaya Maging Ikaw (Nov 7)', 'Women and Minorities in STEM Research Archive', 'Campus Inclusion & Accessibility Audits']
     }
   };
 
