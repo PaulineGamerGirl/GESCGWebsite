@@ -1023,28 +1023,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 </p>
                 <p style="font-size: 0.82rem; color: rgba(255,255,255,0.65);">Explore our Term 1 initiatives, governance frameworks, and student services.</p>
               </div>
-              <div class="animate-in" style="animation-delay:0.5s; width: 100%; max-width: 380px;">
-                <div class="scg-assistance-card" style="margin-top: 8px; padding: 14px 16px;">
-                  <div class="scg-assistance-label">For any assistance, message:</div>
-                  <div class="scg-assistance-title" style="font-size: 0.86rem; margin-bottom: 10px;">SCG EXECUTIVE BOARD</div>
-                  <div class="scg-assistance-grid">
-                    <div class="scg-assistance-row">
-                      <span class="scg-assistance-name">Pauline Galias, President</span>
-                      <a href="https://t.me/PaulineGalias07" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@PaulineGalias07</a>
-                    </div>
-                    <div class="scg-assistance-row">
-                      <span class="scg-assistance-name">Trish Longboy, Chief of Staff</span>
-                      <a href="https://t.me/onetwo_trish" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@onetwo_trish</a>
-                    </div>
-                    <div class="scg-assistance-row">
-                      <span class="scg-assistance-name">Ace Licuanan, Chief Operating Officer</span>
-                      <a href="https://t.me/acecarloo" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@acecarloo</a>
-                    </div>
-                    <div class="scg-assistance-row">
-                      <span class="scg-assistance-name">Ann Farala, Chief Communications Officer</span>
-                      <a href="https://t.me/annfarala" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@annfarala</a>
-                    </div>
-                  </div>
+              <div class="animate-in" style="animation-delay:0.5s; width: 100%; display: flex; justify-content: center;">
+                <div class="scg-assistance-row-clean">
+                  <span class="scg-assistance-lead">For assistance:</span>
+                  <span class="scg-person"><strong>Pauline Galias</strong>, President <a href="https://t.me/PaulineGalias07" target="_blank" rel="noopener noreferrer">@PaulineGalias07</a></span>
+                  <span class="scg-bullet">&bull;</span>
+                  <span class="scg-person"><strong>Trish Longboy</strong>, Chief of Staff <a href="https://t.me/onetwo_trish" target="_blank" rel="noopener noreferrer">@onetwo_trish</a></span>
+                  <span class="scg-bullet">&bull;</span>
+                  <span class="scg-person"><strong>Ace Licuanan</strong>, COO <a href="https://t.me/acecarloo" target="_blank" rel="noopener noreferrer">@acecarloo</a></span>
+                  <span class="scg-bullet">&bull;</span>
+                  <span class="scg-person"><strong>Ann Farala</strong>, CCO <a href="https://t.me/annfarala" target="_blank" rel="noopener noreferrer">@annfarala</a></span>
                 </div>
               </div>
             </div>
@@ -1060,30 +1048,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p style="font-size: 1rem; line-height: 1.6; color: rgba(255,255,255,0.95); margin-bottom: 6px; font-weight: 500;">
                   This is the official platform and operations hub of the <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; display: inline-block; animation: breathe-glow-text 5s ease-in-out infinite;">Science College Government (SCG)</span> for Academic Year 2026–2027.
                 </p>
-                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 400; margin-bottom: 14px;">
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 400; margin-bottom: 12px;">
                   Explore our Term 1 initiatives, governance frameworks, and student services.
                 </p>
-                <div class="scg-assistance-card">
-                  <div class="scg-assistance-label">For any assistance, message:</div>
-                  <div class="scg-assistance-title">SCG EXECUTIVE BOARD</div>
-                  <div class="scg-assistance-grid">
-                    <div class="scg-assistance-row">
-                      <span class="scg-assistance-name">Pauline Galias, President</span>
-                      <a href="https://t.me/PaulineGalias07" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@PaulineGalias07</a>
-                    </div>
-                    <div class="scg-assistance-row">
-                      <span class="scg-assistance-name">Trish Longboy, Chief of Staff</span>
-                      <a href="https://t.me/onetwo_trish" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@onetwo_trish</a>
-                    </div>
-                    <div class="scg-assistance-row">
-                      <span class="scg-assistance-name">Ace Licuanan, Chief Operating Officer</span>
-                      <a href="https://t.me/acecarloo" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@acecarloo</a>
-                    </div>
-                    <div class="scg-assistance-row">
-                      <span class="scg-assistance-name">Ann Farala, Chief Communications Officer</span>
-                      <a href="https://t.me/annfarala" target="_blank" rel="noopener noreferrer" class="scg-assistance-handle">@annfarala</a>
-                    </div>
-                  </div>
+                <div class="scg-assistance-row-clean">
+                  <span class="scg-assistance-lead">For assistance:</span>
+                  <span class="scg-person"><strong>Pauline Galias</strong>, President <a href="https://t.me/PaulineGalias07" target="_blank" rel="noopener noreferrer">@PaulineGalias07</a></span>
+                  <span class="scg-bullet">&bull;</span>
+                  <span class="scg-person"><strong>Trish Longboy</strong>, Chief of Staff <a href="https://t.me/onetwo_trish" target="_blank" rel="noopener noreferrer">@onetwo_trish</a></span>
+                  <span class="scg-bullet">&bull;</span>
+                  <span class="scg-person"><strong>Ace Licuanan</strong>, Chief Operating Officer <a href="https://t.me/acecarloo" target="_blank" rel="noopener noreferrer">@acecarloo</a></span>
+                  <span class="scg-bullet">&bull;</span>
+                  <span class="scg-person"><strong>Ann Farala</strong>, Chief Communications Officer <a href="https://t.me/annfarala" target="_blank" rel="noopener noreferrer">@annfarala</a></span>
                 </div>
               </div>
             </div>
@@ -2006,86 +1982,58 @@ function renderImmersiveView(target) {
 
       html += `
           <div class="immersive-glass-card animate-in" style="animation-delay: ${delay}s">
-            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px;">
-              <span class="gosm-badge gosm-badge-green">${p.classification}</span>
-              <span class="gosm-badge gosm-badge-purple">${p.nature}</span>
-              <span class="gosm-badge gosm-badge-purple">${p.daamType}</span>
-              <span class="gosm-badge gosm-badge-green">Budget: ${p.budget}</span>
-            </div>
-
-            <h3 style="font-size: 1.25rem; font-weight: 700; color: #fff; margin-top: 0; margin-bottom: 8px; line-height: 1.4;">
+            <h3 style="font-size: 1.35rem; font-weight: 700; color: #fff; margin-top: 0; margin-bottom: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.18); padding-bottom: 0.5rem; letter-spacing: 0.01em;">
               ${p.title}
             </h3>
 
-            <div class="gosm-meta-box">
-              <div class="gosm-meta-item">
-                <span class="gosm-meta-label">Target Launch / Execution Date</span>
-                <span class="gosm-meta-val" style="color: #d8b4fe;">${p.date}</span>
-              </div>
-              <div class="gosm-meta-item">
-                <span class="gosm-meta-label">Lead Committee</span>
-                <span class="gosm-meta-val">${p.lead}</span>
-              </div>
-              <div class="gosm-meta-item">
-                <span class="gosm-meta-label">Collaborators & Partners</span>
-                <span class="gosm-meta-val">${p.collab}</span>
-              </div>
-              <div class="gosm-meta-item">
-                <span class="gosm-meta-label">Venue / Platform Infrastructure</span>
-                <span class="gosm-meta-val">${p.venue}</span>
-              </div>
-            </div>
+            <ul style="list-style: none; padding-left: 0; margin: 0 0 1.25rem 0; font-size: 0.92rem; line-height: 1.8; color: rgba(255,255,255,0.88);">
+              <li><strong style="color: #d8b4fe;">Classification & Nature:</strong> ${p.classification} &bull; ${p.nature} (${p.daamType})</li>
+              <li><strong style="color: #d8b4fe;">Budget:</strong> <span style="color: #a7f3d0; font-weight: 600;">${p.budget}</span></li>
+              <li><strong style="color: #d8b4fe;">Target Date:</strong> <span style="color: #fff;">${p.date}</span></li>
+              <li><strong style="color: #d8b4fe;">Lead Committee:</strong> ${p.lead}</li>
+              <li><strong style="color: #d8b4fe;">Collaborators & Partners:</strong> ${p.collab}</li>
+              <li><strong style="color: #d8b4fe;">Venue / Platform:</strong> ${p.venue}</li>
+            </ul>
 
             ${p.continuity ? `
-              <div style="background: rgba(167, 139, 250, 0.08); border-left: 3px solid #a78bfa; border-radius: 0 10px 10px 0; padding: 12px 16px; margin-bottom: 16px;">
-                <div style="font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.08em; color: #c4b5fd; font-weight: 700; margin-bottom: 4px;">Institutional Continuity</div>
-                <p style="font-size: 0.88rem; line-height: 1.5; color: rgba(255,255,255,0.92); margin: 0;">${p.continuity}</p>
+              <div style="margin-bottom: 1.25rem; padding-left: 1rem; border-left: 2px solid #c4b5fd;">
+                <p style="margin: 0; font-size: 0.92rem; line-height: 1.7; color: rgba(255,255,255,0.92);">
+                  <strong style="color: #d8b4fe;">Institutional Continuity:</strong> ${p.continuity}
+                </p>
               </div>
             ` : ''}
 
-            <div class="gosm-issue-card">
-              <div class="gosm-issue-label">Issue & Student Concern Addressed</div>
-              <p class="gosm-issue-desc">${p.issue}</p>
-            </div>
+            <h4 style="font-size: 1.1rem; font-weight: 600; color: #fff; margin-top: 1.5rem; margin-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.35rem;">
+              Project Description
+            </h4>
+            <p style="font-size: 0.93rem; line-height: 1.75; color: rgba(255,255,255,0.88); margin-bottom: 1.5rem;">
+              ${p.description}
+            </p>
 
-            <div style="margin-bottom: 18px;">
-              <h4 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em; color: #e9d5ff; margin-bottom: 8px;">Project Scope & Description</h4>
-              <p style="font-size: 0.92rem; line-height: 1.7; color: rgba(255, 255, 255, 0.9); margin: 0;">
-                ${p.description}
-              </p>
-            </div>
+            <h4 style="font-size: 1.1rem; font-weight: 600; color: #fff; margin-top: 1.5rem; margin-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.35rem;">
+              Objectives & Impact Targets
+            </h4>
+            <ul style="padding-left: 1.4rem; margin: 0 0 1.5rem 0; font-size: 0.92rem; line-height: 1.8; color: rgba(255,255,255,0.88);">
+              <li><strong style="color: #d8b4fe;">Issue Addressed:</strong> ${p.issue}</li>
+              <li><strong style="color: #d8b4fe;">Core Objective:</strong> ${p.objective}</li>
+              <li><strong style="color: #d8b4fe;">Target Metric:</strong> <span style="color: #a7f3d0; font-weight: 600;">${p.metric}</span></li>
+            </ul>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 20px; background: rgba(0,0,0,0.22); padding: 14px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.06);">
-              <div>
-                <div style="font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.5); font-weight: 600; margin-bottom: 4px;">Core Objective</div>
-                <div style="font-size: 0.88rem; color: #fff; line-height: 1.5;">${p.objective}</div>
-              </div>
-              <div>
-                <div style="font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.5); font-weight: 600; margin-bottom: 4px;">Quantifiable Target Metric</div>
-                <div style="font-size: 0.88rem; color: #6ee7b7; font-weight: 600; line-height: 1.5;">${p.metric}</div>
-              </div>
-            </div>
-
-            <div class="gosm-deliverables-header">
-              <h4 class="gosm-deliverables-title">Phased Execution Plan & CPD Deliverables</h4>
-              <span class="gosm-deliverables-subtitle">USG DAAM Compliant &bull; 4 Phased Gates</span>
-            </div>
-
-            <div class="phase-timeline-container">
+            <h4 style="font-size: 1.1rem; font-weight: 600; color: #fff; margin-top: 1.5rem; margin-bottom: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.35rem;">
+              Step-by-Step Deliverables & Timeline (CPD Tracker)
+            </h4>
+            <div style="display: flex; flex-direction: column; gap: 1.25rem;">
               ${p.phases.map((ph, phIdx) => `
-                <div class="phase-step-card">
-                  <div class="phase-step-header">
-                    <span class="phase-step-name">${ph.name}</span>
-                    <span class="phase-step-date">${ph.date}</span>
+                <div style="padding-left: 0.85rem; border-left: 2px solid rgba(216, 180, 254, 0.45);">
+                  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 0.35rem;">
+                    <span style="font-weight: 600; font-size: 0.96rem; color: #fff;">${ph.name}</span>
+                    <span style="font-size: 0.82rem; font-family: 'JetBrains Mono', monospace; color: #d8b4fe;">${ph.date} &bull; ${ph.lead}</span>
                   </div>
-                  <div class="phase-step-meta">
-                    <span><strong>Lead Committee:</strong> ${ph.lead}</span>
-                  </div>
-                  <ul class="phase-step-checklist">
+                  <ul style="padding-left: 1.25rem; margin: 0.35rem 0; font-size: 0.9rem; line-height: 1.7; color: rgba(255,255,255,0.84);">
                     ${ph.items.map(it => `<li>${it}</li>`).join('')}
                   </ul>
-                  <div class="phase-verification-badge">
-                    Gate Check: ${ph.check}
+                  <div style="font-size: 0.82rem; color: rgba(255,255,255,0.7); margin-top: 0.25rem;">
+                    <strong style="color: #a7f3d0;">Verification Gate:</strong> ${ph.check}
                   </div>
                 </div>
               `).join('')}

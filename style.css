@@ -2240,15 +2240,6 @@ html.mobile-ui .mobile-project-section {
 }
 
 #desktop-logo {
-  position: fixed;
-  top: 24px;
-  right: 24px;
-  width: 44px;
-  height: 44px;
-  z-index: 9999;
-  object-fit: contain;
-}
-html.mobile-ui #desktop-logo {
   display: none !important;
 }
 
@@ -2576,68 +2567,61 @@ html.mobile-ui .me-photo-top {
   margin: 20px auto 0;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-  transition: border-color 0.3s ease;
-}
-.scg-assistance-card:hover {
-  border-color: rgba(216, 180, 254, 0.45);
-}
-.scg-assistance-label {
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 4px;
-  font-weight: 500;
-}
-.scg-assistance-title {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #f3e8ff;
-  letter-spacing: 0.1em;
-  margin-bottom: 14px;
-}
-.scg-assistance-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  text-align: left;
-}
-.scg-assistance-row {
-  display: flex;
-  justify-content: space-between;
+.scg-assistance-row-clean {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  padding: 7px 14px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  font-size: 0.88rem;
-  gap: 12px;
+  gap: 8px 14px;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.88);
+  margin-top: 14px;
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  max-width: 95vw;
 }
-.scg-assistance-row:hover {
-  background: rgba(216, 180, 254, 0.06);
-}
-.scg-assistance-name {
-  color: rgba(255, 255, 255, 0.95);
-  font-weight: 500;
-}
-.scg-assistance-handle {
+.scg-assistance-row-clean .scg-assistance-lead {
+  font-weight: 600;
   color: #d8b4fe;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.74rem;
+}
+.scg-assistance-row-clean .scg-person {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+.scg-assistance-row-clean .scg-person strong {
+  color: #fff;
+  font-weight: 600;
+}
+.scg-assistance-row-clean .scg-person a {
+  color: #c4b5fd;
   text-decoration: none;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.84rem;
-  font-weight: 600;
-  transition: color 0.2s ease, text-shadow 0.2s ease;
+  font-size: 0.78rem;
+  transition: color 0.2s ease;
 }
-.scg-assistance-handle:hover {
+.scg-assistance-row-clean .scg-person a:hover {
   color: #fff;
-  text-shadow: 0 0 8px rgba(216, 180, 254, 0.8);
+  text-decoration: underline;
+}
+.scg-assistance-row-clean .scg-bullet {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.75rem;
 }
 
 @media (max-width: 600px) {
-  .scg-assistance-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
+  .scg-assistance-row-clean {
+    border-radius: 14px;
+    padding: 10px 14px;
+    gap: 6px 10px;
   }
 }
 
