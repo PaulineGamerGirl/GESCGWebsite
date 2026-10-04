@@ -2543,110 +2543,101 @@ html.mobile-ui .me-photo-top {
 
 /* ═══════════════════════════════════════════════════════════════
    SCG HOMEPAGE ASSISTANCE GLASS BAR (BOTTOM FLOATING ROW)
+   Matches the signature frosted glass of .glassy-nav-container
    ═══════════════════════════════════════════════════════════════ */
-.scg-assistance-bottom-wrapper {
+.scg-assistance-container {
   position: absolute;
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 50;
-  width: max-content;
-  max-width: 96vw;
+  bottom: 32px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   pointer-events: auto;
+  z-index: 20;
 }
 
 .scg-assistance-row-clean {
   display: inline-flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
   align-items: center;
-  gap: 12px;
-  padding: 10px 24px;
-  border-radius: 9999px;
-  background: rgba(18, 12, 32, 0.65);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%), rgba(18, 12, 32, 0.65);
-  backdrop-filter: blur(28px) saturate(190%);
-  -webkit-backdrop-filter: blur(28px) saturate(190%);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.55), 0 0 20px rgba(168, 85, 247, 0.18), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+  justify-content: center;
+  flex-wrap: nowrap;
   white-space: nowrap;
-  color: #ffffff !important;
-  font-size: clamp(0.74rem, 0.95vw, 0.84rem);
-  line-height: 1.4;
-  letter-spacing: 0.01em;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  gap: 12px;
+  padding: 8px 22px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.3s ease;
 }
 
 .scg-assistance-row-clean:hover {
-  border-color: rgba(216, 180, 254, 0.45);
-  box-shadow: 0 16px 44px 0 rgba(0, 0, 0, 0.65), 0 0 28px rgba(168, 85, 247, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.5);
-  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.5);
 }
 
 .scg-assistance-row-clean .scg-assistance-lead {
-  font-weight: 700;
-  color: #d8b4fe !important;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.72rem;
-  text-shadow: 0 0 10px rgba(216, 180, 254, 0.6);
-  margin-right: 2px;
+  font-weight: 600;
+  color: #d8b4fe;
+  font-size: 13px;
+  letter-spacing: 0.02em;
 }
 
 .scg-assistance-row-clean .scg-person {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  color: #ffffff !important;
+  gap: 4px;
+  color: rgba(255, 255, 255, 0.85);
   white-space: nowrap;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(255, 255, 255, 0.35);
 }
 
 .scg-assistance-row-clean .scg-person strong {
-  color: #ffffff !important;
-  font-weight: 700;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .scg-assistance-row-clean .scg-person a {
-  color: #d8b4fe !important;
+  color: #d8b4fe;
   text-decoration: none;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.78rem;
-  font-weight: 600;
-  text-shadow: 0 0 8px rgba(216, 180, 254, 0.5);
-  transition: color 0.2s ease, text-shadow 0.2s ease;
+  font-weight: 500;
+  font-family: var(--font-display);
+  transition: color 0.2s ease;
 }
 
 .scg-assistance-row-clean .scg-person a:hover {
-  color: #ffffff !important;
-  text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   text-decoration: underline;
 }
 
 .scg-assistance-row-clean .scg-bullet {
-  color: rgba(255, 255, 255, 0.35) !important;
-  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 11px;
   margin: 0 2px;
   user-select: none;
 }
 
 @media (max-width: 900px) {
-  .scg-assistance-bottom-wrapper {
+  .scg-assistance-container {
     position: static;
-    transform: none;
-    margin-top: 18px;
+    margin-top: 20px;
+    padding: 0 16px;
     width: 100%;
-    display: flex;
-    justify-content: center;
   }
   .scg-assistance-row-clean {
     flex-wrap: wrap;
     white-space: normal;
     border-radius: 16px;
     padding: 10px 16px;
-    gap: 8px 12px;
+    gap: 6px 10px;
+    font-size: 12px;
     text-align: center;
   }
 }
