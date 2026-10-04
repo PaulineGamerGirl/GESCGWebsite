@@ -2239,27 +2239,15 @@ html.mobile-ui .mobile-project-section {
   display: block;
 }
 
-#desktop-logo {
-  display: none !important;
-}
-
+#desktop-logo,
 .mobile-nav-logo {
-  display: none;
-  height: 20px;
-  width: auto;
-  margin: 0 auto;
-}
-html.mobile-ui .desktop-text {
   display: none !important;
-}
-html.mobile-ui .mobile-nav-logo {
-  display: block !important;
 }
 html.mobile-ui .glassy-btn[data-target="home"] {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  padding: 8px 6px !important;
+  padding: 8px 14px !important;
 }
 html.mobile-ui .glassy-btn[data-target="suggestions"] {
   flex: 0 0 auto !important;
@@ -2554,74 +2542,112 @@ html.mobile-ui .me-photo-top {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   SCG EXECUTIVE BOARD ASSISTANCE DIRECTORY (HOMEPAGE)
+   SCG HOMEPAGE ASSISTANCE GLASS BAR (BOTTOM FLOATING ROW)
    ═══════════════════════════════════════════════════════════════ */
-.scg-assistance-card {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(216, 180, 254, 0.25);
-  border-radius: 18px;
-  padding: 18px 24px;
-  max-width: 680px;
-  margin: 20px auto 0;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+.scg-assistance-bottom-wrapper {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  width: max-content;
+  max-width: 96vw;
+  pointer-events: auto;
+}
+
 .scg-assistance-row-clean {
   display: inline-flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  gap: 8px 14px;
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.88);
-  margin-top: 14px;
-  padding: 8px 18px;
-  background: rgba(255, 255, 255, 0.035);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 999px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  max-width: 95vw;
+  gap: 12px;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  background: rgba(18, 12, 32, 0.65);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%), rgba(18, 12, 32, 0.65);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.55), 0 0 20px rgba(168, 85, 247, 0.18), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+  white-space: nowrap;
+  color: #ffffff !important;
+  font-size: clamp(0.74rem, 0.95vw, 0.84rem);
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+.scg-assistance-row-clean:hover {
+  border-color: rgba(216, 180, 254, 0.45);
+  box-shadow: 0 16px 44px 0 rgba(0, 0, 0, 0.65), 0 0 28px rgba(168, 85, 247, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
+}
+
 .scg-assistance-row-clean .scg-assistance-lead {
-  font-weight: 600;
-  color: #d8b4fe;
+  font-weight: 700;
+  color: #d8b4fe !important;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  text-shadow: 0 0 10px rgba(216, 180, 254, 0.6);
+  margin-right: 2px;
 }
+
 .scg-assistance-row-clean .scg-person {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
+  color: #ffffff !important;
   white-space: nowrap;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(255, 255, 255, 0.35);
 }
+
 .scg-assistance-row-clean .scg-person strong {
-  color: #fff;
-  font-weight: 600;
+  color: #ffffff !important;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
+
 .scg-assistance-row-clean .scg-person a {
-  color: #c4b5fd;
+  color: #d8b4fe !important;
   text-decoration: none;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.78rem;
-  transition: color 0.2s ease;
-}
-.scg-assistance-row-clean .scg-person a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-.scg-assistance-row-clean .scg-bullet {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 0.75rem;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(216, 180, 254, 0.5);
+  transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
-@media (max-width: 600px) {
+.scg-assistance-row-clean .scg-person a:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+}
+
+.scg-assistance-row-clean .scg-bullet {
+  color: rgba(255, 255, 255, 0.35) !important;
+  font-size: 0.75rem;
+  margin: 0 2px;
+  user-select: none;
+}
+
+@media (max-width: 900px) {
+  .scg-assistance-bottom-wrapper {
+    position: static;
+    transform: none;
+    margin-top: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .scg-assistance-row-clean {
-    border-radius: 14px;
-    padding: 10px 14px;
-    gap: 6px 10px;
+    flex-wrap: wrap;
+    white-space: normal;
+    border-radius: 16px;
+    padding: 10px 16px;
+    gap: 8px 12px;
+    text-align: center;
   }
 }
 
@@ -2804,15 +2830,16 @@ html.mobile-ui .me-photo-top {
   content: '✓';
   position: absolute;
   left: 0;
-  color: #34d399;
+  color: #d8b4fe;
   font-weight: bold;
+  text-shadow: 0 0 6px rgba(216, 180, 254, 0.4);
 }
 .phase-verification-badge {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #6ee7b7;
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.25);
+  color: #d8b4fe;
+  background: rgba(216, 180, 254, 0.1);
+  border: 1px solid rgba(216, 180, 254, 0.25);
   border-radius: 6px;
   padding: 3px 8px;
   display: inline-block;

@@ -1017,22 +1017,22 @@ document.addEventListener('DOMContentLoaded', () => {
                      alt="Welcome">
               </div>
               <div class="animate-in" style="animation-delay:0.3s; text-align: center; max-width: 340px;">
-                <p style="font-size: 0.92rem; line-height: 1.6; color: rgba(255,255,255,0.92); margin-bottom: 8px;">
+                <p style="font-size: 0.92rem; line-height: 1.6; color: #ffffff; text-shadow: 0 1px 3px rgba(0,0,0,0.8); margin-bottom: 8px;">
                   This is the official platform and operations hub of the
-                  <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; animation: breathe-glow-text 5s ease-in-out infinite; display: inline-block;">Science College Government (SCG)</span> for Academic Year 2026–2027.
+                  <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.6); font-weight: bold; animation: breathe-glow-text 5s ease-in-out infinite; display: inline-block;">Science College Government (SCG)</span> for Academic Year 2026–2027.
                 </p>
-                <p style="font-size: 0.82rem; color: rgba(255,255,255,0.65);">Explore our Term 1 initiatives, governance frameworks, and student services.</p>
+                <p style="font-size: 0.82rem; color: rgba(255,255,255,0.75);">Explore our Term 1 initiatives, governance frameworks, and student services.</p>
               </div>
               <div class="animate-in" style="animation-delay:0.5s; width: 100%; display: flex; justify-content: center;">
-                <div class="scg-assistance-row-clean">
-                  <span class="scg-assistance-lead">For assistance:</span>
-                  <span class="scg-person"><strong>Pauline Galias</strong>, President <a href="https://t.me/PaulineGalias07" target="_blank" rel="noopener noreferrer">@PaulineGalias07</a></span>
-                  <span class="scg-bullet">&bull;</span>
-                  <span class="scg-person"><strong>Trish Longboy</strong>, Chief of Staff <a href="https://t.me/onetwo_trish" target="_blank" rel="noopener noreferrer">@onetwo_trish</a></span>
-                  <span class="scg-bullet">&bull;</span>
-                  <span class="scg-person"><strong>Ace Licuanan</strong>, COO <a href="https://t.me/acecarloo" target="_blank" rel="noopener noreferrer">@acecarloo</a></span>
-                  <span class="scg-bullet">&bull;</span>
-                  <span class="scg-person"><strong>Ann Farala</strong>, CCO <a href="https://t.me/annfarala" target="_blank" rel="noopener noreferrer">@annfarala</a></span>
+                <div class="scg-assistance-row-clean" style="display: inline-flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 12px; padding: 10px 18px; border-radius: 18px; background: rgba(18, 12, 32, 0.65); background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%), rgba(18, 12, 32, 0.65); backdrop-filter: blur(28px) saturate(190%); -webkit-backdrop-filter: blur(28px) saturate(190%); border: 1px solid rgba(255, 255, 255, 0.22); box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.55), 0 0 20px rgba(168, 85, 247, 0.18), inset 0 1px 1px rgba(255, 255, 255, 0.35); color: #ffffff !important;">
+                  <span class="scg-assistance-lead" style="font-weight: 700; color: #d8b4fe !important; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.72rem; text-shadow: 0 0 10px rgba(216, 180, 254, 0.6);">For assistance:</span>
+                  <span class="scg-person" style="display: inline-flex; align-items: center; gap: 5px; color: #ffffff !important; white-space: nowrap; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(255, 255, 255, 0.35);"><strong style="color: #ffffff !important; font-weight: 700; text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);">Pauline Galias</strong>, President <a href="https://t.me/PaulineGalias07" target="_blank" rel="noopener noreferrer" style="color: #d8b4fe !important; text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; font-weight: 600; text-shadow: 0 0 8px rgba(216, 180, 254, 0.5);">@PaulineGalias07</a></span>
+                  <span class="scg-bullet" style="color: rgba(255, 255, 255, 0.35) !important; font-size: 0.75rem;">&bull;</span>
+                  <span class="scg-person" style="display: inline-flex; align-items: center; gap: 5px; color: #ffffff !important; white-space: nowrap; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(255, 255, 255, 0.35);"><strong style="color: #ffffff !important; font-weight: 700; text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);">Trish Longboy</strong>, Chief of Staff <a href="https://t.me/onetwo_trish" target="_blank" rel="noopener noreferrer" style="color: #d8b4fe !important; text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; font-weight: 600; text-shadow: 0 0 8px rgba(216, 180, 254, 0.5);">@onetwo_trish</a></span>
+                  <span class="scg-bullet" style="color: rgba(255, 255, 255, 0.35) !important; font-size: 0.75rem;">&bull;</span>
+                  <span class="scg-person" style="display: inline-flex; align-items: center; gap: 5px; color: #ffffff !important; white-space: nowrap; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(255, 255, 255, 0.35);"><strong style="color: #ffffff !important; font-weight: 700; text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);">Ace Licuanan</strong>, COO <a href="https://t.me/acecarloo" target="_blank" rel="noopener noreferrer" style="color: #d8b4fe !important; text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; font-weight: 600; text-shadow: 0 0 8px rgba(216, 180, 254, 0.5);">@acecarloo</a></span>
+                  <span class="scg-bullet" style="color: rgba(255, 255, 255, 0.35) !important; font-size: 0.75rem;">&bull;</span>
+                  <span class="scg-person" style="display: inline-flex; align-items: center; gap: 5px; color: #ffffff !important; white-space: nowrap; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(255, 255, 255, 0.35);"><strong style="color: #ffffff !important; font-weight: 700; text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);">Ann Farala</strong>, CCO <a href="https://t.me/annfarala" target="_blank" rel="noopener noreferrer" style="color: #d8b4fe !important; text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; font-weight: 600; text-shadow: 0 0 8px rgba(216, 180, 254, 0.5);">@annfarala</a></span>
                 </div>
               </div>
             </div>
@@ -1045,22 +1045,25 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div style="position: absolute; top: calc(50vh + 35px); left: 50%; transform: translateX(-50%); width: 100%; display: flex; justify-content: center; pointer-events: auto;">
               <div class="animate-in" style="width: auto; max-width: 95vw; padding: 12px 24px; text-align: center; animation-delay: 0.3s;">
-                <p style="font-size: 1rem; line-height: 1.6; color: rgba(255,255,255,0.95); margin-bottom: 6px; font-weight: 500;">
-                  This is the official platform and operations hub of the <span style="color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.5); font-weight: bold; display: inline-block; animation: breathe-glow-text 5s ease-in-out infinite;">Science College Government (SCG)</span> for Academic Year 2026–2027.
+                <p style="font-size: 1rem; line-height: 1.6; color: #ffffff; text-shadow: 0 1px 3px rgba(0,0,0,0.8); margin-bottom: 6px; font-weight: 500;">
+                  This is the official platform and operations hub of the <span style="color: #fff; text-shadow: 0 0 12px rgba(255,255,255,0.6); font-weight: 700; display: inline-block; animation: breathe-glow-text 5s ease-in-out infinite;">Science College Government (SCG)</span> for Academic Year 2026–2027.
                 </p>
-                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 400; margin-bottom: 12px;">
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.78); font-weight: 400; margin-bottom: 0;">
                   Explore our Term 1 initiatives, governance frameworks, and student services.
                 </p>
-                <div class="scg-assistance-row-clean">
-                  <span class="scg-assistance-lead">For assistance:</span>
-                  <span class="scg-person"><strong>Pauline Galias</strong>, President <a href="https://t.me/PaulineGalias07" target="_blank" rel="noopener noreferrer">@PaulineGalias07</a></span>
-                  <span class="scg-bullet">&bull;</span>
-                  <span class="scg-person"><strong>Trish Longboy</strong>, Chief of Staff <a href="https://t.me/onetwo_trish" target="_blank" rel="noopener noreferrer">@onetwo_trish</a></span>
-                  <span class="scg-bullet">&bull;</span>
-                  <span class="scg-person"><strong>Ace Licuanan</strong>, Chief Operating Officer <a href="https://t.me/acecarloo" target="_blank" rel="noopener noreferrer">@acecarloo</a></span>
-                  <span class="scg-bullet">&bull;</span>
-                  <span class="scg-person"><strong>Ann Farala</strong>, Chief Communications Officer <a href="https://t.me/annfarala" target="_blank" rel="noopener noreferrer">@annfarala</a></span>
-                </div>
+              </div>
+            </div>
+            <!-- SCG Assistance Frosted Glass Bar - positioned BELOW at bottom of screen, ONE ROW -->
+            <div class="scg-assistance-bottom-wrapper animate-in" style="position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%); z-index: 50; width: max-content; max-width: 96vw; pointer-events: auto; animation-delay: 0.5s;">
+              <div class="scg-assistance-row-clean" style="display: inline-flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: center; white-space: nowrap; gap: 12px; padding: 10px 24px; border-radius: 9999px; background: rgba(18, 12, 32, 0.65); background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%), rgba(18, 12, 32, 0.65); backdrop-filter: blur(28px) saturate(190%); -webkit-backdrop-filter: blur(28px) saturate(190%); border: 1px solid rgba(255, 255, 255, 0.22); box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.55), 0 0 20px rgba(168, 85, 247, 0.18), inset 0 1px 1px rgba(255, 255, 255, 0.35); color: #ffffff !important;">
+                <span class="scg-assistance-lead" style="font-weight: 700; color: #d8b4fe !important; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.72rem; text-shadow: 0 0 10px rgba(216, 180, 254, 0.6); margin-right: 2px;">For assistance:</span>
+                <span class="scg-person" style="display: inline-flex; align-items: center; gap: 5px; color: #ffffff !important; white-space: nowrap; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(255, 255, 255, 0.35);"><strong style="color: #ffffff !important; font-weight: 700; text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);">Pauline Galias</strong>, President <a href="https://t.me/PaulineGalias07" target="_blank" rel="noopener noreferrer" style="color: #d8b4fe !important; text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; font-weight: 600; text-shadow: 0 0 8px rgba(216, 180, 254, 0.5);">@PaulineGalias07</a></span>
+                <span class="scg-bullet" style="color: rgba(255, 255, 255, 0.35) !important; font-size: 0.75rem; margin: 0 2px;">&bull;</span>
+                <span class="scg-person" style="display: inline-flex; align-items: center; gap: 5px; color: #ffffff !important; white-space: nowrap; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(255, 255, 255, 0.35);"><strong style="color: #ffffff !important; font-weight: 700; text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);">Trish Longboy</strong>, Chief of Staff <a href="https://t.me/onetwo_trish" target="_blank" rel="noopener noreferrer" style="color: #d8b4fe !important; text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; font-weight: 600; text-shadow: 0 0 8px rgba(216, 180, 254, 0.5);">@onetwo_trish</a></span>
+                <span class="scg-bullet" style="color: rgba(255, 255, 255, 0.35) !important; font-size: 0.75rem; margin: 0 2px;">&bull;</span>
+                <span class="scg-person" style="display: inline-flex; align-items: center; gap: 5px; color: #ffffff !important; white-space: nowrap; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(255, 255, 255, 0.35);"><strong style="color: #ffffff !important; font-weight: 700; text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);">Ace Licuanan</strong>, COO <a href="https://t.me/acecarloo" target="_blank" rel="noopener noreferrer" style="color: #d8b4fe !important; text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; font-weight: 600; text-shadow: 0 0 8px rgba(216, 180, 254, 0.5);">@acecarloo</a></span>
+                <span class="scg-bullet" style="color: rgba(255, 255, 255, 0.35) !important; font-size: 0.75rem; margin: 0 2px;">&bull;</span>
+                <span class="scg-person" style="display: inline-flex; align-items: center; gap: 5px; color: #ffffff !important; white-space: nowrap; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(255, 255, 255, 0.35);"><strong style="color: #ffffff !important; font-weight: 700; text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);">Ann Farala</strong>, CCO <a href="https://t.me/annfarala" target="_blank" rel="noopener noreferrer" style="color: #d8b4fe !important; text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; font-weight: 600; text-shadow: 0 0 8px rgba(216, 180, 254, 0.5);">@annfarala</a></span>
               </div>
             </div>
           `;
@@ -1975,7 +1978,7 @@ function renderImmersiveView(target) {
       html += `
         <div class="immersive-card-wrapper" id="immersive-card-${index}" data-index="${index}">
           <h2 class="immersive-section-title animate-in" style="animation-delay: ${delay}s">
-            Project ${p.num} &mdash; ${p.shortTitle}
+            <span style="color: #d8b4fe; font-weight: 700; text-shadow: 0 0 12px rgba(216, 180, 254, 0.6);">Project ${p.num}</span> &mdash; <span style="color: #fff; text-shadow: 0 0 8px rgba(255,255,255,0.3);">${p.shortTitle}</span>
           </h2>
       `;
       delay += 0.08;
@@ -1987,53 +1990,53 @@ function renderImmersiveView(target) {
             </h3>
 
             <ul style="list-style: none; padding-left: 0; margin: 0 0 1.25rem 0; font-size: 0.92rem; line-height: 1.8; color: rgba(255,255,255,0.88);">
-              <li><strong style="color: #d8b4fe;">Classification & Nature:</strong> ${p.classification} &bull; ${p.nature} (${p.daamType})</li>
-              <li><strong style="color: #d8b4fe;">Budget:</strong> <span style="color: #a7f3d0; font-weight: 600;">${p.budget}</span></li>
-              <li><strong style="color: #d8b4fe;">Target Date:</strong> <span style="color: #fff;">${p.date}</span></li>
-              <li><strong style="color: #d8b4fe;">Lead Committee:</strong> ${p.lead}</li>
-              <li><strong style="color: #d8b4fe;">Collaborators & Partners:</strong> ${p.collab}</li>
-              <li><strong style="color: #d8b4fe;">Venue / Platform:</strong> ${p.venue}</li>
+              <li><strong style="color: #fff; font-weight: 700; text-shadow: 0 0 8px rgba(255,255,255,0.45);">Classification & Nature:</strong> ${p.classification} &bull; ${p.nature} (${p.daamType})</li>
+              <li><strong style="color: #fff; font-weight: 700; text-shadow: 0 0 8px rgba(255,255,255,0.45);">Budget:</strong> <span style="color: #fff; font-weight: 600; text-shadow: 0 0 6px rgba(255,255,255,0.3);">${p.budget}</span></li>
+              <li><strong style="color: #fff; font-weight: 700; text-shadow: 0 0 8px rgba(255,255,255,0.45);">Target Date:</strong> <span style="color: #d8b4fe; font-weight: 600; text-shadow: 0 0 8px rgba(216, 180, 254, 0.45);">${p.date}</span></li>
+              <li><strong style="color: #fff; font-weight: 700; text-shadow: 0 0 8px rgba(255,255,255,0.45);">Lead Committee:</strong> ${p.lead}</li>
+              <li><strong style="color: #fff; font-weight: 700; text-shadow: 0 0 8px rgba(255,255,255,0.45);">Collaborators & Partners:</strong> ${p.collab}</li>
+              <li><strong style="color: #fff; font-weight: 700; text-shadow: 0 0 8px rgba(255,255,255,0.45);">Venue / Platform:</strong> ${p.venue}</li>
             </ul>
 
             ${p.continuity ? `
               <div style="margin-bottom: 1.25rem; padding-left: 1rem; border-left: 2px solid #c4b5fd;">
                 <p style="margin: 0; font-size: 0.92rem; line-height: 1.7; color: rgba(255,255,255,0.92);">
-                  <strong style="color: #d8b4fe;">Institutional Continuity:</strong> ${p.continuity}
+                  <strong style="color: #d8b4fe; font-weight: 700; text-shadow: 0 0 8px rgba(216, 180, 254, 0.5);">Institutional Continuity:</strong> ${p.continuity}
                 </p>
               </div>
             ` : ''}
 
-            <h4 style="font-size: 1.1rem; font-weight: 600; color: #fff; margin-top: 1.5rem; margin-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.35rem;">
+            <h4 style="font-size: 1.1rem; font-weight: 700; color: #fff; text-shadow: 0 0 8px rgba(255,255,255,0.35); margin-top: 1.5rem; margin-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 0.35rem;">
               Project Description
             </h4>
             <p style="font-size: 0.93rem; line-height: 1.75; color: rgba(255,255,255,0.88); margin-bottom: 1.5rem;">
               ${p.description}
             </p>
 
-            <h4 style="font-size: 1.1rem; font-weight: 600; color: #fff; margin-top: 1.5rem; margin-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.35rem;">
+            <h4 style="font-size: 1.1rem; font-weight: 700; color: #fff; text-shadow: 0 0 8px rgba(255,255,255,0.35); margin-top: 1.5rem; margin-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 0.35rem;">
               Objectives & Impact Targets
             </h4>
             <ul style="padding-left: 1.4rem; margin: 0 0 1.5rem 0; font-size: 0.92rem; line-height: 1.8; color: rgba(255,255,255,0.88);">
-              <li><strong style="color: #d8b4fe;">Issue Addressed:</strong> ${p.issue}</li>
-              <li><strong style="color: #d8b4fe;">Core Objective:</strong> ${p.objective}</li>
-              <li><strong style="color: #d8b4fe;">Target Metric:</strong> <span style="color: #a7f3d0; font-weight: 600;">${p.metric}</span></li>
+              <li><strong style="color: #fff; font-weight: 700; text-shadow: 0 0 8px rgba(255,255,255,0.45);">Issue Addressed:</strong> ${p.issue}</li>
+              <li><strong style="color: #fff; font-weight: 700; text-shadow: 0 0 8px rgba(255,255,255,0.45);">Core Objective:</strong> ${p.objective}</li>
+              <li><strong style="color: #fff; font-weight: 700; text-shadow: 0 0 8px rgba(255,255,255,0.45);">Target Metric:</strong> <span style="color: #fff; font-weight: 600; text-shadow: 0 0 6px rgba(255,255,255,0.3);">${p.metric}</span></li>
             </ul>
 
-            <h4 style="font-size: 1.1rem; font-weight: 600; color: #fff; margin-top: 1.5rem; margin-bottom: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.35rem;">
+            <h4 style="font-size: 1.1rem; font-weight: 700; color: #fff; text-shadow: 0 0 8px rgba(255,255,255,0.35); margin-top: 1.5rem; margin-bottom: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 0.35rem;">
               Step-by-Step Deliverables & Timeline (CPD Tracker)
             </h4>
             <div style="display: flex; flex-direction: column; gap: 1.25rem;">
               ${p.phases.map((ph, phIdx) => `
                 <div style="padding-left: 0.85rem; border-left: 2px solid rgba(216, 180, 254, 0.45);">
                   <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 0.35rem;">
-                    <span style="font-weight: 600; font-size: 0.96rem; color: #fff;">${ph.name}</span>
-                    <span style="font-size: 0.82rem; font-family: 'JetBrains Mono', monospace; color: #d8b4fe;">${ph.date} &bull; ${ph.lead}</span>
+                    <span style="font-weight: 700; font-size: 0.96rem; color: #fff; text-shadow: 0 0 6px rgba(255,255,255,0.3);">${ph.name}</span>
+                    <span style="font-size: 0.82rem; font-family: 'JetBrains Mono', monospace; color: #d8b4fe; text-shadow: 0 0 8px rgba(216, 180, 254, 0.4);">${ph.date} &bull; ${ph.lead}</span>
                   </div>
                   <ul style="padding-left: 1.25rem; margin: 0.35rem 0; font-size: 0.9rem; line-height: 1.7; color: rgba(255,255,255,0.84);">
                     ${ph.items.map(it => `<li>${it}</li>`).join('')}
                   </ul>
                   <div style="font-size: 0.82rem; color: rgba(255,255,255,0.7); margin-top: 0.25rem;">
-                    <strong style="color: #a7f3d0;">Verification Gate:</strong> ${ph.check}
+                    <strong style="color: #fff; font-weight: 700; text-shadow: 0 0 8px rgba(255,255,255,0.45);">Verification Gate:</strong> ${ph.check}
                   </div>
                 </div>
               `).join('')}
